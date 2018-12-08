@@ -48,7 +48,7 @@ Now a days these smaller services are known as Microservices
 I will discuss on Microservice in another article , but as of now lets go with simpler definition.
 
 Microservice:  
-![Api Gateway](images/Apigateway.png)  
+![Api Gateway](images/ApiGateway.png)  
 
 Microservice definition :  
 A Microservice is a service , which performs its job related to its DOMAIN only and it behaves as a single unit.
