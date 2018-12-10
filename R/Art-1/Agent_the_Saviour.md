@@ -51,7 +51,7 @@ With these drawbacks , a non-linux user is reluctant to use the tool.
 **So the question is :**  
 *How can we make something simple which will be helpful to users , who does not know Linux ?*  
 *Is it possible to modify the existing Redis management tool to do the start/stop tasks ?*  
-*Is it possible to create a Dashboard , which will give me all the required information. I don’t have to login to every server for this?  *
+*Is it possible to create a Dashboard , which will give me all the required information.I don’t have to login to every server for this?*
 
 **Solution approach**  
 
