@@ -73,11 +73,15 @@ So what to do ?
 Here comes a variant of Retry pattern… Retry with Exponential Backoff pattern  
 
 **Retry with Exponential Backoff pattern**  
-The idea behind using exponential backoff with retry is that instead of retrying after waiting for a fixed amount of time, we increase the waiting time between retries after each retry failure.
-For example, when the request fails the first time, we retry after one second. If it fails for the second time, we wait for 2 seconds before next retry. 
-If the second retry fails, we wait for four seconds before next retry. So we are incrementally increasing the wait time between the consecutive retry requests after each failure. 
-This gives the service some breathing time so that if the fault is due to service overload, it could get resolved faster.
-So with exponential backoff, our retry algorithm will look like following:
+The idea behind using exponential backoff with retry is that instead of retrying after waiting for a fixed amount of time, we increase the waiting time between retries after each retry failure.  
+
+For example, when the request fails the first time, we retry after one second. If it fails for the second time, we wait for 2 seconds before next retry.  
+
+If the second retry fails, we wait for four seconds before next retry. So we are incrementally increasing the wait time between the consecutive retry requests after each failure.  
+
+This gives the service some breathing time so that if the fault is due to service overload, it could get resolved faster.  
+
+So with exponential backoff, our retry algorithm will look like following:  
 * Identify if the fault is a transient fault.  
 * Define the maximum retry count.
 * Retry the service call and increment the retry count.
