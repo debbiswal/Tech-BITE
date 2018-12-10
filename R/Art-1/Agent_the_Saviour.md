@@ -2,9 +2,9 @@ Hi ,
 
 Today I will discuss about a simple solution , for which I was beating around the bush.
 
-Problem statement
+**Problem statement**
 
-How to manage/monitor an application running on a remote server?
+*How to manage/monitor an application running on a remote server ?*  
 
 To simplify this , just look at below diagram.  
 ![Architecture](images/agent_the_saviour-5.png) 
@@ -18,7 +18,7 @@ Suppose you logged-in into Server-A and you want to do the following things:
 As this scenario is for a Production environment , you can not directly access the application or log or config folders of Server-B/Server-C from Server-A(due to security).
 So every time you have to log-in into Server-B or Server-C , to do the above mentioned tasks.
 
-Our problem 
+**Our problem** 
 
 Just like the previously discussed problem , we have the same problem with REDIS implementation.  
 Let me tell you what it is .  
@@ -30,7 +30,7 @@ In order to manage these Redis instances , We have developed a Redis Management 
 
 But only one problem with the tool is , by using this tool , we can not start a Redis instance from a different server. Every time we have to login to the corresponding server and start the instance.  
 
-One solution to this problem is :  
+*One solution to this problem is :*  
 * share a key file between all 3 Linux servers(one time job) 
 * SSH(say : login) to remote server
 * Do the required task
@@ -48,11 +48,12 @@ Even the Redis management tool has potentials but it has some other drawbacks :
 
 With these drawbacks , a non-linux user is reluctant to use the tool.  
 
-So the question is :  
-How can we make something simple which will be helpful to users , who does not know Linux.  
-Is it possible to modify the existing Redis management tool to do the start/stop tasks.  
-Is it possible to create a Dashboard , which will give me all the required information. I don’t have to login to every server for this?  
-Solution approach  
+**So the question is :**  
+*How can we make something simple which will be helpful to users , who does not know Linux ?*  
+*Is it possible to modify the existing Redis management tool to do the start/stop tasks ?*  
+*Is it possible to create a Dashboard , which will give me all the required information. I don’t have to login to every server for this?  *
+
+**Solution approach**  
 
 The simplest solution is create an API which will connect to redis instance(by using any Redis library) and get the information.  
 
@@ -79,7 +80,7 @@ From API or Tool :
 * get the success/failure response from agent
 
 
-Architecture :  
+**Architecture :**  
 ![Architecture](images/agent_the_saviour-1.png) 
 
 In above diagram , the Configuration DB and the config file will be used to provide the below information :  
@@ -89,7 +90,7 @@ In above diagram , the Configuration DB and the config file will be used to prov
 Non Linux users will use a web application , which will be like a dashboard. They will manage all the tasks from this web application.
 Linux user will use Redis management tool.  
 
-Sample program :  
+**Sample program :**  
 
 The purpose of the sample program is to start and stop a Redis instance.  
 The Redis instance is deployed in path ```/home/vagrant/REDIS_MS/REDIS_8001```  
@@ -110,7 +111,7 @@ To stop the redis instance , we need to execute command(from REDIS_8001 folder) 
 
 I will use two programs to demonstrate this by running on same machine.
 
-Agent : 
+*Agent* : 
 * This program is the Agent application.
 * It uses UDP socket and listens on port 4321.
 * It will start the redis instance 8001 when it gets command *‘start’*
@@ -119,7 +120,7 @@ Agent :
 * Sends the response *‘OK’* to client for valid commands
 * Sends the response *‘INVALID COMMANDS’* to client , if command is not start or stop
 
-Client :
+*Client* :
 * The client takes one argument(start or stop) from command line
 * Connects to agent running on same machine on port 4321 
 * Sends the command to agent
@@ -130,11 +131,11 @@ The program is written in Ruby language(as we have Linux comes with pre-installe
 
 Please note that the below programs are not production ready . I am keeping it as simple as possible for better understanding.
 
-Agent.rb :  
+**Agent.rb :**  
 
 ![Agent](images/agent_the_saviour-2.png)  
 
-Client.rb :  
+**Client.rb :**  
 
 ![Client](images/agent_the_saviour-3.png) 
 
@@ -146,7 +147,7 @@ To run the program :
 * Run Client to start the redis instance : ```ruby Client.rb stop```
 
 
-Things to consider to make it Production ready 
+**Things to consider to make it Production ready** 
 * Define message format/protocol between Client and Agent
 * Implement SSL socket programming for security
 * Concurrent client handling by agent
@@ -154,7 +155,7 @@ Things to consider to make it Production ready
 * Deciding Agent port number
 
 
-Endless Possibilities 
+**Endless Possibilities** 
 We can develop the agent to do many tasks and get the data on to a centralized dashboard.
 On exploring the agent , the Possibilities are Endless.  
 
