@@ -1,6 +1,6 @@
 # Transient Fault - I #  
 
-I my previous article , I discussed basics about Monolith Service , Microservice, API Gateway and Replace-by feature of it.  
+I my [previous article](../Art-1/apigateway_replaceby_functionality.md) , I discussed basics about Monolith Service , Microservice, API Gateway and Replace-by feature of it.  
 Today , I will talk about Transient fault and how API Gateway handles it. 
 
 This fault handling mechanism can be implemented at any place(not only API Gateway) , where ever you feel it is required as per the need.  
