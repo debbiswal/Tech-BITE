@@ -67,11 +67,6 @@ So with exponential backoff, our retry algorithm will look like following:
 * Keep retrying and keep increasing the delay period until the maximum retry count is hit.
 * If the call is failing even after maximum retries, let the caller module know that the target service is unavailable.
 
-So you are HAPPY now…
-BUT…
-Again but…. I am stopping here… HOGI BARUTHEENE(Good Bye)
-Please please.. last few minutes…
-
 Lets imagine that , we have implement the exponential backoff logic , and there is network issue which will take 5 hours to recover(as communicated by Network team).This type of fault is known as Long-lasting Transient Fault.  
 
 The problem with long-lasting transient faults is that our application will end up retrying, waiting and retrying till the maximum retry count is hit and thus wasting resources.  
