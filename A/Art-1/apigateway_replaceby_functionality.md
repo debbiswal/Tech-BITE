@@ -10,8 +10,7 @@ Note : All the examples are for explanatory purpose
 
 So lets START…… :  
 
-### Monolith Service ###
-
+### Monolith Service ###  
 ![Monolith Service](images/monolith.png)  
 
 Lets consider an ORDER service which client consumes to get the order details for a given Order ID.  
@@ -48,7 +47,7 @@ Now a days these smaller services are known as Microservices
 
 I will discuss on Microservice in another article , but as of now lets go with simpler definition.
 
-### Microservice: ###
+### Microservice: ###  
 ![Api Gateway](images/ApiGateway.png)  
 
 Microservice definition :  
@@ -111,7 +110,7 @@ Lets say Client requested for OREDR to Api-Gateway.
 Api-Gateway contacted to all Microservices to get the response.  
 But due to some network issue , call to Delivery service failed.  
 
-So what should we do now?  
+**So what should we do now?**  
 Are we going to return an ERROR to client , even if we have around 80% data available with us.  
 
 No.... We can configure the Api-Gateway in such a way that :  
