@@ -1,3 +1,4 @@
+## Replace-by functionality Of API Gateway ##  
 
 Hi ,  
 Today I came across an interesting feature of API-GATEWAY. The feature is known as Replace-by functionality.  
@@ -9,7 +10,7 @@ Note : All the examples are for explanatory purpose
 
 So lets START…… :  
 
-Monolith Service  
+### Monolith Service ###
 
 ![Monolith Service](images/monolith.png)  
 
@@ -24,7 +25,7 @@ The response from the ORDER service comprises the below details :
 Here the ORDER service performs all the required task and returns the data.  
 As we can see that , ORDER service performs many task , we can say that our ORDER service is a MONOLITH(a large single block) service.
 
-Disadvantages of Monolith Service:  
+**Disadvantages of Monolith Service:**  
 * Not so easy to maintain  
 * Requires more development effort and delays delivery due to dependency on different modules  
 * Complexity increases as time passes by  
@@ -47,7 +48,7 @@ Now a days these smaller services are known as Microservices
 
 I will discuss on Microservice in another article , but as of now lets go with simpler definition.
 
-Microservice:  
+### Microservice: ###
 ![Api Gateway](images/ApiGateway.png)  
 
 Microservice definition :  
@@ -81,7 +82,7 @@ We need a middle man who will do these for us.
 
 Here comes API-GATEWAY to rescue us.  
 
-So What is API-GATEWAY?  
+**So What is API-GATEWAY?**  
 API Gateway is a software component which does the following jobs  
 * Authentication  
 * Aggregation  
@@ -93,7 +94,7 @@ API Gateway is a software component which does the following jobs
 * Message conversion between different protocol  
 
 
-How Client will get response?  
+**How Client will get response?**  
 Client will consume a virtual API URL , which is supported by Api-Gateway.  
 When client hits this virtual url , Api-Gateway converts this single request to multiple requests based on parameters provided in URL and sends to Microservices.  
 Finally it collects all the responses and creates the single response out of it and return to client.  
@@ -105,7 +106,7 @@ Api-Gateway will not do automatically these for us , we have to configure it as 
 
 As we can see Api-Gatway has many features , today I will talk a little bit about the Replace-by functionality.  
 
-Replace-by functionality
+**Replace-by functionality**
 Lets say Client requested for OREDR to Api-Gateway.  
 Api-Gateway contacted to all Microservices to get the response.  
 But due to some network issue , call to Delivery service failed.  
