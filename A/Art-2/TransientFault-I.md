@@ -13,6 +13,7 @@ As per Cambridge dictionary: It is something that last for short time , temporar
 **So ..What is Transient fault?**  
 Lets understand this with one example :
 Suppose an user is trying to search for some products on a retail website like Amazon,Flipkart etc.  
+
 When user gave a search text and clicked the search button , the retail website tried to connect to PRODUCT_SEARCH service to get the data.  
 
 But due to some problem search result is not displayed.  
@@ -20,6 +21,7 @@ User tried again , and this time he got the search result.
 
 **So , what happened first time , and why it worked second time?**  
 As the user is able to get the result , it means PRODUCT_SEARCH service is working fine and the issue is somewhere else.You might have faced this at some point of time.  
+
 These kind of failures are known as Transient Failures. These failures are temporary and many times goes off in second or third try.These failures are irregular and unpredictable.  
 
 What could be the reason for Transient Failures?  
@@ -36,12 +38,13 @@ The Application can implement RETRY PATTERN to resolve this issue…
 
 **What is Retry Pattern ?**  
 The Retry pattern allows to retry some action if any transient failure happens.  
+![RetryPattern](images/TransientFault-1-a.png)  
 
 **Identifying Transient Faults**  
 Before we start talking about how to handle the transient failures, the first thing is to identify the transient faults. 
 The way to do that is to :
-* Check if the fault is something that the target service is sending and actually has some context from the application perspective. If this is the case then we know that this is not a transient fault since the service is sending us a fault.
-For example : if the service call fails due to some authentication failure , then there is no point of retrying
+* Check if the fault is something that the target service is sending and actually has some context from the application perspective. If this is the case then we know that this is not a transient fault since the service is sending us a fault.  
+*For example : if the service call fails due to some authentication failure , then there is no point of retrying*
 * But if we are getting a fault that is not coming from the service and perhaps coming from some other reasons like infrastructure issues and the fault appears to be something that can be resolved by simply the calling service again, then we can say that it as a transient fault.
 
 **Implementing Retry logic**  
@@ -54,7 +57,9 @@ The typical way to implement the retry is as follows:
 * If we are still getting the same fault, keep retrying until the maximum retry count is reached.  
 * If the call is failing even after maximum retries, let the caller module know that the target service is unavailable.  
 
-Here it goes(screen shot of sample program ) :
+Here it goes(screen shot of sample program ) :  
+![RetryPattern](images/TransientFault-1-b.png)  
+![RetryPattern](images/TransientFault-1-c.png)  
 
 In the above sample program I am trying to call an api productsearch to search for apple.  
 Assuming some transient fault will happen , and our retry logic will execute.  
