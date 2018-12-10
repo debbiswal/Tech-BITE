@@ -1,5 +1,5 @@
 
-In my last article[Retry Pattern | Transient Fault - I](../A2/TransientFault-I.md)  I discussed about :  
+In my last article[Retry Pattern | Transient Fault - I](../Art-2/TransientFault-I.md)  I discussed about :  
 * What is Transient fault ?  
 * Dealing transient faults with Simple Retry pattern  
 * Demerits of Simple Retry pattern  
