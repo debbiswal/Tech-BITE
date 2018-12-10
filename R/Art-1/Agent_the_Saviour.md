@@ -94,12 +94,19 @@ Sample program :
 The purpose of the sample program is to start and stop a Redis instance.  
 The Redis instance is deployed in path ```/home/vagrant/REDIS_MS/REDIS_8001```  
 
-To start the redis instance , we need to execute command(from REDIS_8001 folder) : ```./redis-server redis.conf```  
-To stop the redis instance , we need to execute command(from REDIS_8001 folder) : ```./redis-cli –p 8001 SHUTDOWN```  
+To start the redis instance , we need to execute command(from REDIS_8001 folder) :  
+```./redis-server redis.conf```  
+
+To stop the redis instance , we need to execute command(from REDIS_8001 folder) :  
+```./redis-cli –p 8001 SHUTDOWN```  
 
 But if we want to execute the same command from any other folder , we have to provide the full path :  
-To start the redis instance , we need to execute command(from REDIS_8001 folder) : ```/home/vagrant/REDIS_MS/REDIS_8001/./redis-server /home/vagrant/REDIS_MS/REDIS_8001/redis.conf```  
-To stop the redis instance , we need to execute command(from REDIS_8001 folder) : ```/home/vagrant/REDIS_MS/REDIS_8001/./redis-cli –p 8001 SHUTDOWN```  
+
+To start the redis instance , we need to execute command(from REDIS_8001 folder) :  
+```/home/vagrant/REDIS_MS/REDIS_8001/./redis-server /home/vagrant/REDIS_MS/REDIS_8001/redis.conf```  
+
+To stop the redis instance , we need to execute command(from REDIS_8001 folder) :  
+```/home/vagrant/REDIS_MS/REDIS_8001/./redis-cli –p 8001 SHUTDOWN```  
 
 I will use two programs to demonstrate this by running on same machine.
 
@@ -123,10 +130,12 @@ The program is written in Ruby language(as we have Linux comes with pre-installe
 
 Please note that the below programs are not production ready . I am keeping it as simple as possible for better understanding.
 
-Agent.rb :
-![Agent](images/agent_the_saviour-2.png) 
+Agent.rb :  
 
-Client.rb :
+![Agent](images/agent_the_saviour-2.png)  
+
+Client.rb :  
+
 ![Client](images/agent_the_saviour-3.png) 
 
 To run the program :
@@ -147,7 +156,8 @@ Things to consider to make it Production ready
 
 Endless Possibilities 
 We can develop the agent to do many tasks and get the data on to a centralized dashboard.
-On exploring the agent , the Possibilities are Endless.
+On exploring the agent , the Possibilities are Endless.  
+
 ![Client](images/agent_the_saviour-4.png) 
 
 Happy Learning :)
