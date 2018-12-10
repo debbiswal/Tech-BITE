@@ -34,14 +34,33 @@ The most common reasons are :
 
 The Application can implement RETRY PATTERN to resolve this issue…  
 
-What is Retry Pattern ?  
+**What is Retry Pattern ?**  
 The Retry pattern allows to retry some action if any transient failure happens.  
+
+**Identifying Transient Faults**  
+Before we start talking about how to handle the transient failures, the first thing is to identify the transient faults. 
+The way to do that is to :
+* Check if the fault is something that the target service is sending and actually has some context from the application perspective. If this is the case then we know that this is not a transient fault since the service is sending us a fault.
+For example : if the service call fails due to some authentication failure , then there is no point of retrying
+* But if we are getting a fault that is not coming from the service and perhaps coming from some other reasons like infrastructure issues and the fault appears to be something that can be resolved by simply the calling service again, then we can say that it as a transient fault.
+
+**Implementing Retry logic**  
+Once we have identified the fault as a transient fault, we need to put some retry logic so that the issue will get resolved simply by calling the service again. 
+The typical way to implement the retry is as follows:  
+* Identify if the fault is a transient fault.  
+* Define the maximum retry count.  
+* Retry the service call and increment the retry count.  
+* If the calls succeeds, return the result to the caller.  
+* If we are still getting the same fault, keep retrying until the maximum retry count is reached.  
+* If the call is failing even after maximum retries, let the caller module know that the target service is unavailable.  
+
+Here it goes(screen shot of sample program ) :
 
 In the above sample program I am trying to call an api productsearch to search for apple.  
 Assuming some transient fault will happen , and our retry logic will execute.  
 I have not shown the implementation of IsTransientFault method , as it depends on .. what is transient for your application.  
 
-Problem with Simple Retry logic  
+**Problem with Simple Retry logic**  
 Let's imagine a scenario where the transient fault is happening because the service is overloaded in peak hour or some throttling(limiting the number of calls to be served per second by the service) is implemented at the service end.  
 
 This service is rejecting new calls. This is a transient fault as if we call the service after some time, our call could succeed.  
@@ -53,7 +72,7 @@ So in a way, our requests are contributing further to the reason of the fault. U
 So what to do ?  
 Here comes a variant of Retry pattern… Retry with Exponential Backoff pattern  
 
-Retry with Exponential Backoff pattern
+**Retry with Exponential Backoff pattern**  
 The idea behind using exponential backoff with retry is that instead of retrying after waiting for a fixed amount of time, we increase the waiting time between retries after each retry failure.
 For example, when the request fails the first time, we retry after one second. If it fails for the second time, we wait for 2 seconds before next retry. 
 If the second retry fails, we wait for four seconds before next retry. So we are incrementally increasing the wait time between the consecutive retry requests after each failure. 
