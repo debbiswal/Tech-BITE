@@ -33,7 +33,7 @@ As we can see that , ORDER service performs many task , we can say that our ORDE
 * (There are more… but as of now lets go ahead with these )  
 
 
-So What is solution for these disadvantages…?
+*So What is solution for these disadvantages…?*
 
 Solution :  
 If we will break our Monolith service to smaller one then  
@@ -105,7 +105,7 @@ Api-Gateway will not do automatically these for us , we have to configure it as 
 
 As we can see Api-Gatway has many features , today I will talk a little bit about the Replace-by functionality.  
 
-**Replace-by functionality**
+**Replace-by functionality**  
 Lets say Client requested for OREDR to Api-Gateway.  
 Api-Gateway contacted to all Microservices to get the response.  
 But due to some network issue , call to Delivery service failed.  
