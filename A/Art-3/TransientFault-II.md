@@ -81,7 +81,7 @@ It tries to access to Service and :
 * If Service call succeeds , then it increases a counter for success , but does not switch to Closed state immediately  
 * If the success counter reached to given threshold value , then it understands that Service is stable now and switches to Closed state.  
 
-**What is the advantage of it ?**  
+**What is the advantage of it ?**
 * It helps to fail fast. It means ,it can help to maintain the response time of the system by quickly rejecting a request for an operation that's likely to fail, rather than waiting for the operation to time out, or never return   
 * Gives the accessed resource(Service) a breathing time to recover  
 * Does not overload the Service , if Service is in failed state  
@@ -108,7 +108,7 @@ However, the retry logic should be sensitive to any exceptions returned by the c
 Yes it is.  
 
 We can customize it according to the type of the possible failure.   
-For example :  
+For example : 
 * **Exponentail backoff :** We can apply an increasing timeout timer to a circuit breaker(like in Retry with exponential backoff pattern).We could place the circuit breaker in the Open state for a few seconds initially, and then if the failure hasn't been resolved increase the timeout to a few minutes, and so on.  
 * **Default Value :** In some cases, rather than the Open state returning failure and raising an exception, it could be useful to return a default value that is meaningful to the application(like Replace-by feature of Service gateway).  
 * **Service Ping :** In the Open state, rather than using a timer to determine when to switch to the Half-Open state, a circuit breaker can instead periodically ping the service to determine whether it's become available again  
@@ -118,7 +118,7 @@ Similarly, we could force a circuit breaker into the Open state (and restart the
 * **Replay Failed request :** In the Open state, rather than simply failing quickly, a circuit breaker could also record the details of each request to a log and arrange for these requests to be replayed when the service becomes available.  
 
 
-Reference :  
+Reference :
 * Retry pattern  
 * Resiliency Pattern  
 * Strategy Pattern  
