@@ -7,7 +7,7 @@ It helps us to avoid hard coded values floating around the code base.
 The basic difference  
 Ans : The difference is  :  
 
-1)	enum helps us to group a set of constants  , which is related to some context.  
+:one:	enum helps us to group a set of constants  , which is related to some context.  
 For example for the status of a database transaction :  
 
 With constants can be written as :  
@@ -30,7 +30,7 @@ var transaction_status = DbTransactionStatus.SUCCESS;
 
 In the above example , we saw that the enum , is more elaborative and self-explanatory.  
 
-2)	enum also helps to write code with less ambiguity  , Just look at the below example :  
+:two:	enum also helps to write code with less ambiguity  , Just look at the below example :  
 ```
 const QueryExecutionStatus= {
                 SUCCESS=”success”,
