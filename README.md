@@ -6,7 +6,7 @@
 * [Circuit Breaker Pattern | Transient Fault -II](A/Art-3/TransientFault-II.md)
 
 ## Linux
-* [Commands](L/Art-1/commands.md)
+* [Useful Commands](L/Art-1/useful_commands.md)
 
 ## Redis
 * [Agent the Saviour](R/Art-1/Agent_the_Saviour.md)
