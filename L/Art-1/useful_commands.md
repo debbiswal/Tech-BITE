@@ -17,4 +17,4 @@ ps -eo size,pid,user,command --sort -size
 
 
 **How to get Host name from IP in Linux ?**  
-```Get host name from IP in Linux```  
+```host IP | cut -d " " -f 5 | cut -d "." -f 1```  
