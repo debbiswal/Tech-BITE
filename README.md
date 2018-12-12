@@ -11,6 +11,11 @@
 ## Gatling
 * TO BE DONE
 
+## Git
+* Useful commands
+* Submodule
+* Subtree
+
 ## Grafana
 * TO BE DONE
 
