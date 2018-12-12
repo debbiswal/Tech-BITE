@@ -72,7 +72,9 @@ var query_status = Status.QUERY.SUCCESS ;
 **A bit more on const keyword**    
 
 As per the documentation , it says ::   
+
 *The const declaration creates a read-only reference to a value. It does not mean the value it holds is immutable, solely that the variable identifier can not be reassigned.*  
+
 So lets understand the above statement.  
 
 *“ solely that the variable identifier can not be reassigned”*  
