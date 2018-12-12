@@ -81,13 +81,14 @@ So lets understand the above statement.
 
 Example :
 ```
-1)	const SUCCESS=1
+1) const SUCCESS=1
 SUCCESS = 2 ;    => will through error , as it can not be reassigned
 
-2)	const DbTransactionStatus = {
+2) const DbTransactionStatus = {
 SUCCESS : 1,
 FAILED : 0 ,
 } ;
+
 DbTransactionStatus = 1  => will through error , as it can not be reassigned
 ```
 
