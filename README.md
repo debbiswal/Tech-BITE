@@ -15,7 +15,7 @@
 * TO BE DONE
 
 ## Javascript
-* TO BE DONE
+* [Constant Vs Enum](JavaScript/Art-1/const_vs_enum.md)
 
 ## Kubernetes
 * TO BE DONE
