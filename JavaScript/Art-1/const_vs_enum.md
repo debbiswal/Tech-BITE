@@ -1,3 +1,4 @@
+# Constant vs Enum in Java Script
 
 Lets first understand the basic difference , irrespective of any programming language:
 
