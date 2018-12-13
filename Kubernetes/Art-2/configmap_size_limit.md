@@ -16,7 +16,7 @@ The issue lies with Imperative Management and Declarative Management approach.
 
 Lets see what Kubernetes documentation says :  
 
-**Imperative Management Approach(kubectl create)** 
+**Imperative Management Approach(kubectl create)**  
 *When using imperative commands, a user operates directly on live objects in a cluster. The user provides operations to the kubectl command as arguments or flags.*  
 
 This is the simplest way to get started or to run a one-off task in a cluster. Because this technique operates directly on live objects, it provides no history of previous configurations.  
@@ -29,6 +29,7 @@ The kubectl apply command calculates this patch request using the configuration 
 
 
 So , it means , when we use **‘kubectl apply’** command , the object configuration holds the last configuration details as a backup.  
+
 This historical data is saved in **metadata.annotations.last-applied-configuration** in configuration object.  
 
 See the below example , the **metadata.data** is almost replicated in **metadata.annotations.last-applied-configuration**:  
