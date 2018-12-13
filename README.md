@@ -44,6 +44,7 @@
 * [How to scrape custom service metrics endpoints in Prometheus-Operator](PrometheusOperator/Art-2/scrape_custom_endpoint.md)
 * [How to deploy custom Grafana dashboard as part of Grafana Deployment in Prometheus-Operator](PrometheusOperator/Art-3/deploy_custom_grafana_dashboard.md)
 * [Deploying Prometheus StatefulSet with Persistent Volume in Prometheus-Operator](PrometheusOperator/Art-4/deploy_pss_with_pv.md)
+* [How to deploy Grafana with Persistent Volume in Prometheus-Operator](PrometheusOperator/Art-5/deploy_grafana_with_pv.md)
 
 ## Redis
 * [Agent the Saviour](Redis/Art-1/Agent_the_Saviour.md)
