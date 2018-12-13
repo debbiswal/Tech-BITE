@@ -22,9 +22,9 @@ Persistent Disk - Google Persistent Disk is durable and high performance block s
 
 Cloud Storage - Google Cloud Storage is unified object storage  
 
-|Feature|AWS|AZURE|GCP|Comparision
+|Feature|AWS|AZURE|GCP|Comparision|
 |---|---|---|---|---|
-|S3/EBS/EFS/Instance Store|Blob Storage|Object Storage|Amazon Offers 4 types of storage services like EBS, EC2 Instance Store, Elastic File System (EFS) and Simple Storage Service (S3).  
+|Storage|S3/EBS/EFS/Instance Store|Blob Storage|Object Storage|Amazon Offers 4 types of storage services like EBS, EC2 Instance Store, Elastic File System (EFS) and Simple Storage Service (S3).  
 
 EBS - Amazon EBS provides durable, block-level storage volumes that you can attach to a running instance you can use Amazon EBS as a primary storage device for data that requires frequent and granular updates  
 
