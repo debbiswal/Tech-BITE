@@ -1,4 +1,5 @@
-## Replace-by functionality Of API Gateway ##  
+[:house:Home](https://github.com/debbiswal/Articles)
+# Replace-by functionality Of API Gateway
 
 Hi ,  
 Today I came across an interesting feature of API-GATEWAY. The feature is known as Replace-by functionality.  
@@ -124,3 +125,5 @@ So , providing the default values for any failed service call is known as Replac
 
 Happy Learning… :)
 
+
+[:house:Home](https://github.com/debbiswal/Articles)
