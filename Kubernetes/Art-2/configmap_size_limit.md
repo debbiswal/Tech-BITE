@@ -41,7 +41,7 @@ But , when we use **‘kubectl create’** , the object configuration does not h
 You can see from below image , that the **metadata.annotations.last-applied-configuration** section is not there.  
 ![metadata](images/configmap.png)    
 
-So , the solution to my configmap size limitation is to use ‘kubectl create –f <file>’  instead of  ‘kubectl apply –f <file>’.
+So , the solution to my configmap size limitation is to use **‘kubectl create –f <file>’**  instead of  **‘kubectl apply –f <file>’**.
 By this I am able to create the configmap with larger size.
 
 Read the below link :  
