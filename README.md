@@ -49,7 +49,7 @@
 * TO BE DONE
 
 ## Splunk
-* TO BE DONE
+* [How to setup negative Alerting](Splunk/Art-1/negative_alerting.md)
 
 ## .Net
 * [In Memory cache flushing](DotNet/Art-1/inmemory_cache_flushing.md)
