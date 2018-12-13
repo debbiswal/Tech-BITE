@@ -26,7 +26,7 @@
 * Subtree
 
 ## Grafana
-* TO BE DONE
+* [How to reset lost admin password for Grafana , running in Kubernetes](Grafana/Art-1/reset_admin_pwd.md)
 
 ## Javascript
 * [Constant Vs Enum](JavaScript/Art-1/const_vs_enum.md)
