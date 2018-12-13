@@ -22,6 +22,7 @@
 
 ## Git
 * [Useful commands](Git/Art-1/useful_commands.md)
+* [Upgrading GIT in CENTOS from source code](Git/Art-2/upgrade_git_in_centos.md)
 * Submodule
 * Subtree
 
