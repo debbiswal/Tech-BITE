@@ -2,7 +2,7 @@
 
 # Converting time series row data to column format using Table panel in GRAFANA  
 
-**Requirement : **I have a Redis Cluster with 6 Redis instances running. I want to display which instance is running and which is not.
+**Requirement :** I have a Redis Cluster with 6 Redis instances running. I want to display which instance is running and which is not.
 I am getting the below metrics from Prometheus for ‘redis_up’ key. The value for each instance also comes with label ‘addr’ and ‘alias’ , which are its IP/DNS and PORT details.
 
 Below is the sample metrics :  
