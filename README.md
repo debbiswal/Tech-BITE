@@ -36,8 +36,11 @@
 ## NodeJS
 * TO BE DONE
 
-## Prometheus
+## Prometheus 
 * TO BE DONE
+
+## Prometheus Operator
+* [How to change alerting interval of a Prometheus alert](PrometheusOperator/Art-1/change_alert_interval.md)
 
 ## Redis
 * [Agent the Saviour](Redis/Art-1/Agent_the_Saviour.md)
