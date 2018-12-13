@@ -41,5 +41,5 @@ But , when we use **‘kubectl create’** , the object configuration does not h
 You can see from below image , that the **metadata.annotations.last-applied-configuration** section is not there.  
 ![metadata](images/configmap.png)    
 
-Happy Learning :smiley:
+Happy Learning :smiley:  
 [:house:Home](https://github.com/debbiswal/Articles)
