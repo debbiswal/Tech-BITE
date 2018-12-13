@@ -41,5 +41,16 @@ But , when we use **‘kubectl create’** , the object configuration does not h
 You can see from below image , that the **metadata.annotations.last-applied-configuration** section is not there.  
 ![metadata](images/configmap.png)    
 
+So , the solution to my configmap size limitation is to use ‘kubectl create –f <file>’  instead of  ‘kubectl apply –f <file>’.
+By this I am able to create the configmap with larger size.
+
+Read the below link :
+
+[How apply calculates differences and merges changes](https://kubernetes.io/docs/concepts/overview/object-management-kubectl/declarative-config/#how-apply-calculates-differences-and-merges-changes)
+[Imperative Management of Kubernetes Objects Using Configuration Files](https://kubernetes.io/docs/concepts/overview/object-management-kubectl/imperative-config/)
+[Declarative Management of Kubernetes Objects Using Configuration Files](https://kubernetes.io/docs/concepts/overview/object-management-kubectl/declarative-config/)
+
+
 Happy Learning :smiley:  
+
 [:house:Home](https://github.com/debbiswal/Articles)
