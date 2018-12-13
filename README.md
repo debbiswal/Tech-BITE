@@ -26,7 +26,7 @@
 * [Constant Vs Enum](JavaScript/Art-1/const_vs_enum.md)
 
 ## Kubernetes
-* Console log , stringification issue
+* [Console log stringification issue](Kubernetes/Art-1/console_log_strigification_issue.md)
 
 ## Linux
 * [Useful Commands](Linux/Art-1/useful_commands.md)
