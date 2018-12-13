@@ -2,7 +2,7 @@
 
 # Using SingleStat pannel in Grafana to diaplay messages based on value 
 
-#### Requirement :
+### Requirement :
 I have 6 redis instances running with port 8001 to 8006 in cluster mode. I want to inform the user whether the Redis Cluster is UP or DOWN on the Grafana dashboard.  
 I want to display a message ‘UP’ in Green color and ‘DOWN’ in Red color on Grafana dash board based on below metrics from Prometheus..  
 
@@ -13,7 +13,7 @@ These values will be either 0 (when cluster is DOWN) or 1(when cluster is UP).
 I want to display the message on dashboard like below :  
 ![requirement](images/img2.png)  
 
-#### Answer :
+### Answer :
 
 **What type of panel I will use ?**  
 I am using SingleStat panel , which will show only one result.
