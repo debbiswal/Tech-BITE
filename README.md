@@ -42,6 +42,7 @@
 ## Prometheus Operator
 * [How to change alerting interval of a Prometheus alert](PrometheusOperator/Art-1/change_alert_interval.md)
 * [How to scrape custom service metrics endpoints in Prometheus-Operator](PrometheusOperator/Art-2/scrape_custom_endpoint.md)
+* [How to deploy custom Grafana dashboard as part of Grafana Deployment in Prometheus Operator](PrometheusOperator/Art-3/deploy_custom_grafana_dashboard.md)
 
 ## Redis
 * [Agent the Saviour](Redis/Art-1/Agent_the_Saviour.md)
