@@ -27,6 +27,7 @@
 
 ## Grafana
 * [How to reset lost admin password for Grafana , running in Kubernetes](Grafana/Art-1/reset_admin_pwd.md)
+* [Converting time series row data to column format using Table panel](Grafana/Art-2/timeseries_row_to_column.md)
 
 ## Javascript
 * [Constant Vs Enum](JavaScript/Art-1/const_vs_enum.md)
