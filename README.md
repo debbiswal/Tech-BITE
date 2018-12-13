@@ -9,7 +9,7 @@
 * TO BE DONE
 
 ## Docker
-* Docker log , stringification issue
+* TO BE DONE
 
 ## Gatling
 * TO BE DONE
@@ -26,7 +26,7 @@
 * [Constant Vs Enum](JavaScript/Art-1/const_vs_enum.md)
 
 ## Kubernetes
-* TO BE DONE
+* Console log , stringification issue
 
 ## Linux
 * [Useful Commands](Linux/Art-1/useful_commands.md)
