@@ -8,6 +8,12 @@
 ## AWS
 * TO BE DONE
 
+## Cloud Design Pattern
+* TO BE DONE
+
+## Design Pattern
+* TO BE DONE
+
 ## Docker
 * TO BE DONE
 
@@ -33,6 +39,12 @@
 ## Linux
 * [Useful Commands](Linux/Art-1/useful_commands.md)
 
+## Micro Service
+* TO BE DONE
+
+## .Net
+* [In Memory cache flushing](DotNet/Art-1/inmemory_cache_flushing.md)
+
 ## NodeJS
 * TO BE DONE
 
@@ -54,9 +66,6 @@
 
 ## Splunk
 * [How to setup negative Alerting](Splunk/Art-1/negative_alerting.md)
-
-## .Net
-* [In Memory cache flushing](DotNet/Art-1/inmemory_cache_flushing.md)
 
 ## WRK
 * TO BE DONE
