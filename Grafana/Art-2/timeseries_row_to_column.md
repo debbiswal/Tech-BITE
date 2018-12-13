@@ -51,7 +51,7 @@ Now the dashboard will look like below with redis instances displayed in columns
 * In Thresholds I gave a range of 0 to 0.9 and changed the colors . You can change the colors by clicking on the given colors.
   * <0  means RED  
   * 0 to 0.9 means RED  
-  * >0.9 means GREEN   
+  * />0.9 means GREEN   
 * Set ‘Color mode’ to ‘Cell’ , so that color will be applied to Cell background.  
 
 Now you will get the result like below  
