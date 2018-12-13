@@ -8,6 +8,9 @@
 ## AWS
 * TO BE DONE
 
+## Docker
+* Docker log , stringification issue
+
 ## Gatling
 * TO BE DONE
 
