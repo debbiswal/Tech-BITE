@@ -1,6 +1,6 @@
 [:house:Home](https://github.com/debbiswal/Articles)
 
-**Resetting lost Admin password**  
+**Resetting lost Admin password :**  
 
 Connect to the Grafana pod in kubernetes which is running in namespace ‘monitoring’  
 ```kubectl exec -it --namespace=monitoring {grafana_pod_name} /bin/sh  ```  
@@ -9,7 +9,9 @@ Change the password in the pod
 ```grafana-cli admin reset-admin-password --homepath "/usr/share/grafana" {new_password}```   
 
 
-**Changing Admin password (did not lost)**
+
+
+**Changing Admin password (did not lost) :**
 
 If you only want to change the password(did not lost admin password)  :  
 ```
