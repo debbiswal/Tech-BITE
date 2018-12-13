@@ -64,5 +64,6 @@ Now , when you deploy  the Prometheus Operator , the Persistent Volume Dashboard
 *Note that : Any dashboard deployed as part of Grafana Deployment , is readonly. If you want to modify it , then you can save the modified  dashboard in a different name.*  
 
 
-Happy Learning :smiley:
+Happy Learning :smiley:  
+
 [:house:Home](https://github.com/debbiswal/Articles)
