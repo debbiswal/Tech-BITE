@@ -21,7 +21,7 @@
 * TO BE DONE
 
 ## Git
-* Useful commands
+* [Useful commands](Git/Art-1/useful_commands.md)
 * Submodule
 * Subtree
 
