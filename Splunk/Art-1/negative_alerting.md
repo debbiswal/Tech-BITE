@@ -34,9 +34,8 @@ After the configured scheduled time , I got the email , but did not get Zendesk 
 
 After beating around the bush , finally got the solution for this. The culprit was the Splunk query.
 
-So , Why I was not getting the Zendesk ticket ?
-Ans : Its because , when the search query did not get any data like “DeadMansSwitch” , it met the alert condition and I got the email.
-But in order to raise Zendesk ticket , we should pass data to Zendesk. In my case , the search query was not get any data(which is valid) , when Alerting Pipeline fails , so no data was passed to Zendesk.
+**So , Why I was not getting the Zendesk ticket ?**  
+**Ans :** Its because , when the search query did not get any data like “DeadMansSwitch” , it met the alert condition and I got the email.But in order to raise Zendesk ticket , we should pass data to Zendesk. In my case , the search query was not get any data(which is valid) , when Alerting Pipeline fails , so no data was passed to Zendesk.
 
 So , I need a kind of query , where I will get some result , with some indication that , there is no such record with data “DeadMansSwitch”.
 
