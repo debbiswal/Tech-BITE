@@ -1,3 +1,5 @@
+[:house:Home](https://github.com/debbiswal/Articles)
+
 # Constant vs Enum in Java Script
 
 Lets first understand the basic difference , irrespective of any programming language:
@@ -210,3 +212,5 @@ The reason this happens is that upon deserialization JSON.parse creates a new ob
 This new object is not the same as DbTransactionStatus.SUCCESS  , so the comparisons all fail and we end up in the else branch.  
 
 Happy Learning :smile:
+
+[:house:Home](https://github.com/debbiswal/Articles)
