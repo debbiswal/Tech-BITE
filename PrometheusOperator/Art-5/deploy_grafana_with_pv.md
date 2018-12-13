@@ -26,7 +26,7 @@ So , what to do now.
 I followed the link given in the log , and got some information .
 By default  , the user settings(grafana-deployment.yaml) for grafana is ‘runAsUser: 65534’.
 
-**So what is UID 65534 ?**
+**So what is UID 65534 ?**  
 Ans: The UID 65534 is commonly reserved for nobody, a user with no system privileges, as opposed to an ordinary (i.e., non-privileged) user.
 
 But if we want to use external storage , we have to use UID as 472 (I am using Grafana 5.2).  
@@ -37,7 +37,7 @@ But if we want to use external storage , we have to use UID as 472 (I am using G
 
 No that I have changed the ‘runAsUser’ to 472 and ADDED ‘fsGroup:472’
 
-**What is fsGroup?**
+**What is fsGroup?**  
 fsGroup defines a pod’s "file system group" ID, which is added to the container’s supplemental groups
 
 * Change the /hack/cluster-monitoring/deploy’ file to include the PVC  
