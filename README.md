@@ -68,5 +68,8 @@
 ## Splunk
 * [How to setup negative Alerting](Splunk/Art-1/negative_alerting.md)
 
+## VS Code
+* [YAML Support for Visual Studio Code provided by Red Hat, with built-in Kubernetes and Kedge](VSCode/Art-1/yaml_support.md)
+
 ## WRK
 * TO BE DONE
