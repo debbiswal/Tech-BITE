@@ -7,7 +7,7 @@ But the data of Prometheus pod resides inside the pod , as it uses local storage
 
 I was trying to assign Persistent Volume to Prometheus pods .  
 And I tried the below storage spec  to start with(using default storage provisioning) :  
-[default](images/img1.png)  
+![default](images/img1.png)  
 
 But , after deploying the Prometheus-Operator , I found that the StatefulSet(prometheus-k8s) and the pods (prometheus-k8s-0, prometheus-k8s-1) are not created.  
 
@@ -19,7 +19,7 @@ As , the deployment is of kind ‘Prometheus’ , which is a Custom Resource , I
 It might be a case , where the CRD is not expecting ‘name’ , and the deployment is failing.  
 
 So I tried with , removing the ‘metadata’ section (using default storage provisioning) :  
-[metadata](images/img2.png)  
+![metadata](images/img2.png)  
 
 And deployed the Prometheus-Operator again.  
 
@@ -29,10 +29,10 @@ It will create 2 PVC and related PV .
 The PVC are created with certain naming format like : prometheus-k8s-db-prometheus-k8s-0 , prometheus-k8s-db-prometheus-k8s-1.  
 
 **Sample screen shot of a PVC :**  
-[pvc](images/img3.png)  
+![pvc](images/img3.png)  
 
 **Sample screen shot of a PV :**  
-[pv](images/img4.png)  
+![pv](images/img4.png)  
 
 Happy Learning :smiley:  
 
