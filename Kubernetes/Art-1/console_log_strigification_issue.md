@@ -46,6 +46,6 @@ description , summary , alertname , container , instance , job , namespace , pod
 
 You can test the regular expression on https://regex101.com/ and see how it works . Below are the screen shots:  
 ![Test string](images/test_string.png)  
-![Explanation](images/explanation.png)  
+![Explanation](images/explanation.PNG)  
 
 [:house:Home](https://github.com/debbiswal/Articles)
