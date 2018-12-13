@@ -21,12 +21,12 @@ Also the endpoint 9121 has been named as ‘metrics’.
 
 * Add RBAC role 
   * Open kube-prometheus/manifests/prometheus/prometheus-k8s-roles.yaml
-  * Add the following (namespace should be ‘redis’)
+  * Add the following (namespace should be ‘redis’)  
 ![role](images/img2.png)  
 
 * Add RBAC Rolebindings
   * Open kube-prometheus/manifests/prometheus/prometheus-k8s-role-bindings.yaml
-  * Add the following (namespace should be ‘redis’)
+  * Add the following (namespace should be ‘redis’)  
 ![rolebinding](images/img3.png)  
 
 * Add the ServiceMonitor(Custom Resource Definition , provided by Prometheus-Operator ) to monitor our ‘redis-cluster’ service.
