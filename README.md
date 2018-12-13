@@ -6,7 +6,7 @@
 * [Circuit Breaker Pattern | Transient Fault -II](ApiGateway/Art-3/TransientFault-II.md)
 
 ## AWS
-* TO BE DONE
+* [AWS vs AZURE vs GCP](AWS/Art-1/aws_azure_gcp.md)
 
 ## Cloud Design Pattern
 * TO BE DONE
