@@ -34,6 +34,7 @@
 * [How to reset lost admin password for Grafana , running in Kubernetes](Grafana/Art-1/reset_admin_pwd.md)
 * [Converting time series row data to column format using Table panel](Grafana/Art-2/timeseries_row_to_column.md)
 * [Using SingleStat pannel in Grafana to diaplay messages based on value](Grafana/Art-3/singlestat_panel.md)
+* [How to set custom auto refresh values in GRAFANA](Grafana/Art-4/auto_refresh_grafana.md)
 
 ### Javascript
 * [Constant Vs Enum](JavaScript/Art-1/const_vs_enum.md)
