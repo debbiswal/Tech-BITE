@@ -67,6 +67,8 @@
 
 ### Redis
 * [Agent the Saviour](Redis/Art-1/Agent_the_Saviour.md)
+* [Get Date & Time stamp of Redis using Powershell](Redis/Art-2/redis_datetime_powershell.md)
+
 
 ### Ruby
 * TO BE DONE
