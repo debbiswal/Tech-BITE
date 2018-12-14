@@ -109,7 +109,7 @@ class CustomSimulation extends Simulation {
 }
 ```  
 
-*Note : You need to change the yellow highlighted section(baseurl,maxDuration) as per your need
+*Note : You need to change the yellow highlighted section(baseurl[line 60],maxDuration[line 108]) as per your need.  
 If you are changing the package name and class name in CustomSimulation.scala then , remember to use same in command line.*
 
 
