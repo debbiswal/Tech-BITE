@@ -11,6 +11,7 @@
 * [How to run remote AWS session in background](AWS/Art-3/remote_aws_session_background.md)
 * [How to run a shell script on AWS EC2 from local machine](AWS/Art-4/run_shellscript_aws_ec2_local.md)
 * [How to download files from AWS EC2 to local machine](AWS/Art-5/download_from_aws_ec2_local.md)
+* [How to copy a file from local machine to AWS EC2 instance ](AWS/Art-6/copy_file_local_to_ec2.md)
 
 ### Cloud Design Pattern
 * TO BE DONE
