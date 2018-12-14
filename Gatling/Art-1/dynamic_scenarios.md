@@ -9,7 +9,7 @@ You can download it from http://www.java2s.com/Code/Jar/o/Downloadorgjsonjar.htm
 
 
 **JSON**  
-Below is the JSON which will be passed as command line parameter to gatling.  
+Create scenarios.json in data folder and paste the below :  
 ```
 [
   {
@@ -21,30 +21,29 @@ Below is the JSON which will be passed as command line parameter to gatling.
 ```  
 
 In the above example :  
-scenario : is the scenario name  
-url : is the url part which will be used with baseurl  
-type = Injection type  
-args=Arguments to Injection type  
+* scenario : is the scenario name  
+* url : is the url part which will be used with baseurl  
+* type = Injection type  
+* args=Arguments to Injection type  
 
 Like :  
-nothingFor : is used to make steady state for 20 seconds  
-rampUsers : is used for ramping up 10 users  in 5 seconds  
+* nothingFor : is used to make steady state for 20 seconds  
+* rampUsers : is used for ramping up 10 users  in 5 seconds  
 
-for more settings  , check getInjectionStep method in CustomSimulation.scala  
+for more settings  , check *getInjectionStep* method in CustomSimulation.scala  
 
 As the above JSON is an array , we can implement multiple scenarios with custom url and injection pattern  
 
 
 **Command**  
-The command line argument will be passed with JAVA_OPTS , like below (note that escape characters will be used to format the JSON) :  
 ```
-JAVA_OPTS="-DtestCases=[{\"scenario\":\"WithLatency100_Steady20sec\",\"url\":\"/\",\"inject\":[{\"type\":\"rampUsers\",\"args\":[10,5]},{\"type\":\"nothingFor\",\"args\":[20]},{\"type\":\"rampUsers\",\"args\":[10,5]},{\"type\":\"nothingFor\",\"args\":[10]}]}]" ./gatling.sh -s CustomerOrderV2.CustomSimulation
-```
+./gatling.sh -s Order.CustomSimulation
+```  
 
 **Gatling script :**  
 CustomSimulation.scala  
 ```
-package CustomerOrderV2
+package Order
 
 import io.gatling.core.Predef._
 import io.gatling.core.structure.PopulationBuilder
@@ -55,11 +54,12 @@ import scala.concurrent.duration._
 import scala.collection.mutable.ArraySeq
 import org.json.JSONArray;
 import org.json.JSONObject;
+import scala.io.Source
 
 class CustomSimulation extends Simulation {
     val baseURL = "http://127.0.0.1:10001"
     val httpConf = http.baseURL(baseURL)
-    val rawTestList = System.getProperty("testCases")
+    val rawTestList = Source.fromFile("../user-files/data/scenarios.json").getLines.mkString
 
     def getInjectionStep(stepType:String, stepArgs:JSONArray) : InjectionStep = {
         stepType match {
