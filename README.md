@@ -7,6 +7,7 @@
 
 ### AWS
 * [AWS vs AZURE vs GCP](AWS/Art-1/aws_azure_gcp.md)
+* [How to configure AWS Cli on local machine with Auto complete feature](AWS/Art-2/local_awscli_configure.md)
 
 ### Cloud Design Pattern
 * TO BE DONE
