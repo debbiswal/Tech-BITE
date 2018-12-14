@@ -36,17 +36,17 @@ The reason is , by default the golang image size if around 800MB.
 
 So , I need to optimize the image size.
 
-*How ?*
+*How ?*  
 Here comes the Multi-Stage build in docker
 
-*So What is Multi-Stage build ?*
+*So What is Multi-Stage build ?*  
 Multi-stage build is a feature , which is available from Docker 17.05 version.
 Using this feature , we can optimize the docker image size.
 
-*For Upgrading Docker CE* 
+*For Upgrading Docker CE*  
 * For CENTOS  follow the link : https://docs.docker.com/install/linux/docker-ce/centos/
 
-**Solution**
+**Solution**  
 * Create a new image based on golang docker image from docker hub  
 * Copy paste the code from local machine to container  
 * Build the code inside container , to generate the binaries  
@@ -57,7 +57,7 @@ Using this feature , we can optimize the docker image size.
 Dockerfile :  
 ![docker file](images/img4.png)  
 
-Build :
+Build :  
 ```
 $ docker build –t testalpinego . (this step will create two image , testalpinego and a <none> one)
 ```  
@@ -77,7 +77,7 @@ BINGO….
 
 You can see from the above image that testalpinego(10.6MB) image size is very very less as compared to testgoimage(800MB).  
 
-*NOTE : All applications may not work properly in Alpine due to library dependencies. As Alpine uses musl library instead of glibc . So you have to test the app properly in alpine container.*
+*NOTE : All applications may not work properly in Alpine due to library dependencies. As Alpine uses musl library instead of glibc . So you have to test the app properly in alpine container.*  
 
 
 Happy Learning :smiley:  
