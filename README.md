@@ -24,6 +24,9 @@
 * [How to access local host from a container](Docker/Art-2/access_localhost.md)
 * [Kernel address map issue in Docker container](Docker/Art-3/kernel_addressmap_error.md)
 
+### Domain Driven Design  
+* To be Done
+
 ### Gatling
 * [Running different scenarios dynamicaly](Gatling/Art-1/dynamic_scenarios.md)
 
@@ -61,6 +64,9 @@
 
 ### .Net
 * [In Memory cache flushing](DotNet/Art-1/inmemory_cache_flushing.md)
+
+### NGinx
+* To be Done
 
 ### NodeJS
 * TO BE DONE
