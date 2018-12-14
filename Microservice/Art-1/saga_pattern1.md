@@ -55,7 +55,7 @@ In the case above, if the state of the order needs to be tracked, Order Service 
 
 In-order to publish and listen to messages/events , Services has to interact with some sort of Messaging & Workflow software’s like NServiceBus,Kafka etc .  
 
-**Rollbacks in distributed transactions**
+**Rollbacks in distributed transactions**  
 Rolling back a distributed transaction does not come for free. Normally you have to implement another operation/transaction to compensate for what has been done before.  
 
 Suppose that Stock Service has failed during a transaction. Let’s see what the rollback would look like:  
@@ -69,7 +69,7 @@ Suppose that Stock Service has failed during a transaction. Let’s see what the
 
 *Note that it is crucial to define a common shared ID(transaction ID) for each transaction, so whenever you throw an event, all listeners can know right away which transaction it refers to.*  
 
-**Benefits and drawbacks of using Saga’s Event/Choreography design**
+**Benefits and drawbacks of using Saga’s Event/Choreography design**  
 Events/Choreography is a natural way to implement Saga’s pattern, it is simple, easy to understand, does not require much effort to build, and all participants are loosely coupled as they don’t have direct knowledge of each other. If your transaction involves few steps, it might be a very good fit.  
 
 However, this approach can rapidly become confusing if you keep adding extra steps in your transaction as it is difficult to track which services listen to which events. Moreover, it also might add a cyclic dependency between services as they have to subscribe to one another’s events.  
