@@ -22,6 +22,7 @@
 ### Docker
 * [Multistage Docker building](Docker/Art-1/multi_stage_build.md)
 * [How to access local host from a container](Docker/Art-2/access_localhost.md)
+* [Kernel address map issue in Docker container](Docker/Art-3/kernel_addressmap_error.md)
 
 ### Gatling
 * [Running different scenarios dynamicaly](Gatling/Art-1/dynamic_scenarios.md)
