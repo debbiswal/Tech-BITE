@@ -16,6 +16,7 @@
 
 ## Docker
 * [Multistage Docker building](Docker/Art-1/multi_stage_build.md)
+* [How to access local host from a container](Docker/Art-2/access_localhost.md)
 
 ## Gatling
 * TO BE DONE
