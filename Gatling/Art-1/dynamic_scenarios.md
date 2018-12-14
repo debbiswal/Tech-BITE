@@ -2,6 +2,15 @@
 
 # Executing different scenarios dynamically in Gatling  
 
+**Requirement**  
+I have an api 'myOrderAPI' running on local port 10001.  
+
+I want to do a load test with different scenarios like :  
+* Rampup 10 users in 5 seconds  
+* next , Do nothing for 20 seconds  
+* next , Rampup 10 users in 5 seconds  
+* next , Do nothing for 10 seconds  
+
 **Prerequisite :**  
 Copy the attached org.json.jar.zip file to lib folder of gatling application , and unzip it.  
 OR  
@@ -9,13 +18,13 @@ You can download it from http://www.java2s.com/Code/Jar/o/Downloadorgjsonjar.htm
 
 
 **JSON**  
-Create scenarios.json in data folder and paste the below :  
+Create scenarios.json in data folder , which holds the scenario details :  
 ```
 [
   {
     "scenario": "WithLatency100_Steady20sec",
     "url": "/",
-    "inject": [ {  "type": "rampUsers",  "args": [10,5]}, {  "type": "nothingFor",  "args": [20]}, {  "type": "rampUsers", "args": [10,5]}, {  "type": "nothingFor", "args": [10 ]} ]
+    "inject": [ {  "type": "rampUsers",  "args": [10,5]}, {  "type": "nothingFor",  "args": [20]}, {  "type": "rampUsers", "args": [10,5]}, {  "type": "nothingFor", "args": [10]} ]
   }
 ]
 ```  
@@ -30,15 +39,14 @@ Like :
 * nothingFor : is used to make steady state for 20 seconds  
 * rampUsers : is used for ramping up 10 users  in 5 seconds  
 
-for more settings  , check *getInjectionStep* method in CustomSimulation.scala  
+for more settings  , check *getInjectionStep* method in CustomSimulation.scala.  
+
+The other options available are :  
+* atOnceUsers :  load N number of users at a time  
+* constantUsersPerSec : Per second , load N number of user at a time  
+* rampUsersPerSec : Per second , ramp N number of users  
 
 As the above JSON is an array , we can implement multiple scenarios with custom url and injection pattern  
-
-
-**Command**  
-```
-./gatling.sh -s Order.CustomSimulation
-```  
 
 **Gatling script :**  
 CustomSimulation.scala  
@@ -57,7 +65,7 @@ import org.json.JSONObject;
 import scala.io.Source
 
 class CustomSimulation extends Simulation {
-    val baseURL = "http://127.0.0.1:10001"
+    val baseURL = "http://myOrderAPI:10001"
     val httpConf = http.baseURL(baseURL)
     val rawTestList = Source.fromFile("../user-files/data/scenarios.json").getLines.mkString
 
@@ -109,8 +117,13 @@ class CustomSimulation extends Simulation {
 }
 ```  
 
-*Note : You need to change the yellow highlighted section(baseurl[line 60],maxDuration[line 108]) as per your need.  
+*Note : You need to change the yellow highlighted section(baseurl[line 68],maxDuration[line 116]) as per your need.  
 If you are changing the package name and class name in CustomSimulation.scala then , remember to use same in command line.*
+
+**Command**  
+```
+./gatling.sh -s Order.CustomSimulation
+```  
 
 
 Happy Learning :smiley:  
