@@ -31,7 +31,7 @@ $ docker images
 
 ![file_size](images/img3.png)  
 
-**But , what I see is , for my minimal program , the docker image size is 800MB.**
+**But , what I see is , for my minimal program , the docker image size is 800MB.**  
 The reason is , by default the golang image size if around 800MB.
 
 So , I need to optimize the image size.
