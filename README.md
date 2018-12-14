@@ -27,6 +27,9 @@
 * Submodule
 * Subtree
 
+### Go
+* [How to disable certificate validation for https request in Go lang](Go/Art-1/disable_https_cert_validation.md)
+
 ### Grafana
 * [How to reset lost admin password for Grafana , running in Kubernetes](Grafana/Art-1/reset_admin_pwd.md)
 * [Converting time series row data to column format using Table panel](Grafana/Art-2/timeseries_row_to_column.md)
