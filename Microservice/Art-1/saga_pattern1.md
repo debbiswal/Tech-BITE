@@ -22,7 +22,7 @@ In the above diagram , one can’t just place an order, charge the customer, upd
 
 We all know how difficult is to implement anything distributed, and transactions, unfortunately, are not an exception. Dealing with transient states, eventual consistency between services, isolations, and rollbacks are scenarios that should be considered during the design phase.  
 
-**The SAGA Pattern**
+## The SAGA Pattern
 
 A saga is a sequence of local transactions where each transaction updates data within a single service. The first transaction is initiated by an external request corresponding to the system operation, and then each subsequent step is triggered by the completion of the previous one.  
 
