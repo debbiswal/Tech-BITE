@@ -3,7 +3,7 @@
 # How to configure AWS Cli on local machine with Auto complete feature
 
 **Installing AWSCli**  
-```
+```shell
 sudo yum -y install python-pip    =>  It will install pip python package . pip is required to install other python packages
 pip install awscli --upgrade --user   =>  Install awscli
 ls ~/.local/bin => you will be able to see aws file
@@ -11,7 +11,7 @@ ls ~/.local/bin => you will be able to see aws file
 
 **Configuring path**  
 Edit user profle to add awscli path :  
-```
+```shell
 vi ~/.bash_profile  
 export PATH=~/.local/bin:$PATH  
 source ~/.bash_profile   => this command will load the modified profile to current session. Else you have to relogin to take effect the changes  
@@ -29,7 +29,7 @@ These details are saved in config and credentials file in ~/.aws folder of local
 Configuring Command completion(auto complete)  
 This step is optional. But it is helpful while using command line.  
 For auto completion , you can press TAB key.  
-```
+```shell
 vi ~/.bashrc  
 complete -C '~/.local/bin/aws_completer' aws => add this line to file  
 
