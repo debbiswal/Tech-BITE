@@ -111,6 +111,7 @@
 
 ### WinSCP
 * [Copying files to multiple servers using WinSCP](WinSCP/Art-1/copy_file_multiple_server.md)
+* [Binary mode in WinSCP](WinSCP/Art-2/binary_mode.md)
 
 ### WRK
 * TO BE DONE
