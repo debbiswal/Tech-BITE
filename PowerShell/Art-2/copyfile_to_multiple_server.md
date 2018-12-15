@@ -2,7 +2,7 @@
 
 ## Copying  files to Multiple servers using WinSCP with PowerShell script
 
-In one of my [prevuious article]() I discussed about copying files using WinSCP.  
+In one of my [previous article](https://github.com/debbiswal/Articles/blob/master/WinSCP/Art-1/copy_file_multiple_server.md) I discussed about copying files using WinSCP.  
 
 Below I am trying to explain with example , how we can copy files to multiple servers using WinSCP with Powershell script.  
 It became very handy for me , during deployment time.  
