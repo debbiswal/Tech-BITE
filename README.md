@@ -24,6 +24,7 @@
 * [How to access local host from a container](Docker/Art-2/access_localhost.md)
 * [Kernel address map issue in Docker container](Docker/Art-3/kernel_addressmap_error.md)
 * [Creating a Flamegraph for a sample NodeJs application running in a Docker container](Docker/Art-4/flamegraph_docker_nodeapp.md)
+* [How to use DOCKER commands without SUDO](Docker/Art-5/use_docker_without_sudo.md)
 
 ### Domain Driven Design  
 * To be Done
