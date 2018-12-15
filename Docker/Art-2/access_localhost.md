@@ -9,7 +9,7 @@ I have created a small program  which will connect to Redis cluster . The progra
 In order to acces the local machine port from container , we need to add “—network host”  
 
 Example :  
-```
+```shell
 docker run --network host --name myredisclientcontainer -p 8001-8006:8001-8006  -it myredisclientimage
 ```  
 
