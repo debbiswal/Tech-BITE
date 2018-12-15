@@ -2,7 +2,7 @@
 
 ## Validating copied files on Multiple servers using WinSCP with PowerShell script  
 
-In my [previous article]() I have mentioned how to copy files to multiple Linux servers using WinSCP & Powershell script.
+In my [previous article](https://github.com/debbiswal/Articles/blob/master/PowerShell/Art-2/copyfile_to_multiple_server.md) I have mentioned how to copy files to multiple Linux servers using WinSCP & Powershell script.
 But how to confirm that files are actually copied.
 
 *Note : You need to download the WinSCP automation(.Net assembly/COM library) dll from https://winscp.net/eng/download.php and keep it in the same folder where the script is kept.*  
