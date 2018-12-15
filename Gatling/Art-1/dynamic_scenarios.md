@@ -19,7 +19,7 @@ You can download it from http://www.java2s.com/Code/Jar/o/Downloadorgjsonjar.htm
 
 **JSON**  
 Create scenarios.json in data folder , which holds the scenario details :  
-```
+```json
 [
   {
     "scenario": "WithLatency100_Steady20sec",
@@ -50,7 +50,7 @@ As the above JSON is an array , we can implement multiple scenarios with custom 
 
 **Gatling script :**  
 CustomSimulation.scala  
-```
+```scala
 package Order
 
 import io.gatling.core.Predef._
