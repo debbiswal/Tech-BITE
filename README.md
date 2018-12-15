@@ -109,5 +109,8 @@
 ### VS Code
 * [YAML Support for Visual Studio Code provided by Red Hat, with built-in Kubernetes and Kedge](VSCode/Art-1/yaml_support.md)
 
+### WinSCP
+* [Copying files to multiple servers using WinSCP](WinSCP/Art-1/copy_file_multiple_server.md)
+
 ### WRK
 * TO BE DONE
