@@ -7,7 +7,7 @@ Lets first understand the basic difference , irrespective of any programming lan
 Both const and enum , helps programmer to make the code understandable , readable.  
 It helps us to avoid hard coded values floating around the code base.  
 
-The basic difference  
+**The basic difference**  
 Ans : The difference is  :  
 
 :one:	enum helps us to group a set of constants  , which is related to some context.  
