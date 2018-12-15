@@ -2,7 +2,7 @@
 
 ## How to get HOST Name from IP  
 
-Below is a powershell script which reads ip list from a file and displays the HOST name.  
+Below is a powershell script which reads ip list from a file(iplist.txt) and displays the HOST name.  
 
 Code :  
 
