@@ -14,7 +14,7 @@ Ans : The difference is  :
 For example for the status of a database transaction :  
 
 With constants can be written as :  
-```
+```js
 const SUCCESS=1  
 const FAILED=0  
 
@@ -22,7 +22,7 @@ var transaction_status = SUCCESS
 ```
 
 with enum can be written as(by using const keyword in JS) :
-```
+```js
 const DbTransactionStatus = {
                 SUCCESS : 1,
                 FAILED : 0 ,
@@ -34,7 +34,7 @@ var transaction_status = DbTransactionStatus.SUCCESS;
 In the above example , we saw that the enum , is more elaborative and self-explanatory.  
 
 :two:	enum also helps to write code with less ambiguity  , Just look at the below example :  
-```
+```js
 const QueryExecutionStatus= {
                 SUCCESS=”success”,
                 FAILED=”failed”
@@ -49,7 +49,7 @@ var query_status = QueryExecutionStatus.SUCCESS
 ```
 
 But with constants , the constant names will be lengthier, not easy to use and not easy to memorize:  
-```
+```js
 const DB_TRANSACTION_STATUS_SUCCESS=1
 const DB_TRANSACTION_STATUS_FAILED=0
 const QUERY_EXECUTION_STATUS_SUCCESS=”success”
@@ -61,7 +61,7 @@ var query_status = QUERY_EXECUTION_STATUS_SUCCESS
 
 In Javascript , we can create nested enums , to create an illusion of namespace , where as simple constants are one liners.  
 Lets consider the below example :  
-```
+```js
 const Status = {
                 DB : { SUCCESS : 1 , FAIL :2,},
                 QUERY : { SUCCESS:”success” ,  FAIL: “fail”,}
@@ -82,7 +82,7 @@ So lets understand the above statement.
 *“ solely that the variable identifier can not be reassigned”*  
 
 Example :
-```
+```js
 1) const SUCCESS=1
 SUCCESS = 2 ;    => will through error , as it can not be reassigned
 
@@ -99,7 +99,7 @@ DbTransactionStatus = 1  => will through error , as it can not be reassigned
 As per the above statement , the value , the const variable holds , can be modified.  
 But the reference , that the const variable holds , can not be modified.  
 Example :  
-```
+```js
 const DbTransactionStatus = { SUCCESS : 1, FAILED : 0 ,} ;  
 
 /*below is a simple object*/
@@ -116,7 +116,7 @@ But enum , created with const keyword , can be changed , by changing the value ,
 
 **Freezing the Object**    
 We can also add new property to the enum.  
-```
+```js
 const DbTransactionStatus = { SUCCESS : 1, FAILED : 0 ,} ;  
 DbTransactionStatus.ERROR = 3;   => no exception thrown
 alert(DbTransactionStatus.ERROR)   => it prints value 3
@@ -127,7 +127,7 @@ But , still there is an issue persists. The enum we created , is not an enum in 
 Because , we are able to change the inside values. So how we will restrict it.  
 
 Here comes Object.freeze() method. Look at the below example :  
-```
+```js
 const DbTransactionStatus = { SUCCESS : 1, FAILED : 0 ,} ;  
 Object.freeze(DbTransactionStatus);    => freeze the object
 DbTransactionStatus.SUCCESS = “success” ; => will not through any error , but will not modify the value
@@ -137,7 +137,7 @@ alert(DbTransactionStatus.SUCCESS)  => it will print the value 1
 But there is an issue with Object.freeze(). It does not freeze the nested objects.  
 
 Example :  
-```
+```js
 const DbTransactionStatus = { 
 SUCCESS : 1, 
 FAILED : 0 ,
@@ -151,7 +151,7 @@ LockError:200
 In the above example , we have a nested object ERROR with 2 properties.  
 
 Now lets try to freeze the object :  
-```
+```js
 alert(DbTransactionStatus.SUCCESS); => prints 1
 alert(DbTransactionStatus.ERROR.TransactionError) => prints 100
 
@@ -169,7 +169,7 @@ alert(DbTransactionStatus.ERROR.TransactionError) => prints 150 , value got chan
 We can create enum with empty objects as values.  
 
 Look at below example:  
-```
+```js
 const DbTransactionStatus = {
 SUCCESS:{},  
 FAILl:{},
@@ -194,7 +194,7 @@ alert("v1 and v3 are not equal")
 But there is a problem with such enum declaration.  
 The issue comes into picture  when we do serialization.  
 Example :  
-```
+```js
 var v1 = DbTransactionStatus.SUCCESS
 var serialized = JSON.stringify(v1);
 alert("serialized myObject: " + serialized);
