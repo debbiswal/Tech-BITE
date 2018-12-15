@@ -83,6 +83,7 @@
 
 ### PoerShell
 * [How to get HOST Name from IP in PowerShell](PowerShell/Art-1/hostname_from_ip.md)
+* [Copying files to multiple servers using WinSCP with PowerShell script](PowerShell/Art-2/copyfile_to_multiple_server.md)
 
 ### Prometheus 
 * TO BE DONE
@@ -112,6 +113,7 @@
 ### WinSCP
 * [Copying files to multiple servers using WinSCP](WinSCP/Art-1/copy_file_multiple_server.md)
 * [Binary mode in WinSCP](WinSCP/Art-2/binary_mode.md)
+* [Copying files to multiple servers using WinSCP with PowerShell script](PowerShell/Art-2/copyfile_to_multiple_server.md)
 
 ### WRK
 * TO BE DONE
