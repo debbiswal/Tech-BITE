@@ -53,6 +53,7 @@
 
 ### JSON
 * [Create multiple JSON records from CSV using JSON template](JSON/Art-1/json_record_from_csv.md)
+* [Extracting selected fields from JSON data](JSON/Art-2/extract_field_from_json.md)
 
 ### JSON Web Token (JWT)
 * To be done
