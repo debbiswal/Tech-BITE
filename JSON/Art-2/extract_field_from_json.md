@@ -40,7 +40,7 @@ JSON :
 ```  
 
 JQ query :  
-```JSON
+```
 .[] | {name:.name,productId:.productId,baseProductId:.baseProductId}
 ```  
 
