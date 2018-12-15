@@ -30,6 +30,7 @@
 * To be Done
 
 ### Gatling
+* [How to Implement Load Test Scenarios in Gatling](Gatling/Art-2/howto_loadtest.md)
 * [Running different scenarios dynamicaly](Gatling/Art-1/dynamic_scenarios.md)
 
 ### Git
