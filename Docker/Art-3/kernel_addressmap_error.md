@@ -5,7 +5,7 @@
 Below is the error , which you may get while working with docker container.
 
 **Error :**
-```
+```shell
 WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
 check /proc/sys/kernel/kptr_restrict.
 
@@ -23,14 +23,14 @@ Check /proc/kallsyms permission or run as root.
 ```  
 
 **Solution :**
-```
+```shell
 cat /proc/sys/kernel/kptr_restrict : the output should be 1 or 2.
 ```  
 
 We have to make it 0.
 
 Try :  
-```
+```shell
 sudo sh –c ‘echo 0 > /proc/sys/kernel/kptr_restrict’
 ```  
 
@@ -38,19 +38,19 @@ sudo sh –c ‘echo 0 > /proc/sys/kernel/kptr_restrict’
 If this is giving ‘Read only’ permission issue, then
 
 Start the container with ‘--privileged’ argument . like : 
-```
+```shell
 docker run –privileged ….
 ```  
 
 Then use sysctl command to change the value of kptr_restrict
-```
+```shell
 sudo sysctl –w kernel.kptr_restrict=0
 ```  
 
 It will resolve the issue.  
 
 Below is the excerpt from kernel documentation regarding kptr_restrict :  
-```
+```shell
 kptr_restrict:
 
 This toggle indicates whether restrictions are placed on exposing kernel addresses via /proc and other interfaces.
