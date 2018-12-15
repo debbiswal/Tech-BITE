@@ -21,7 +21,7 @@ $ cd node-perf-master
 $ docker build -t my-nodejs-app .
 ```  
 
-* Step3 - Run Docker container & enable SYS_ADMIN privileges to run perf (Docker Console-1)  
+* Step3 - Run Docker container & enable *SYS_ADMIN* privileges to run perf (Docker Console-1)  
 You can visit for more info : https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities  
 ```
 $ docker run --cap-add=SYS_ADMIN -i -t -p 8090:8080 my-nodejs-app
@@ -33,7 +33,7 @@ $docker ps
 ```  
 Note down the image id from the result of above command  
 
-* Step5 - Create a new Bash session in the container . Here the value fe4f5336a048  is the container id (Docker Console-2)  
+* Step5 - Create a new Bash session in the container . Here the value *fe4f5336a048*  is the container id (Docker Console-2)  
 ```
 $ docker exec -it fe4f5336a048 /bin/bash
 ```  
@@ -45,7 +45,7 @@ root@fe4f5336a048:/# sudo perf record -F 99 -p `pgrep -n node` -g -- sleep 30
 ```  
 The above command when completes creates a file perf.data.
 
-* Step7 - Create a new Bash session in the container . Here the value fe4f5336a048  is the container id (Docker Console-3)  
+* Step7 - Create a new Bash session in the container . Here the value *fe4f5336a048*  is the container id (Docker Console-3)  
 ```
 $ docker exec -it fe4f5336a048 /bin/bash
 ```  
