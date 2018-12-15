@@ -9,7 +9,7 @@ Here is a sample program in Powershell , which pings each Redis instance.
 The Redis server list is read from server_list.txt file.  
 
 Sample code :  
-```
+```powershell
 function PrintDateTime
 {
   Param ([string]$redis_host,[int]$redis_port)  
