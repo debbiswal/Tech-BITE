@@ -10,8 +10,7 @@ It became very handy for me , during deployment time.
 
 * Create file with list of all servers , to which you want to copy  
 
-server_list.txt  
-===============  
+*server_list.txt*   
 ```
 LinuxServer1.tesco.org
 LinuxServer2.tesco.org
@@ -23,8 +22,7 @@ Here I am trying to copy to /tmp folder of Linux server
 The below script tries to connect to server and copies files/folders in BINARY mode(to avoid file getting corrupted)  
 ‘option confirm off’ is used to overwrite the files on target server , if exists.  
 
-script_template.txt  
-================  
+*script_template.txt*    
 ```
 open sftp://MY_UID:"MY_PASSWORD"@{SERVER}/ -hostkey=*
 option transfer binary
@@ -50,7 +48,7 @@ exit
 *Note : I am creating script file for each server , in order to avoid permission issue. This issue will occur Winscp is using it and I am trying to change the {SERVER} place holder with another server name.
 Separate log file is created for each server to avoid confusion while debugging.* 
 
-**copy.ps1 :**  
+*copy.ps1 :*    
 ![code](images/img1.png)  
 
 
