@@ -37,6 +37,7 @@
 * [Upgrading GIT in CENTOS from source code](Git/Art-2/upgrade_git_in_centos.md)
 * Submodule
 * Subtree
+* [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
 
 ### Go
 * [How to disable certificate validation for https request in Go lang](Go/Art-1/disable_https_cert_validation.md)
