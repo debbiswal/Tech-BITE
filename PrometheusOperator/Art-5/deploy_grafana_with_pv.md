@@ -14,7 +14,7 @@ You can see that I have commented the ‘emptyDir:{}’ , which is local storage
 By, doing this I was all set….  Deployed the Prometheus operator (teardown the existing setup , if exists)
 
 But , alas…. Grafana pod was getting crashed.. Upon verifying the pod log I found below :
-```
+```shell
 GF_PATHS_DATA='/var/lib/grafana' is not writable.
 You may have issues with file permissions, more information here: http://docs.grafana.org/installation/docker/#migration-from-a-previous-version-of-the-docker-container-to-5-1-or-later
 mkdir: cannot create directory '/var/lib/grafana/plugins': Permission denied
