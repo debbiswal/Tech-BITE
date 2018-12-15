@@ -4,12 +4,12 @@
 Below are the steps needed to get rid of using sudo commands while working in DOCKER.  
 
 Start the docker daemon(if not stared)  
-```shell
-$ sudo service docker start
+```bash
+sudo service docker start
 ```  
 
 Create the docker group.  
-```shell
+```bash
 $ sudo groupadd docker
 ```  
 
