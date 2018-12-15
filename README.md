@@ -92,6 +92,7 @@
 * [How to deploy Grafana with Persistent Volume in Prometheus-Operator](PrometheusOperator/Art-5/deploy_grafana_with_pv.md)
 
 ### Redis
+* [Useful Commands](Redis/Art-3/useful_commands.md)
 * [Agent the Saviour](Redis/Art-1/Agent_the_Saviour.md)
 * [Get Date & Time stamp of Redis using Powershell](Redis/Art-2/redis_datetime_powershell.md)
 
