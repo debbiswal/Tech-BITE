@@ -4,17 +4,17 @@
 Below are the steps needed to get rid of using sudo commands while working in DOCKER.  
 
 Start the docker daemon(if not stared)  
-```
+```shell
 $ sudo service docker start
 ```  
 
 Create the docker group.  
-```
+```shell
 $ sudo groupadd docker
 ```  
 
 Add your user to the docker group.  
-```
+```shell
 $ sudo usermod -aG docker $USER
 ```  
 
@@ -33,7 +33,7 @@ Verify that you can run docker commands without sudo.
 stat /home/user/.docker/config.json: permission denied**  
 
 To fix this problem, either remove the ~/.docker/ directory (it is recreated automatically, but any custom settings are lost), or change its ownership and permissions using the following commands:  
-```
+```shell
 $ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 $ sudo chmod g+rwx "/home/$USER/.docker" –R
 ```  
