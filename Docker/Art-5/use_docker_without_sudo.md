@@ -5,7 +5,7 @@ Below are the steps needed to get rid of using sudo commands while working in DO
 
 Start the docker daemon(if not stared)  
 ```bash
-sudo service docker start
+$ sudo service docker start
 ```  
 
 Create the docker group.  
@@ -14,7 +14,7 @@ $ sudo groupadd docker
 ```  
 
 Add your user to the docker group.  
-```shell
+```bash
 $ sudo usermod -aG docker $USER
 ```  
 
