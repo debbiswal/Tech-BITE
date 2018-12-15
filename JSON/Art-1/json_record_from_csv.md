@@ -7,7 +7,7 @@ http://www.convertcsv.com/csv-to-json.htm
 
 **Example :**
 
-Go to STEP-1  on page:
+* Go to STEP-1  on page:  
 Provide CSV details
 
 Sample csv data:  
@@ -19,15 +19,19 @@ Tesco Gala Apples Loose,253559147,50623419
 Tesco Cox Apples Loose,254304534,50925828
 ```  
 
-Go to STEP-2  on page:
-Provide the separator details here
+* Go to STEP-2  on page:  
+Provide the separator details here  
 
-Go to STEP-4 on page :
-Provide the JSON template and click ‘Convert CSV to JSON via template”
-You can see from below example  , how column names from CSV data is used .
+* Go to STEP-4 on page :  
+Provide the JSON template and click ‘Convert CSV to JSON via template”  
+You can see from below example  , how column names from CSV data is used .  
 
-Provide TOP = “[“  , BOTTOM=”]”
-The TOP and BOTTOM values will be used to wrap the output. Here we have used the JSON array notation to keep all generated JSON records within.
+Provide 
+``` 
+TOP = “[“  , BOTTOM=”]”
+```  
+
+The TOP and BOTTOM values will be used to wrap the output. Here we have used the JSON array notation to keep all generated JSON records within.  
 
 Sample JSON template  :  
 ```json
@@ -41,8 +45,7 @@ Sample JSON template  :
     }
 ```  
 
-
-Output :
+Output :  
 ```json
 [
 { "DeliveryGroupId": 1, "ProductId": "253807413", "BaseProductId": "50852666",  "Description": " Tesco Braeburn Apples Loose ", "InStorePrice": 4, "InStoreTotalPrice": 4  },
