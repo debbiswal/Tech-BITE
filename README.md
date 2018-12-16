@@ -16,6 +16,12 @@
 ### Cloud Design Pattern
 * TO BE DONE
 
+### Couchbase
+* To be done
+
+### Data Structure and Algorothims
+* To be done
+
 ### Design Pattern
 * TO BE DONE
 
@@ -105,6 +111,9 @@
 
 ### Ruby
 * TO BE DONE
+
+### Service Mesh
+* To be done
 
 ### Splunk
 * [How to setup negative Alerting](Splunk/Art-1/negative_alerting.md)
