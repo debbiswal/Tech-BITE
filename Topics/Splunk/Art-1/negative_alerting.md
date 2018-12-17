@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#splunk)
 
 # Negative Alerting
 **Context :** In our Kubernetes Cluster  , Prometheus Alert Manager is running . The sole purpose of AlertManager is to raise alerts based on the rules configured to it.
@@ -59,4 +59,4 @@ I got the email and Zendesk ticket.
 Happy Learning :smiley:
 
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#splunk)
