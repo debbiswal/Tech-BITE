@@ -45,6 +45,7 @@
 * Submodule
 * Subtree
 * [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
+* [Git Desktop application for Linux](https://github.com/shiftkey/desktop/releases)(external link)
 
 ### Go
 * [How to disable certificate validation for https request in Go lang](Go/Art-1/disable_https_cert_validation.md)
