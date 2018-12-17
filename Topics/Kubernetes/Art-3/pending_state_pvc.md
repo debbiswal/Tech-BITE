@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#kubernetes)
 
 # Resolving pending state of Persistent Volume Claim
 
@@ -20,4 +20,4 @@ There could be other reasons for Pending state issue. So validate properly while
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#kubernetes)
