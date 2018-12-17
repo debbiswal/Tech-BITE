@@ -16,7 +16,7 @@
 * [Retry Pattern | Transient Fault - I](Topics/ApiGateway/Art-2/TransientFault-I.md)
 * [Circuit Breaker Pattern | Transient Fault -II](Topics/ApiGateway/Art-3/TransientFault-II.md)
 
-[topics](#topics)  
+[:top:topics](#topics)  
 
 ### AWS
 * [AWS vs AZURE vs GCP](Topics/AWS/Art-1/aws_azure_gcp.md)
