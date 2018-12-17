@@ -166,6 +166,7 @@
 * Redis Sentinel 
 * Redis Sentinel Event handling
 * Redis Key notification
+* Redis Publish/Subscribe
 * Redis Monitoring
 * Redis Production ready Configuration
 * Redis Cluster
