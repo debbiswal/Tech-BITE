@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)  
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
 
 ## Copying  files to Multiple servers using WinSCP with PowerShell script
 
@@ -54,4 +54,4 @@ Separate log file is created for each server to avoid confusion while debugging.
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
