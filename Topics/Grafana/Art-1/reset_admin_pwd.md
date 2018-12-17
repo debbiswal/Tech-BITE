@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#grafana)
 
 **Resetting lost Admin password :**  
 
@@ -24,4 +24,4 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#grafana)
