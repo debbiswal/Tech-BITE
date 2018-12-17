@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
 
 # How to deploy Grafana with Persistent Volume in Prometheus-Operator  
 
@@ -52,4 +52,4 @@ DONE… its working now
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
