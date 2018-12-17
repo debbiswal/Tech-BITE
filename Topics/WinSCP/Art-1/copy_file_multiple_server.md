@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)  
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#winscp)
 
 ## How to copy files to multiple servers using WinSCP 
 
@@ -48,4 +48,4 @@ You can also modify the script to copy the file to multiple servers.
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#winscp)
