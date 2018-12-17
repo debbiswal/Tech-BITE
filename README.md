@@ -22,8 +22,8 @@
 ### Data Structure and Algorothims
 * To be done
 
-### Design Pattern
-* TO BE DONE
+### GOF Design Pattern
+* Command Design Pattern
 
 ### Docker
 * [Multistage Docker building](Docker/Art-1/multi_stage_build.md)
@@ -110,14 +110,16 @@
 * Redis Sentinel Event handling
 * Redis Key notification
 * Redis Monitoring
+* Redis Production ready Configuration
 * Redis Cluster
 * Redis Split Brain situation
+* Redis with HA-Proxy
 * Redis Master-Slave Vs Cluster performance
 * Jepsen Test
 * Redis Master-Slave Test
 * Redis Cluster Test
-* Redis deployment in AWS using Kubernetes
-* Redis Monitoring using Prometheus,Grafana
+* Redis Cluster deployment using Kubernetes
+* Redis Cluster Monitoring using Prometheus,Grafana
 * [Agent the Saviour](Redis/Art-1/Agent_the_Saviour.md)
 * [Get Date & Time stamp of Redis using Powershell](Redis/Art-2/redis_datetime_powershell.md)
 
