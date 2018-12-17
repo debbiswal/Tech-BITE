@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)  
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
 
 ## How to get HOST Name from IP  
 
@@ -10,4 +10,4 @@ Code :
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
