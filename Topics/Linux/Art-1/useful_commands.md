@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#linux)
 
 **How to get Linux Memory Utilization ?**  
 ```top -o %MEM```
@@ -21,4 +21,4 @@ ps -eo size,pid,user,command --sort -size
 **How to get Host name from IP in Linux ?**  
 ```host IP | cut -d " " -f 5 | cut -d "." -f 1```  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#linux)
