@@ -86,7 +86,7 @@
 * To be Done
 
 ### NodeJS
-* TO BE DONE
+* Using Redis Pub/Sub in Node.Js
 
 ### PowerShell
 * [How to get HOST Name from IP in PowerShell](PowerShell/Art-1/hostname_from_ip.md)
@@ -105,6 +105,19 @@
 
 ### Redis
 * [Useful Commands](Redis/Art-3/useful_commands.md)
+* Redis Master Slave
+* Redis Sentinel 
+* Redis Sentinel Event handling
+* Redis Key notification
+* Redis Monitoring
+* Redis Cluster
+* Redis Split Brain situation
+* Redis Master-Slave Vs Cluster performance
+* Jepsen Test
+* Redis Master-Slave Test
+* Redis Cluster Test
+* Redis deployment in AWS using Kubernetes
+* Redis Monitoring using Prometheus,Grafana
 * [Agent the Saviour](Redis/Art-1/Agent_the_Saviour.md)
 * [Get Date & Time stamp of Redis using Powershell](Redis/Art-2/redis_datetime_powershell.md)
 
