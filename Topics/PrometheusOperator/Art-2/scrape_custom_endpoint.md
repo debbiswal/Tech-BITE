@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
 
 # How to scrape custom service metrics endpoints in Prometheus-Operator
 We have a Service with name ‘redis-cluster’ running in ‘redis’ namespace in kubernetes .It exposes thee end points on port :   
@@ -39,4 +39,4 @@ Also the endpoint 9121 has been named as ‘metrics’.
 Happy Learning :smiley:
 
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
