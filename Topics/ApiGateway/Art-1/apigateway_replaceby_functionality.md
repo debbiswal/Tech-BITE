@@ -126,4 +126,4 @@ So , providing the default values for any failed service call is known as Replac
 Happy Learning… :)
 
 
-[:house:Home](https://github.com/debbiswal/Articles)[Back](https://github.com/debbiswal/Articles/blob/master/README.md#api-gateway)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#api-gateway)
