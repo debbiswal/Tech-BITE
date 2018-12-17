@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
 
 # How to deploy custom Grafana dashboard as part of Grafana Deployment in Prometheus Operator
 
@@ -66,4 +66,4 @@ Now , when you deploy  the Prometheus Operator , the Persistent Volume Dashboard
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
