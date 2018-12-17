@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles)  
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
 
 ## Validating copied files on Multiple servers using WinSCP with PowerShell script  
 
@@ -28,4 +28,4 @@ LinuxServer3.tesco.org
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles)
+[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
