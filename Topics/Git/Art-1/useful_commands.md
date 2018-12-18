@@ -2,7 +2,7 @@
 
 # Useful Commands
 
-**How to delete git reference from a folder and sub folder ?**  
+#### Delete git reference from a folder and sub folder 
 ```bash
 find . -name ".git" -type f -delete  
 find . -name ".gitattributes" -type f -delete  
