@@ -67,6 +67,10 @@
 [:top:](#topics)  
 
 ### Git
+* Submodule
+* Subtree
+* [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
+* [Git Desktop application for Linux](https://github.com/shiftkey/desktop/releases)(external link)
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
   * [Configuration](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#configuration-commands)
   * [Initialize and clone](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#initialize-and-clone)
@@ -89,12 +93,8 @@
   * [Remove a file from the repository](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#remove-a-file-from-the-repository)
   * [Create a Repository on Gitlab using the API for every Directory in a List](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#create-a-repository-on-gitlab-using-the-api-for-every-directory-in-a-list)
   * [Set up a Git Repository using Git LFS](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#set-up-a-git-repository-using-git-lfs)
-  * [Githooks}(https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#githooks)
+  * [Githooks](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#githooks)
 * [Upgrading GIT in CENTOS from source code](Topics/Git/Art-2/upgrade_git_in_centos.md)
-* Submodule
-* Subtree
-* [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
-* [Git Desktop application for Linux](https://github.com/shiftkey/desktop/releases)(external link)
 
 [:top:](#topics)  
 
