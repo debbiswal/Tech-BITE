@@ -72,6 +72,7 @@
 * [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
 * [Git Desktop application for Linux](https://github.com/shiftkey/desktop/releases)(external link)
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
+  * [Delete git reference from a folder and sub folder](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#delete-git-reference-from-a-folder-and-sub-folder)
   * [Configuration](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#configuration-commands)
   * [Initialize and clone](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#initialize-and-clone)
   * [Track , Add and commit](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#track-add-and-commit)
