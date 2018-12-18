@@ -14,6 +14,9 @@ How to switch to a different submodule
 How to remove a submodule  
 
 
+### Disadvantages of Submodule  
+
+
 
 
 Happy Learning :smiley:  
