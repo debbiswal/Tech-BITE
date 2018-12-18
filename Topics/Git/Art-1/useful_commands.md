@@ -9,8 +9,8 @@ find . -name ".gitattributes" -type f -delete
 find . -name ".gitignore" -type f -delete  
 ```
 
-** Configuration
-```
+**Configuration**    
+```git
 # show current values for all global configuration parameters 
 git config --list --global
 
