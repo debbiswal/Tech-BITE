@@ -479,13 +479,109 @@ host server.com
  User git
  ```  
  **List all dangling commits**  
-````
-git fsck --no-reflog | awk /dangling commit/ {print $3}
+ ```
+ git fsck --no-reflog | awk '/dangling commit/ {print $3}'
+ ```  
+ 
+ **Leave the current commit as the only commit in the repository**
+ ```
+git checkout --orphan new
+git add -A
+git commit -am "Initial commit"
+git branch -D master
+git branch -m master
 ```  
 
-**Leave the current commit as the only commit in the repository**  
+**Remove a file from the repository**
+```
+git filter-branch -f --prune-empty --index-filter \
+  'git rm --cached -r -q -- . ; git reset -q $GIT_COMMIT -- myfile' -- --all
+```  
 
+**Create a Repository on Gitlab using the API for every Directory in a List**  
+```
+# 
+for x in `ls|tr -d ' '`;\
+do echo "creating $x ... ";\
+curl -H "Content-Type:application/json" https://gitlab.com/api/v3/projects?private_token=REPLACE_WITH_VALID_TOKEN -d "{ \"name\": \"$x\" }";\
+done
+```  
 
- 
+**Set up a Git Repository using Git LFS**
+```
+git init
+git remote add origin git@domain.com:user/repository.git
+git lfs track "*.jpg"
+git lfs track "*.mpg"
+git lfs track "*.mp4"
+git lfs track "*.png"
+git lfs track '*.bin'
+git lfs track '*.iso'
+git lfs track '*.zip'
+git lfs track '*.rar'
+git lfs track '*.7zip'
+git lfs track '*.tar.gz'
+git lfs track '*.gz'
+git lfs track "*.avi"
+git lfs track "*.pcap"
+git lfs track "*.pcapng"
+git lfs track "*.exe"
+git lfs track "*.bmp"
+git lfs track "*.bak"
+git lfs track "*.bk"
+git lfs track "*.obj"
+git lfs track "*.odt"
+git lfs track "*.pptx"
+git lfs track "*.ppt"
+git lfs track "*.doc"
+git lfs track "*.docx"
+git lfs track "*.xls"
+git lfs track "*.xlsx"
+git lfs track "*.dll"
+git lfs track "*.o"
+git lfs track "*.pdf"
+git lfs track "*.msi"
+git lfs track "*.jar"
+git lfs track "*.ico"
+git lfs track "*.gif"
+git lfs track "*.tar"
+git lfs track "*.bin"
+git lfs track "*.data"
+git lfs track "*.wmv"
+git lfs track "*.dat"
+git lfs track "*.db"
+git lfs track "*.pickle"
+git lfs track "*.csv"
+git lfs track "*.list "
+git lfs track "*.pyc"
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+```  
+
+**Githooks**  
+```
+# git hooks are scripts which can be executed after an action is performed, the options are: applypatch-msg ,commit-msg ,post-update ,pre-applypatch ,pre-commit ,prepare-commit-msg ,pre-push ,pre-rebase ,update 
+
+# git hooks for a given repository are stored under `.git/hooks`
+[~/gitrepo]$ ls .git
+branches  COMMIT_EDITMSG  config  description  FETCH_HEAD  gitweb  HEAD  hooks  index  info  logs  modules  objects  ORIG_HEAD  refs
+
+[~/gitrepo]$ cd .git/hooks/
+
+[~/gitrepo]$ ls -1
+
+applypatch-msg.sample
+commit-msg.sample
+post-update.sample
+pre-applypatch.sample
+pre-commit.sample
+prepare-commit-msg.sample
+pre-push.sample
+pre-rebase.sample
+update.sample
+```  
+
+Happy Learning :smiley:  
 
 [:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#git)
