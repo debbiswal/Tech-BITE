@@ -14,14 +14,21 @@ Say , I have a repository **Customer** and **Product**.
 Also , I have a repo **TextFileLogger** and **DBLogger**.  
 
 Now , I want to reuse the **TextFileLogger** in my **Customer** and  **Product** repo.  
-For this , I can copy the contents of **TextFileLogger** and paste it inside my repo.  
+For this , I can copy the contents of **TextFileLogger** and paste it inside my **Customer** and  **Product** repo.  
 But , with this approach I will not be able to track the changes made to **TextFileLogger**.  
-Evry time , I need to check for updates happning on **TextFileLogger** and copy paste them in my repo , which is cumbersome.  
+Evry time , I need to check for updates happning on **TextFileLogger** and copy paste them in my **Customer** and  **Product** repo , which is cumbersome.  
 
 The simplest solution , is to refer **TextFileLogger** repo from our repo. And pull/fetch the **TextFileLogger** repo when-ever required.
 
+Now , say there are some changes happend to **TextFileLogger** :  
+* change-1 : a new file LOGGING_V1.txt is added with commit id - COMMIT_ID_001
+* change-2 : a new file LOGGING_V2.txt is added with commit id - COMMIT_ID_002
 
+And due to some reason , we can upgrade the **TextFileLogger** in **Product** repo , to COMMIT_ID_002.  
+But **Customer** repo will only be able to use the COMMIT_ID_001 , due to some backward compatibility of other modules inside it.  
 
+This kind of facility makes use to submodules simpler , as we can refer to different commit state in our differnt projects/repositories.  
+{diagram}
 
 Explain with diagram  , how two different repo can refer to different version of submodule  
 How to add a submodule to existing repo   
