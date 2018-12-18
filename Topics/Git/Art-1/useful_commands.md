@@ -9,7 +9,7 @@ find . -name ".gitattributes" -type f -delete
 find . -name ".gitignore" -type f -delete  
 ```
 
-**Configuration Commands**    
+#### Configuration Commands    
 ```bash
 # show current values for all global configuration parameters 
 git config --list --global
@@ -78,7 +78,7 @@ git config --global stash.showPatch true
 git config --global push.default tracking
 ```  
 
-**Initialize and Clone**  
+#### Initialize and Clone  
 ```
 # initialize a git repository in the current working directory
 git init
@@ -96,7 +96,7 @@ git clone --recursive https://remote.com/repo.git
 git clone --recursive ssh://git@remote.com:/repo.git
 ```  
 
-**Track, Add and Commit**   
+#### Track, Add and Commit   
 ```
 # tell git to start tracking a file or add its current state to the index
 git add file
@@ -117,7 +117,7 @@ git commit --amend -m "message"
 git commit --allow-empty-message -m
 ```  
 
-**Status and Diagnostics**  
+#### Status and Diagnostics  
 ```
 # show the commit at the head of the branch currently checked out
 git show HEAD
@@ -132,7 +132,7 @@ git status
 git status -s
 ```  
 
-**Checking Out**  
+#### Checking Out  
 ```
 # replace filename with the latest version from the current branch
 git checkout -- filename
@@ -148,7 +148,7 @@ git checkout 05c5fa
 git checkout master
 ```  
 
-**Working with Remotes**
+#### Working with Remotes
 ```
 # show the remote branches and their associated urls
 git remote -v 
@@ -217,7 +217,7 @@ git push --force-with-lease
 git merge --squash mybranch
 ```  
 
-**Going back by working with the History**  
+#### Going back by working with the History  
 ```
 # figures out the changes introduced by commitid and introduces a new commit undoing them. 
 git revert commitid
@@ -239,7 +239,7 @@ git reset --hard commitid
 git reset --hard origin/master
 ```  
 
-**Working with the Stash**  
+#### Working with the Stash  
 ```
 # take all changes made to working tree and stash them in a new dangling commit, putting the working tree in a clean state
 # DISCLAIMER: this does not include untracked files
@@ -270,7 +270,7 @@ git stash --keep-index
 git stash clear
 ```  
 
-**Working with Submodules**
+#### Working with Submodules
 ```
 # add a submodule to a repository and clone it
 git submodule add https://domain.com/user/repository.git submodules/repository
@@ -293,7 +293,7 @@ git config --remove-section $submodule;\
 git rm --cached $submodule
 ```  
 
-**Searching**  
+#### Searching  
 ```
 #list the latest tagged revision which includes a given commit
 git name-rev --name-only commitid
@@ -308,7 +308,7 @@ git cherry -v master
 git show :/regex
 ```  
 
-**ls-files and ls-tree**  
+#### ls-files and ls-tree  
 ```
 # list the files contained in the current HEAD or in the head of the master branch respectively
 git ls-tree --full-tree -r HEAD
@@ -319,7 +319,7 @@ git ls-tree -r HEAD --name-only
 git ls-files -i
 ```  
 
-**Diffing**  
+#### Diffing  
 ```
 # diff two branches
 git diff branch1..branch2
@@ -333,7 +333,7 @@ git diff > changes.patch
 git apply -v changes.patch
 ```  
 
-**Cleaning**  
+#### Cleaning  
 ```
 # perform a dry run and only list what untracked files or directories  would be removed without actually doing so
 git clean -n
@@ -351,7 +351,7 @@ git clean -f -x -d
 git clean -fxd :/
 ```  
 
-**git log one-liners**  
+#### git log one-liners  
 ```
 git whatchanged myfile
 git log --after="MMM DD YYYY"
@@ -372,7 +372,7 @@ git log --grep regexp1 --grep regexp2
 git grep -e regexp1 --or -e regexp2
 ```  
 
-**Useful BASH Aliases**  
+#### Useful BASH Aliases  
 You can include the following in your .bash_aliases file.  
 
 ```
@@ -460,7 +460,7 @@ alias gstp='git stash pop'
 alias gsts='git stash show --text'
 ```  
 
-**Set an SSH key for git access**  
+#### Set an SSH key for git access  
 ```
 ssh-keygen -t rsa -C "user@server.com"
 cat id_rsa.pub 
@@ -478,12 +478,12 @@ host server.com
  IdentityFile ~/.ssh/id_rsa_server
  User git
  ```  
- **List all dangling commits**  
+ #### List all dangling commits  
  ```
  git fsck --no-reflog | awk '/dangling commit/ {print $3}'
  ```  
  
- **Leave the current commit as the only commit in the repository**
+ #### Leave the current commit as the only commit in the repository
  ```
 git checkout --orphan new
 git add -A
@@ -492,13 +492,13 @@ git branch -D master
 git branch -m master
 ```  
 
-**Remove a file from the repository**
+#### Remove a file from the repository
 ```
 git filter-branch -f --prune-empty --index-filter \
   'git rm --cached -r -q -- . ; git reset -q $GIT_COMMIT -- myfile' -- --all
 ```  
 
-**Create a Repository on Gitlab using the API for every Directory in a List**  
+#### Create a Repository on Gitlab using the API for every Directory in a List  
 ```
 # 
 for x in `ls|tr -d ' '`;\
@@ -507,7 +507,7 @@ curl -H "Content-Type:application/json" https://gitlab.com/api/v3/projects?priva
 done
 ```  
 
-**Set up a Git Repository using Git LFS**
+#### Set up a Git Repository using Git LFS
 ```
 git init
 git remote add origin git@domain.com:user/repository.git
@@ -559,7 +559,7 @@ git commit -m "Initial commit"
 git push -u origin master
 ```  
 
-**Githooks**  
+#### Githooks  
 ```
 # git hooks are scripts which can be executed after an action is performed, the options are: applypatch-msg ,commit-msg ,post-update ,pre-applypatch ,pre-commit ,prepare-commit-msg ,pre-push ,pre-rebase ,update 
 
