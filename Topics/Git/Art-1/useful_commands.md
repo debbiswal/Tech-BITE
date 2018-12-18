@@ -478,6 +478,14 @@ host server.com
  IdentityFile ~/.ssh/id_rsa_server
  User git
  ```  
+ **List all dangling commits**  
+````
+git fsck --no-reflog | awk /dangling commit/ {print $3}
+```  
+
+**Leave the current commit as the only commit in the repository**  
+
+
  
 
 [:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#git)
