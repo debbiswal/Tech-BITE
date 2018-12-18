@@ -4,10 +4,23 @@
 
 What is a Submodule?  
 A submodule is an external git repository , which we refer and use in our repository as a sub-repository.  
-In simple terms , git submodules as shared libraries or plugins , which we use in our project , by refering them .
-We also can modify and commit changes to this submodules.
+In simple terms , git submodules as shared libraries or plugins , which we use in our project , by refering them  to reuse the existing code.  
+
+These sub modules exists as an independent repo within our main(parent) repo.  
+As submodules are independent repo on its own ,we also can modify and commit changes to this submodules.  
 
 Lets start with an example :  
+Say , I have a repository **Customer** and **Product**.  
+Also , I have a repo **TextFileLogger** and **DBLogger**.  
+
+Now , I want to reuse the **TextFileLogger** in my **Customer** and  **Product** repo.  
+For this , I can copy the contents of **TextFileLogger** and paste it inside my repo.  
+But , with this approach I will not be able to track the changes made to **TextFileLogger**.  
+Evry time , I need to check for updates happning on **TextFileLogger** and copy paste them in my repo , which is cumbersome.  
+
+The simplest solution , is to refer **TextFileLogger** repo from our repo. And pull/fetch the **TextFileLogger** repo when-ever required.
+
+
 
 
 Explain with diagram  , how two different repo can refer to different version of submodule  
