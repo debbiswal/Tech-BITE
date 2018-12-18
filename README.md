@@ -68,6 +68,28 @@
 
 ### Git
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
+  * [Configuration](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#configuration-commands)
+  * [Initialize and clone](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#initialize-and-clone)
+  * [Track , Add and commit](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#track-add-and-commit)
+  * [Status and Diagnostic](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#status-and-diagnostics)
+  * [Checking out](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#checking-out)
+  * [Working with Remotes](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#working-with-remotes)
+  * [Going back by Working with History](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#going-back-by-working-with-the-history)
+  * [Working with Stash](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#working-with-the-stash)
+  * [Working with Submodules](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#working-with-submodules)
+  * [Searching](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#searching)
+  * [ls-files and ls-tree](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#ls-files-and-ls-tree)
+  * [Diffing](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#diffing)
+  * [Cleaning](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#cleaning)
+  * [git log one-liners](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#git-log-one-liners)
+  * [Useful Bash Aliases](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#useful-bash-aliases)
+  * [Set SSH key for git access](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#set-an-ssh-key-for-git-access)
+  * [List all dangling commits](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#list-all-dangling-commits)
+  * [Leave the current commit as the only commit in the repository](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#leave-the-current-commit-as-the-only-commit-in-the-repository)
+  * [Remove a file from the repository](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#remove-a-file-from-the-repository)
+  * [Create a Repository on Gitlab using the API for every Directory in a List](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#create-a-repository-on-gitlab-using-the-api-for-every-directory-in-a-list)
+  * [Set up a Git Repository using Git LFS](https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#set-up-a-git-repository-using-git-lfs)
+  * [Githooks}(https://github.com/debbiswal/Articles/blob/master/Topics/Git/Art-1/useful_commands.md#githooks)
 * [Upgrading GIT in CENTOS from source code](Topics/Git/Art-2/upgrade_git_in_centos.md)
 * Submodule
 * Subtree
