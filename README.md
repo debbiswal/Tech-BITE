@@ -27,10 +27,17 @@
 * [How to copy a file from local machine to AWS EC2 instance ](Topics/AWS/Art-6/copy_file_local_to_ec2.md)
 
 [:top:](#topics)  
+
+### AZURE  
+* To be done
+
+[:top:](#topics)  
+
 ### Cloud Design Pattern
 * TO BE DONE
 
 [:top:](#topics)  
+
 ### Couchbase
 * To be done
 
