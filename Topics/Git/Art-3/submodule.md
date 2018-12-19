@@ -29,11 +29,11 @@ So in summary , the problems with this approach are:
 The simplest solution , is to refer **TextFileLogger** repo from our repo. And pull/fetch the **TextFileLogger** repo when-ever required.
 
 Now , say there are some changes happend to **TextFileLogger** :  
-* change-1 : a new file LOGGING_V1.txt is added with commit id - COMMIT_ID_001
-* change-2 : a new file LOGGING_V2.txt is added with commit id - COMMIT_ID_002
+* change-1 : a new file LOGGING_V1.txt is added with commit id - COMMIT-ID-01
+* change-2 : a new file LOGGING_V2.txt is added with commit id - COMMIT-ID-02
 
-We will upgrade the **TextFileLogger** in **Product** repo , to COMMIT_ID_002.  
-But **Customer** repo will only be able to use the COMMIT_ID_001 , due to some backward compatibility of other modules inside it.  
+We will upgrade the **TextFileLogger** in **Product** repo , to COMMIT-ID-02.  
+But **Customer** repo will only be able to use the COMMIT-ID-01 , due to some backward compatibility of other modules inside it.  
 
 This kind of facility makes use of submodules simpler , as we can refer to different commit state in our differnt projects/repositories.  
 {diagram}
