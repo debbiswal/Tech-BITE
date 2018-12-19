@@ -16,7 +16,7 @@ Also , I have a repo **TextFileLogger** and **DBLogger**.
 Now , I want to reuse the **TextFileLogger** in my **Customer** and  **Product** repo.  
 For this , I can copy the contents of **TextFileLogger** and paste it inside my **Customer** and  **Product** repo.  
 But , with this approach I will not be able to track the changes made to **TextFileLogger**.  
-Evry time , I need to check for updates happning on **TextFileLogger** and copy paste them in my **Customer** and  **Product** repo , which is cumbersome.  
+Every time , I need to check for updates happning on **TextFileLogger** and copy paste them in my **Customer** and  **Product** repo , which is cumbersome.  
 
 So in summary , the problems with this approach are:  
 
