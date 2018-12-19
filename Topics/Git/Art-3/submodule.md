@@ -32,10 +32,10 @@ Now , say there are some changes happend to **TextFileLogger** :
 * change-1 : a new file LOGGING_V1.txt is added with commit id - COMMIT_ID_001
 * change-2 : a new file LOGGING_V2.txt is added with commit id - COMMIT_ID_002
 
-And due to some reason , we can upgrade the **TextFileLogger** in **Product** repo , to COMMIT_ID_002.  
+We will upgrade the **TextFileLogger** in **Product** repo , to COMMIT_ID_002.  
 But **Customer** repo will only be able to use the COMMIT_ID_001 , due to some backward compatibility of other modules inside it.  
 
-This kind of facility makes use to submodules simpler , as we can refer to different commit state in our differnt projects/repositories.  
+This kind of facility makes use of submodules simpler , as we can refer to different commit state in our differnt projects/repositories.  
 {diagram}
 
 Explain with diagram  , how two different repo can refer to different version of submodule  
