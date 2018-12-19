@@ -38,7 +38,9 @@ Modifying submodule , commiting mainmodule without commiting submodule
 How to derefer a submodule  
 How to refere to different version  
 How to switch to a different submodule  
-How to remove a submodule  
+How to remove a submodule 
+Parallelized fetching,shallow-submodules(https://dzone.com/articles/the-2016-git-retrospective-submodules)  
+
 
 
 ### Disadvantages of Submodule  
