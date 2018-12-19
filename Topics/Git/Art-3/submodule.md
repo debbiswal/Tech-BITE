@@ -20,11 +20,11 @@ Every time , I need to check for updates happning on **TextFileLogger** and copy
 
 So in summary , the problems with this approach are:  
 
-* The original reference is lost. When you copy and paste code, there’s no reference back to the original spot where the code was found, and it’s easily forgotten about.  
+* The original reference is lost. When we copy and paste code, there’s no reference back to the original spot where the code was found, and it’s easily forgotten about.  
 
-* Updates aren’t easily integrated. When changes are made to the original code you copied, it becomes very hard to track what’s changed so you can apply those changes back to your cut and pasted code. Some third party libraries can have thousands of lines of code, spread across hundreds of files, and it’s impossible to keep things synchronized manually.  
+* Updates aren’t easily integrated. When changes are made to the original code we copied, it becomes very hard to track what’s changed so we can apply those changes back to our cut and pasted code. Some third party libraries can have thousands of lines of code, spread across hundreds of files, and it’s impossible to keep things synchronized manually.  
 
-* Version information isn’t maintained. Proper software development practices call for versioning releases of your code. You’ll find this consistent in third party libraries you use in your projects. When you copy and paste code, there’s no easy way to know you’re using version 1.2.2 of library XYZ, and how will you remember to update your code when version 1.2.3 is released?
+* Version information isn’t maintained. Proper software development practices call for versioning releases of our code. We will find this consistent in third party libraries we use in our projects. When we copy and paste code, there’s no easy way to know we are using version 1.0.0 of library **TextFileLogger**  and how will we remember to update our code when version 1.0.1 is released?
 
 The simplest solution , is to refer **TextFileLogger** repo from our repo. And pull/fetch the **TextFileLogger** repo when-ever required.
 
