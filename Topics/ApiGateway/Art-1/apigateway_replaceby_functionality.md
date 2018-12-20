@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#api-gateway)
+[Home](https://debbiswal.github.io/Articles) \| [Back](https://debbiswal.github.io/Articles/#api-gateway)
 # Replace-by functionality Of API Gateway
 
 Hi ,  
@@ -126,4 +126,4 @@ So , providing the default values for any failed service call is known as Replac
 Happy Learning… :)
 
 
-[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#api-gateway)
+[Home](https://debbiswal.github.io/Articles) \| [Back](https://debbiswal.github.io/Articles/#api-gateway)
