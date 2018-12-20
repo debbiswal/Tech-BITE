@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#docker)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#docker)  
 
 # Multi-stage Docker Building  
 
@@ -80,6 +80,6 @@ You can see from the above image that testalpinego(10.6MB) image size is very ve
 *NOTE : All applications may not work properly in Alpine due to library dependencies. As Alpine uses musl library instead of glibc . So you have to test the app properly in alpine container.*  
 
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#docker)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#docker)  
