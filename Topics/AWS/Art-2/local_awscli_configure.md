@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#aws)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#aws)  
 
 # How to configure AWS Cli on local machine with Auto complete feature
 
@@ -41,4 +41,4 @@ source ~/.bashrc
 
 Happy Learning :smiley:  
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#aws)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#aws)  
