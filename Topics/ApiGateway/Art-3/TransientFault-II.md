@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#api-gateway)
+[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#api-gateway)
 
 In my last article[Retry Pattern | Transient Fault - I](../Art-2/TransientFault-I.md)  I discussed about :  
 * What is Transient fault ?  
@@ -129,4 +129,4 @@ Reference :
 
 Happy Learning :)
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#api-gateway)
+[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#api-gateway)
