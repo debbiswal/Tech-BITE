@@ -1,5 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#go)  
-
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#go)  
 # How to disable certificate validation for https request in GO  
 
 * Set the TLSClient config globally
@@ -13,6 +12,6 @@ req, err := http.NewRequest("GET", "https://123.12.3.125:8091/pools/nodes", nil)
 ```  
 
 
-Happy Learning :smiley:  
+Happy Learning :)
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#go)  
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#go)  
