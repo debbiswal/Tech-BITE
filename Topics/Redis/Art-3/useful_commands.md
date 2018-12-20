@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#redis)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#redis)
 
 ## Useful Commands  
 
@@ -8,6 +8,6 @@
 ```  
 
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#redis)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#redis)
