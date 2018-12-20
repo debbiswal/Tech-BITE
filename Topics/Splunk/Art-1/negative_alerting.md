@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#splunk)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#splunk)
 
 # Negative Alerting
 **Context :** In our Kubernetes Cluster  , Prometheus Alert Manager is running . The sole purpose of AlertManager is to raise alerts based on the rules configured to it.
@@ -56,7 +56,7 @@ I have to use custom condition  and check the ‘count’ as ‘0’.
 Now , again I tested the alert , and BINGO…..   
 I got the email and Zendesk ticket.  
 
-Happy Learning :smiley:
+Happy Learning :)
 
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#splunk)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#splunk)
