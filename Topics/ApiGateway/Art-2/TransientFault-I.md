@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#api-gateway)
+[Home](https://debbiswal.github.io/Articles) \| [Back](https://debbiswal.github.io/Articles/#api-gateway)
 
 # Transient Fault - I #  
 
@@ -113,4 +113,4 @@ References :
 
 Happy Learning :)
 
-[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#api-gateway)
+[Home](https://debbiswal.github.io/Articles) \| [Back](https://debbiswal.github.io/Articles/#api-gateway)
