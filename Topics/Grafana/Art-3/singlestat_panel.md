@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
 
 # Using SingleStat pannel in Grafana to diaplay messages based on value 
 
@@ -48,4 +48,4 @@ Note that , for ‘UP’ I have given the value ‘1 to 100’ , you can give an
 
 Happy Learning :)  
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
