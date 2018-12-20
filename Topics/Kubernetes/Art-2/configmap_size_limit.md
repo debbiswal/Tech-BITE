@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#kubernetes)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#kubernetes)
 
 # Configmap Size Limit
 Requirement : I have an existing Configmap , in which I have added a new configmap entry and reapplied to kubernetes.  
@@ -51,6 +51,6 @@ Read the below link :
 [Declarative Management of Kubernetes Objects Using Configuration Files](https://kubernetes.io/docs/concepts/overview/object-management-kubectl/declarative-config/)
 
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#kubernetes)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#kubernetes)
