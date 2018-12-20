@@ -35,8 +35,11 @@ Now , say there are some changes happend to **TextFileLogger** :
 We will upgrade the **TextFileLogger** in **Product** repo , to COMMIT-ID-02.  
 But **Customer** repo will only be able to use the COMMIT-ID-01 , due to some backward compatibility of other modules inside it.  
 
-This kind of facility makes use of submodules simpler , as we can refer to different commit state in our differnt projects/repositories.  
+This kind of facility makes use of submodules simpler , as we can refer to different commit state in our different projects/repositories.  
+
 ![repo](images/img1.png)  
+
+Create TextFileLogger,DBLogger repo with dummy content
 
 
 Explain with diagram  , how two different repo can refer to different version of submodule  
