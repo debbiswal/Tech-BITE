@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#gatling)  
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#gatling)  
 
 ## How to Implement Load Test Scenarios in Gatling  
 
@@ -41,6 +41,6 @@ Gatling's DSL is very flexible, allowing us to implement many different scenario
 The above examples briefly explain how to implement either throughput or virtual user based load tests.  
 Your application requirements will determine which one to implement.   
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#gatling)  
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#gatling)  
