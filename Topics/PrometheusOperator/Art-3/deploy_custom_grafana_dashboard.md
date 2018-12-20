@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#prometheus-operator)
 
 # How to deploy custom Grafana dashboard as part of Grafana Deployment in Prometheus Operator
 
@@ -64,6 +64,6 @@ Now , when you deploy  the Prometheus Operator , the Persistent Volume Dashboard
 *Note that : Any dashboard deployed as part of Grafana Deployment , is readonly. If you want to modify it , then you can save the modified  dashboard in a different name.*  
 
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#prometheus-operator)
