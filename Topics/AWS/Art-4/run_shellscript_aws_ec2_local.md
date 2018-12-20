@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#aws)  
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#aws)  
 
 # How to run a shell script on AWS EC2 from local machine  
 
@@ -12,6 +12,6 @@ ssh -i "<pem file name>"  <user>@<EC2 instance URL>:<file with path from EC2 ins
 ssh -i "my_aws.pem"  ec2-user@ec2-12-345-67-890.eu-west-1.compute.amazonaws.com  “bash /home/ec-2user/myscripts/run.sh”
 ```  
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#aws)  
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#aws)  
