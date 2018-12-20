@@ -1,47 +1,15 @@
 ## Topics
-<table class="tg">
-  <tr>
-    <th class="tg-baqh" colspan="2">Some values</th>
-  </tr>
-  <tr>
-    <th class="tg-baqh">Material</th>
-    <th class="tg-baqh">Value</th>
-  </tr>
-  <tr>
-    <td class="tg-baqh">A</td>
-    <td class="tg-baqh">0.75</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">B</td>
-    <td class="tg-baqh">0.47</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">C</td>
-    <td class="tg-baqh">0.4 - 0.7</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">C</td>
-    <td class="tg-baqh">1.0 - 1.8</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">S</td>
-    <td class="tg-baqh">0.15 - 2.0</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">W</td>
-    <td class="tg-baqh">0.07 - 0.17</td>
-  </tr>
-</table>  
 
 |-|-|-|-|
 |-------|-------|-------|-------|
 |[API Gateway](#api-gateway)|[AWS](#aws)|[Cloud Design Pattern](#cloud-design-pattern)|[Couchbase](#couchbase)|
 |[Data Structure and Algorothims](#data-structure-and-algorothims)|[GOF Design Pattern](#gof-design-pattern)|[Docker](#docker)|[Domain Driven Design](#domain-driven-design)|
-|[Gatling](#gatling)|[Git](#git)|[Go](#go)|[Grafana](#grafana)|[Javascript](#javascript)|
-|[JSON](#json)|[JSON Web Token (JWT)](#json-Web-token-jwt)|[Kubernetes](#kubernetes)|[Linux](#linux)|
-|[Micro Service](#micro-service)|[.Net](#net)|[NGinx](#nginx)|[NodeJS](#nodejs)|[PowerShell](#powershell)|
-|[Prometheus](#prometheus)|[Prometheus Operator](#prometheus-operator)|[Redis](#redis)|[Ruby](#ruby)|[Service Mesh](#service-mesh)|
-|[Splunk](#splunk)|[VS Code](#vs-code)|[WinSCP](#winscp)|[WRK](#wrk)|-|
+|[Gatling](#gatling)|[Git](#git)|[Go](#go)|[Grafana](#grafana)|
+|[Javascript](#javascript)|[JSON](#json)|[JSON Web Token (JWT)](#json-Web-token-jwt)|[Kubernetes](#kubernetes)|
+|[Linux](#linux)|[Micro Service](#micro-service)|[.Net](#net)|[NGinx](#nginx)|
+|[NodeJS](#nodejs)|[PowerShell](#powershell)|[Prometheus](#prometheus)|[Prometheus Operator](#prometheus-operator)|
+|[Redis](#redis)|[Ruby](#ruby)|[Service Mesh](#service-mesh)|[Splunk](#splunk)|
+|[VS Code](#vs-code)|[WinSCP](#winscp)|[WRK](#wrk)|-|
 
 ## Articles
 
