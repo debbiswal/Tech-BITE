@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#vs-code)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#vs-code)
 
 Dowload Adding from the below lonk :  
 https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml  
@@ -9,6 +9,6 @@ Open vscode editor
 * Paste ‘ext install redhat.vscode-yaml’
 * Press enter
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#vs-code)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#vs-code)
