@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#prometheus-operator)
 
 # Deploying Prometheus StatefulSet with Persistent Volume in Prometheus-Operator  
 
@@ -36,4 +36,4 @@ The PVC are created with certain naming format like : prometheus-k8s-db-promethe
 
 Happy Learning :smiley:  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#prometheus-operator)
