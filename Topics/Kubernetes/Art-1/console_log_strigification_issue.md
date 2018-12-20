@@ -1,5 +1,4 @@
-
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#kubernetes)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#kubernetes)
 
 # Console Log stringification issue
 
@@ -48,4 +47,6 @@ You can test the regular expression on https://regex101.com/ and see how it work
 ![Test string](images/test_string.png)  
 ![Explanation](images/explanation.PNG)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#kubernetes)
+Happy Learning :)
+
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#kubernetes)
