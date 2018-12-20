@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#micro-service)
+[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#micro-service)
 
 # SAGA and Distributed Transaction in Microservice - I  
 
@@ -79,6 +79,6 @@ Finally, testing would be tricky to implement using this design, in order to sim
 In next part of this article , I will explain how to address most of the problems with the Saga’s Events/Choreography approach using another Saga implementation called Command/Orchestration.  
 
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#micro-service)
+[Home](https://debbiswal.github.io/Articles) | [Back](https://debbiswal.github.io/Articles/#micro-service)
