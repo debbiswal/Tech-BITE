@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#javascript)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#javascript)
 
 # Constant vs Enum in Java Script
 
@@ -211,6 +211,6 @@ else
 The reason this happens is that upon deserialization JSON.parse creates a new object as the value for SUCCESS.   
 This new object is not the same as DbTransactionStatus.SUCCESS  , so the comparisons all fail and we end up in the else branch.  
 
-Happy Learning :smile:
+Happy Learning :)
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#javascript)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#javascript)
