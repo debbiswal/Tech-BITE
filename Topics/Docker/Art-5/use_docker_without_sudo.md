@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#docker)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#docker)  
 
 ## How to use DOCKER commands without SUDO  
 
@@ -39,6 +39,6 @@ $ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 $ sudo chmod g+rwx "/home/$USER/.docker" –R
 ```  
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#docker)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#docker)  
