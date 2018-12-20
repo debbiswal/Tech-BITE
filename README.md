@@ -83,7 +83,8 @@
 * [Git Desktop application for Linux](https://github.com/shiftkey/desktop/releases)(external link)
 * Using GitAhead tool
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
-  * [Delete git reference from a folder and sub folder](Topics/Git/Art-1/useful_commands.html##delete-git-reference-from-a-folder-and-sub-folder)
+  * [How to add a remote Git repo from Command line](Topics/Git/Art-1/useful_commands.html#how-to-add-a-remote-git-repo-from-command-line)
+  * [Delete git reference from a folder and sub folder](Topics/Git/Art-1/useful_commands.html#delete-git-reference-from-a-folder-and-sub-folder)
   * [Configuration](Topics/Git/Art-1/useful_commands.html#configuration-commands)
   * [Initialize and clone](Topics/Git/Art-1/useful_commands.html#initialize-and-clone)
   * [Track , Add and commit](Topics/Git/Art-1/useful_commands.html#track-add-and-commit)
