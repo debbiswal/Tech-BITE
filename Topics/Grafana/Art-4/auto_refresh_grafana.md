@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#grafana)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
 
 # How to set custom auto refresh values in Grafana  
 
@@ -17,6 +17,6 @@ Now go back to ‘Time range’ of dash board. You will get the custom refresh s
 ![time range](images/img3.png)  
 
 
-Happy Learning :smiley:  
+Happy Learning :)
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#grafana)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
