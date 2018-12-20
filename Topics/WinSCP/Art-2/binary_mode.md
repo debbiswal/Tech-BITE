@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#winscp)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#winscp)
 
 ## Binary mode in WinSCP
 
@@ -50,6 +50,6 @@ Click OK
 
 5) Now copy your files.  
 
-Happy Learning :smiley:  
+Happy Learning :)
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#winscp)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#winscp)
