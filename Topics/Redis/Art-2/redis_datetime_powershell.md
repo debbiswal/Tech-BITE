@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#redis)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#redis)
 
 # Get Date & Time stamp of Redis using Powershell  
 
@@ -64,6 +64,6 @@ Write-Host "Press any key to exit ..." -foregroundcolor "Blue"
 $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 ```  
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#redis)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#redis)
