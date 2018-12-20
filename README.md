@@ -15,8 +15,8 @@
 
 ### API Gateway  
 * [Replace-by functionaly of API Gateway](Topics/ApiGateway/Art-1/apigateway_replaceby_functionality.md)
-* [Retry Pattern | Transient Fault - I](Topics/ApiGateway/Art-2/TransientFault-I.md)
-* [Circuit Breaker Pattern | Transient Fault -II](Topics/ApiGateway/Art-3/TransientFault-II.md)
+* [Retry Pattern \| Transient Fault - I](Topics/ApiGateway/Art-2/TransientFault-I.md)
+* [Circuit Breaker Pattern \| Transient Fault -II](Topics/ApiGateway/Art-3/TransientFault-II.md)
 
 [:top:](#topics)  
 
