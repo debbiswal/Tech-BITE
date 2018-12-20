@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#powershell)
 
 ## Copying  files to Multiple servers using WinSCP with PowerShell script
 
@@ -52,6 +52,6 @@ Separate log file is created for each server to avoid confusion while debugging.
 ![code](images/img1.png)  
 
 
-Happy Learning :smiley:  
+Happy Learning :)
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#powershell)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#powershell)
