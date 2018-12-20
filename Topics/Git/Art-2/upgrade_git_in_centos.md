@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#git)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#git)  
 
 # Upgrading GIT in CENTOS from source code  
 
@@ -9,13 +9,13 @@ But I wanted the latest version. So the only way is to build it from source code
 **Below are the steps :**  
 
 * Step 1 – Install Required Packages  
-```
+```shell
 sudo yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel  
 sudo yum install gcc perl-ExtUtils-MakeMaker  
 ```
 
 * Step 2 – Install Git 2.17.1  
-```
+```shell
 cd /usr/src  
 wget https://www.kernel.org/pub/software/scm/git/git-2.17.1.tar.gz  
 tar xzf git-2.17.1.tar.gz  
@@ -28,7 +28,7 @@ make prefix=/usr/local/git install
 Note : you can download any other version of git from https://mirrors.edge.kernel.org/pub/software/scm/git/
 
 * Step 3 – Setup Environment  
-```
+```shell
 echo "export PATH=/usr/local/git/bin:$PATH" >> /etc/bashrc  
 source /etc/bashrc  
 ```
@@ -36,10 +36,10 @@ source /etc/bashrc
 
 DONE..  
 now verify the git version  
-```
+```shell
 git --version
 ```  
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#git)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#git)  
