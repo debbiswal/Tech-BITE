@@ -1,11 +1,13 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#linux)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#linux)
 
 **How to get Linux Memory Utilization ?**  
-```top -o %MEM```
+```shell
+top -o %MEM
+```
 
 OR
 
-```
+```shell
 ps -eo size,pid,user,command --sort -size 
 | awk '{ hr=$1/1024 ; printf("%13.2f Mb ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' 
 | cut -d "" -f2 
@@ -15,10 +17,14 @@ ps -eo size,pid,user,command --sort -size
 
 
 **How to check a Linux box is running in VmWare ?**  
-```egrep -i 'virtual|vbox' /var/log/dmesg```  
+```shell
+egrep -i 'virtual|vbox' /var/log/dmesg
+```  
 
 
 **How to get Host name from IP in Linux ?**  
-```host IP | cut -d " " -f 5 | cut -d "." -f 1```  
+```shell
+host IP | cut -d " " -f 5 | cut -d "." -f 1
+```  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#linux)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#linux)
