@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#prometheus-operator)
 
 # How to change alerting interval of a Prometheus alert | Prometheus Operator
 
@@ -51,6 +51,6 @@ Now , you can see that we are getting the alerts logged in Splunk in every 1 min
 
 ![splunk](images/img6.png)   
 
-Happy Learning :smiley:
+Happy Learning :)
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#prometheus-operator)
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#prometheus-operator)
