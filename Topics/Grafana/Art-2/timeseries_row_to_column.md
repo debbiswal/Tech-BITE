@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
 
 # Converting time series row data to column format using Table panel in Grafana  
 
@@ -60,4 +60,4 @@ Note that , the instance 127.0.0.1:8001 is not running(I stopped it to get the e
 
 Happy Learning :smiley:  
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
