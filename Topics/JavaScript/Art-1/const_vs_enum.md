@@ -14,7 +14,7 @@ Ans : The difference is  :
 For example for the status of a database transaction :  
 
 With constants can be written as :  
-```
+```javascript
 const SUCCESS=1  
 const FAILED=0  
 
