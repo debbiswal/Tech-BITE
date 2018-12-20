@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#aws)  
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#aws)  
 
 # How to copy a file from local machine to AWS EC2 instance  
 
@@ -12,6 +12,6 @@ scp -i "<pem file name>"  <file to copy with path>  <user>@<EC2 instance URL>:<D
 scp -i "my_aws.pem"  testcopy.txt ec2-user@ec2-12-345-67-890.eu-west-1.compute.amazonaws.com:/home/ec2-user/testfolder.
 ```  
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
-[:house:Home](https://github.com/debbiswal/Articles) | [Back](https://github.com/debbiswal/Articles/blob/master/README.md#aws)  
+[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#aws)  
