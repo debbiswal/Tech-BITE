@@ -2,6 +2,12 @@
 
 # Useful Commands
 
+#### How to add a remote Git repo from Command line
+```
+# Replace USER_ID,REPO_NAME
+curl -u 'USER_ID' https://api.github.com/user/repos -d "{\"name\":\"REPO_NAME\"}"
+```  
+
 #### Delete git reference from a folder and sub folder 
 ```bash
 find . -name ".git" -type f -delete  
