@@ -3,7 +3,7 @@
 # Useful Commands
 
 #### How to add a remote Git repo from Command line
-```
+```bash
 # Replace USER_ID,REPO_NAME
 curl -u 'USER_ID' https://api.github.com/user/repos -d "{\"name\":\"REPO_NAME\"}"
 ```  
@@ -85,7 +85,7 @@ git config --global push.default tracking
 ```  
 
 #### Initialize and Clone  
-```
+```bash
 # initialize a git repository in the current working directory
 git init
 
@@ -103,7 +103,7 @@ git clone --recursive ssh://git@remote.com:/repo.git
 ```  
 
 #### Track, Add and Commit   
-```
+```bash
 # tell git to start tracking a file or add its current state to the index
 git add file
 
@@ -124,7 +124,7 @@ git commit --allow-empty-message -m
 ```  
 
 #### Status and Diagnostics  
-```
+```bash
 # show the commit at the head of the branch currently checked out
 git show HEAD
 
@@ -139,7 +139,7 @@ git status -s
 ```  
 
 #### Checking Out  
-```
+```bash
 # replace filename with the latest version from the current branch
 git checkout -- filename
 
@@ -155,7 +155,7 @@ git checkout master
 ```  
 
 #### Working with Remotes
-```
+```bash
 # show the remote branches and their associated urls
 git remote -v 
 
@@ -224,7 +224,7 @@ git merge --squash mybranch
 ```  
 
 #### Going back by working with the History  
-```
+```bash
 # figures out the changes introduced by commitid and introduces a new commit undoing them. 
 git revert commitid
 
@@ -246,7 +246,7 @@ git reset --hard origin/master
 ```  
 
 #### Working with the Stash  
-```
+```bash
 # take all changes made to working tree and stash them in a new dangling commit, putting the working tree in a clean state
 # DISCLAIMER: this does not include untracked files
 git stash
@@ -277,7 +277,7 @@ git stash clear
 ```  
 
 #### Working with Submodules
-```
+```bash
 # add a submodule to a repository and clone it
 git submodule add https://domain.com/user/repository.git submodules/repository
 
@@ -300,7 +300,7 @@ git rm --cached $submodule
 ```  
 
 #### Searching  
-```
+```bash
 #list the latest tagged revision which includes a given commit
 git name-rev --name-only commitid
 
@@ -315,7 +315,7 @@ git show :/regex
 ```  
 
 #### ls-files and ls-tree  
-```
+```bash
 # list the files contained in the current HEAD or in the head of the master branch respectively
 git ls-tree --full-tree -r HEAD
 git ls-tree -r master --name-only
@@ -326,7 +326,7 @@ git ls-files -i
 ```  
 
 #### Diffing  
-```
+```bash
 # diff two branches
 git diff branch1..branch2
 
@@ -340,7 +340,7 @@ git apply -v changes.patch
 ```  
 
 #### Cleaning  
-```
+```bash
 # perform a dry run and only list what untracked files or directories  would be removed without actually doing so
 git clean -n
 
@@ -358,7 +358,7 @@ git clean -fxd :/
 ```  
 
 #### git log one-liners  
-```
+```bash
 git whatchanged myfile
 git log --after="MMM DD YYYY"
 git log --pretty=oneline
@@ -381,7 +381,7 @@ git grep -e regexp1 --or -e regexp2
 #### Useful BASH Aliases  
 You can include the following in your .bash_aliases file.  
 
-```
+```bash
 alias g='git'
 alias gs='git status '
 alias ga='git add '
@@ -467,7 +467,7 @@ alias gsts='git stash show --text'
 ```  
 
 #### Set an SSH key for git access  
-```
+```bash
 ssh-keygen -t rsa -C "user@server.com"
 cat id_rsa.pub 
 
@@ -478,19 +478,19 @@ git remote set-url origin ssh://git@server.com:/repo.git
 ```  
 Now the following can be put inside ~/.ssh/config.  
 
-```
+```bash
 host server.com
  HostName server.com
  IdentityFile ~/.ssh/id_rsa_server
  User git
  ```  
  #### List all dangling commits  
- ```
+ ```bash
  git fsck --no-reflog | awk '/dangling commit/ {print $3}'
  ```  
  
  #### Leave the current commit as the only commit in the repository
- ```
+ ```bash
 git checkout --orphan new
 git add -A
 git commit -am "Initial commit"
@@ -499,13 +499,13 @@ git branch -m master
 ```  
 
 #### Remove a file from the repository
-```
+```bash
 git filter-branch -f --prune-empty --index-filter \
   'git rm --cached -r -q -- . ; git reset -q $GIT_COMMIT -- myfile' -- --all
 ```  
 
 #### Create a Repository on Gitlab using the API for every Directory in a List  
-```
+```bash
 # 
 for x in `ls|tr -d ' '`;\
 do echo "creating $x ... ";\
@@ -514,7 +514,7 @@ done
 ```  
 
 #### Set up a Git Repository using Git LFS
-```
+```bash
 git init
 git remote add origin git@domain.com:user/repository.git
 git lfs track "*.jpg"
@@ -566,7 +566,7 @@ git push -u origin master
 ```  
 
 #### Githooks  
-```
+```bash
 # git hooks are scripts which can be executed after an action is performed, the options are: applypatch-msg ,commit-msg ,post-update ,pre-applypatch ,pre-commit ,prepare-commit-msg ,pre-push ,pre-rebase ,update 
 
 # git hooks for a given repository are stored under `.git/hooks`
@@ -588,6 +588,6 @@ pre-rebase.sample
 update.sample
 ```  
 
-Happy Learning :smiley:  
+Happy Learning :)  
 
 [Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#git)  
