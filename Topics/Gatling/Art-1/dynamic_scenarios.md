@@ -1,4 +1,4 @@
-[:house:Home](https://github.com/debbiswal/Tech-BITE) | [Back](https://github.com/debbiswal/Tech-BITE/blob/master/README.md#gatling)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#gatling)  
 
 # Executing different scenarios dynamically in Gatling  
 
@@ -126,6 +126,6 @@ If you are changing the package name and class name in CustomSimulation.scala th
 ```  
 
 
-Happy Learning :smiley:  
+Happy Learning :) 
 
-[:house:Home](https://github.com/debbiswal/Tech-BITE) | [Back](https://github.com/debbiswal/Tech-BITE/blob/master/README.md#gatling)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#gatling)  
