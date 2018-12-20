@@ -1,12 +1,16 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
 
 **Resetting lost Admin password :**  
 
 Connect to the Grafana pod in kubernetes which is running in namespace ‘monitoring’  
-```kubectl exec -it --namespace=monitoring {grafana_pod_name} /bin/sh  ```  
+```shell
+kubectl exec -it --namespace=monitoring {grafana_pod_name} /bin/sh  
+```  
 
 Change the password in the pod  
-```grafana-cli admin reset-admin-password --homepath "/usr/share/grafana" {new_password}```   
+```shell
+grafana-cli admin reset-admin-password --homepath "/usr/share/grafana" {new_password}
+```   
     
     
     
@@ -14,7 +18,7 @@ Change the password in the pod
 **Changing Admin password (did not lost) :**
 
 If you only want to change the password(did not lost admin password)  :  
-```
+```shell
 curl -X PUT -H "Content-Type: application/json" -d '{
   "oldPassword": "current_password",
   "newPassword": "new_password",
@@ -24,4 +28,4 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 
 Happy Learning :)  
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#grafana)  
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
