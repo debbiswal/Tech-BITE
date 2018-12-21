@@ -40,7 +40,7 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 ![repo](images/img1.png)  
 
 Create TextFileLogger repo with some dummy content :  
-```git
+```shell
 # Create a Github remote repository from CLI
 curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
 
