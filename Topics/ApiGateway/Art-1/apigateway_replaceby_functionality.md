@@ -1,4 +1,5 @@
-[Home](../../../../../) \| [Back](../../../../../#api-gateway)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#api-gateway)
+
 # Replace-by functionality Of API Gateway
 
 Hi ,  
