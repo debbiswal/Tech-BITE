@@ -103,6 +103,8 @@ Customer_V0.txt  TextFileLogger
 [Customer]$ ls TextFileLogger
 Logger_V0.txt
 
+# If tree command is not installed , then you have to install it.
+# As my ststem is CENTOS , I have used the command 'sudo yum -y install tree'
 [Customer]$ tree
 .
 ├── Customer_V0.txt
