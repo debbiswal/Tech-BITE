@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#kubernetes)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#kubernetes)
 
 **List all PODS with Containers | Kubernetes**
 ```shell
@@ -8,4 +8,4 @@ kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{"\n"}{.metadata
 
 Happy Learning :)
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#kubernetes)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#kubernetes)
