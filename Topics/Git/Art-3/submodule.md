@@ -39,8 +39,8 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 
 ![repo](images/img1.png)  
 
-Create TextFileLogger,DBLogger repo with dummy content
-```
+Create TextFileLogger repo with some dummy content :  
+```bash
 # Create a Github remote repository from CLI
 curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
 
@@ -48,9 +48,9 @@ curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLo
 mkdir TextFileLogger
 cd TextFileLogger
 git init
-echo "Logger_V0" > Logger_V0.txt
-git add Logger_V0.txt
-git commit -m "added Logger_V0.txt"
+echo "TextLogger_V0" > TextLogger_V0.txt
+git add TextLogger_V0.txt
+git commit -m "added TextLogger_V0.txt"
 
 #Now link the local repo with remote
 git remote add origin https://github.com/debbiswal/TextFileLogger.git
@@ -66,16 +66,19 @@ origin	https://github.com/debbiswal/TextFileLogger.git (push)
 git push -u origin master
 
 # For subsequent push , we dont have to use the -u parameter
-echo "Updated-1" > Logger_V0.txt
+echo "TextLogger Updated-1" > TextLogger_V0.txt
 
-git add Logger_V0.txt
-git commit -m "added Logger_V0.txt"
+git add TextLogger_V0.txt
+git commit -m "added TextLogger_V0.txt"
 OR
-git commit -am "added Logger_V0.txt"
+git commit -am "added TextLogger_V0.txt"
 
 git push
-```
-
+```  
+In the similar way lets create the below repositories :  
+* DBogger  with a fie DBLogger_V0.txt
+* Customer with a file Customer_V0.txt
+* Product with a file Product_V0.txt
 
 
 Explain with diagram  , how two different repo can refer to different version of submodule  
