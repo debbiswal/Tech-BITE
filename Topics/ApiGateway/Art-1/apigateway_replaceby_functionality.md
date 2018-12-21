@@ -1,5 +1,7 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#api-gateway)
 
+<script src="https://gist.github.com/thatisuday/1e9885c0c3a6549a179c9a34e2d01908.js"></script>
+
 # Replace-by functionality Of API Gateway
 
 Hi ,  
