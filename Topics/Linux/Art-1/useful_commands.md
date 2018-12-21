@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#linux)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#linux)
 
 **How to get Linux Memory Utilization ?**  
 ```shell
@@ -27,4 +27,4 @@ egrep -i 'virtual|vbox' /var/log/dmesg
 host IP | cut -d " " -f 5 | cut -d "." -f 1
 ```  
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#linux)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#linux)
