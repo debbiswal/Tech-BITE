@@ -81,6 +81,8 @@
 * [Upgrading GIT in CENTOS from source code](Topics/Git/Art-2/upgrade_git_in_centos.md)
 * [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
 * [Git Desktop application for Linux](https://github.com/shiftkey/desktop/releases)(external link)
+* [Github pages with Jekyll](https://jekyllrb.com/docs/github-pages/) (external link)
+* [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/) (external link)
 * Using GitAhead tool
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
   * [How to add a remote Git repo from Command line](Topics/Git/Art-1/useful_commands.html#how-to-add-a-remote-git-repo-from-command-line)
