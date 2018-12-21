@@ -27,7 +27,8 @@ Create scenarios.json in data folder , which holds the scenario details :
     "inject": [ {  "type": "rampUsers",  "args": [10,5]}, {  "type": "nothingFor",  "args": [20]}, {  "type": "rampUsers", "args": [10,5]}, {  "type": "nothingFor", "args": [10]} ]
   }
 ]
-```  
+```
+<script src="https://gist.github.com/debbiswal/7bf103f727ee3a9cdd320c60ff9b99cc.js?file=scenarios.json"></script>
 
 In the above example :  
 * scenario : is the scenario name  
@@ -50,7 +51,7 @@ As the above JSON is an array , we can implement multiple scenarios with custom 
 
 **Gatling script :**  
 CustomSimulation.scala  
-<script src="https://gist.github.com/debbiswal/7bf103f727ee3a9cdd320c60ff9b99cc.js"></script>
+<script src="https://gist.github.com/debbiswal/7bf103f727ee3a9cdd320c60ff9b99cc.js?file=CustomSimulation.scala"></script>
 
 *Note : You need to change the baseurl and maxDuration as per your need.  
 If you are changing the package name and class name in CustomSimulation.scala then , remember to use same in command line.*
