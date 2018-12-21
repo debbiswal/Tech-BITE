@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#splunk)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#splunk)
 
 # Negative Alerting
 **Context :** In our Kubernetes Cluster  , Prometheus Alert Manager is running . The sole purpose of AlertManager is to raise alerts based on the rules configured to it.
@@ -59,4 +59,4 @@ I got the email and Zendesk ticket.
 Happy Learning :)
 
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#splunk)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#splunk)
