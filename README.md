@@ -1,8 +1,8 @@
 ## Topics
-<a href="url">link text</a>
+
 <table class="tg">
   <tr>
-    <th class="tg-baqh" colspan="4">Some values</th>
+    <th class="tg-baqh" colspan="4">Topics</th>
   </tr>
   <tr>
     <td class="tg-baqh"><a href="#api-gateway">API Gateway</a></td>
