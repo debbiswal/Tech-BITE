@@ -80,9 +80,12 @@ In the similar way lets create the below repositories :
 * Customer with a file Customer_V0.txt
 * Product with a file Product_V0.txt
 
+So Now we have all our repositories ready.
+Lets use the TextFileLogger repo in Customer and Product repos and submodule.  
 
-Explain with diagram  , how two different repo can refer to different version of submodule  
-How to add a submodule to existing repo   
+### Adding Submodules
+
+
   show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
 Modifying submodule , commiting mainmodule without commiting submodule  
