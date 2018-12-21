@@ -19,15 +19,6 @@ You can download it from http://www.java2s.com/Code/Jar/o/Downloadorgjsonjar.htm
 
 **JSON**  
 Create scenarios.json in data folder , which holds the scenario details :  
-```json
-[
-  {
-    "scenario": "WithLatency100_Steady20sec",
-    "url": "/",
-    "inject": [ {  "type": "rampUsers",  "args": [10,5]}, {  "type": "nothingFor",  "args": [20]}, {  "type": "rampUsers", "args": [10,5]}, {  "type": "nothingFor", "args": [10]} ]
-  }
-]
-```
 <script src="https://gist.github.com/debbiswal/7bf103f727ee3a9cdd320c60ff9b99cc.js?file=scenarios.json"></script>
 
 In the above example :  
