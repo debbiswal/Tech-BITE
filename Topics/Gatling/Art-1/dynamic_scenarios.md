@@ -12,7 +12,7 @@ I want to do a load test with different scenarios like :
 * next , Do nothing for 10 seconds  
 
 **Prerequisite :**  
-Copy the attached [org.json.jar.zip](https://github.com/debbiswal/Articles/raw/master/Gatling/Art-1/org.json.jar.zip) file to lib folder of gatling application , and unzip it.  
+Copy the attached [org.json.jar.zip](https://github.com/debbiswal/Tech-BITE/raw/master/Topics/Gatling/Art-1/org.json.jar.zip) file to lib folder of gatling application , and unzip it.  
 OR  
 You can download it from http://www.java2s.com/Code/Jar/o/Downloadorgjsonjar.htm  
 
