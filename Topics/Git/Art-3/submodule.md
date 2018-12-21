@@ -39,6 +39,8 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 
 ![repo](images/img1.png)  
 
+Lets start with creating the required repositories :  
+
 Create TextFileLogger repo with some dummy content :  
 ```shell
 # Create a Github remote repository from CLI
@@ -84,6 +86,75 @@ So Now we have all our repositories ready.
 Lets use the TextFileLogger repo in Customer and Product repos and submodule.  
 
 ### Adding Submodules
+Lets add the TextFileLogger as submodule to Customer repo
+```bash
+# Get into Customer repo folder
+$ cd Customer
+
+# Add the TextFileLogger as a submodule
+[Customer]$ git submodule add https://github.com/debbiswal/TextFileLogger.git
+```  
+
+Now , if we check the Customer folder .. we can see that TextFileLogger folder is created with all the contents.  
+```bash
+[Customer]$ ls
+Customer_V0.txt  TextFileLogger
+
+[Customer]$ ls TextFileLogger
+Logger_V0.txt
+```
+
+Adding submodule added some settings in our local configuration:
+```bash
+[Customer]$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/debbiswal/Customer.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "TextFileLogger"]
+	url = https://github.com/debbiswal/TextFileLogger.git
+	active = true
+```
+We can see that a '[submodule "TextFileLogger"]' section has been added to .git/config file.  
+
+It also staged two files (.gitmodules , TextFileLogger)  
+```
+[Customer]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitmodules
+	new file:   TextFileLogger
+```  
+
+But what is this **.gitmodules** file ?  
+
+```
+[Customer]$ cat .gitmodules 
+[submodule "TextFileLogger"]
+	path = TextFileLogger
+	url = https://github.com/debbiswal/TextFileLogger.git
+```
+
+This is similar to '[submodule "TextFileLogger"]' section in .git/config file .  
+
+So why the duplication ?  
+Its because our local config is local .  
+
+Other contributors won’t see it , so they need a mechanism to get the definitions of all submodules they need to set up in their own repos.  
+
+This is what .gitmodules is for; it will be read later by the **git submodule init** command, as we’ll see in a moment.  
+
 
 
   show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
