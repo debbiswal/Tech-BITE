@@ -41,11 +41,38 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 
 Create TextFileLogger,DBLogger repo with dummy content
 ```
+# Create a Github remote repository from CLI
 curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
+
+#Create the local repo TextFileLogger
+mkdir TextFileLogger
+cd TextFileLogger
 git init
 echo "Logger_V0" > Logger_V0.txt
 git add Logger_V0.txt
 git commit -m "added Logger_V0.txt"
+
+#Now link the local repo with remote
+git remote add origin https://github.com/debbiswal/TextFileLogger.git
+
+# Check the remote links
+git remote -v
+Output :
+origin	https://github.com/debbiswal/TextFileLogger.git (fetch)
+origin	https://github.com/debbiswal/TextFileLogger.git (push)
+
+
+#Now push the local repo data to remote
+git push -u origin master
+
+# For subsequent push , we dont have to use the -u parameter
+echo "Updated-1" > Logger_V0.txt
+
+git add Logger_V0.txt
+git commit -m "added Logger_V0.txt"
+OR
+git commit -am "added Logger_V0.txt"
+
 git push
 ```
 
