@@ -1,4 +1,4 @@
-[Home](../../../../../) \| [Back](../../../../#api-gateway)
+[Home](../../../../../) \| [Back](../../../../../#api-gateway)
 # Replace-by functionality Of API Gateway
 
 Hi ,  
