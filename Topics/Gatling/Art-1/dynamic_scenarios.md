@@ -50,78 +50,13 @@ As the above JSON is an array , we can implement multiple scenarios with custom 
 
 **Gatling script :**  
 CustomSimulation.scala  
-```scala
-package Order
-
-import io.gatling.core.Predef._
-import io.gatling.core.structure.PopulationBuilder
-import io.gatling.core.controller.inject.InjectionStep
-import io.gatling.http.Predef._
-import io.gatling.jdbc.Predef._
-import scala.concurrent.duration._
-import scala.collection.mutable.ArraySeq
-import org.json.JSONArray;
-import org.json.JSONObject;
-import scala.io.Source
-
-class CustomSimulation extends Simulation {
-    val baseURL = "http://myOrderAPI:10001"
-    val httpConf = http.baseURL(baseURL)
-    val rawTestList = Source.fromFile("../user-files/data/scenarios.json").getLines.mkString
-
-    def getInjectionStep(stepType:String, stepArgs:JSONArray) : InjectionStep = {
-        stepType match {
-            case "rampUsers" => rampUsers(stepArgs.getInt(0)) over(stepArgs.getInt(1))
-            case "heavisideUsers" => heavisideUsers(stepArgs.getInt(0)) over(stepArgs.getInt(1))
-            case "atOnceUsers" => atOnceUsers(stepArgs.getInt(0))
-            case "constantUsersPerSec" => constantUsersPerSec(stepArgs.getInt(0)) during(stepArgs.getInt(1))
-            case "rampUsersPerSec" => rampUsersPerSec(stepArgs.getInt(0)) to(stepArgs.getInt(1)) during(stepArgs.getInt(2))
-            case "nothingFor" => nothingFor(stepArgs.getInt(0))
-        }
-    }
-
-    def scnList() : Seq[PopulationBuilder] = {
-        var testList = new JSONArray(rawTestList)
-        var scnList = new ArraySeq[PopulationBuilder](testList.length())
-        for(i <- 0 until testList.length()) {
-            //For each scenario
-            var testCase = testList.getJSONObject(i)
-            val injectionSteps = testCase.getJSONArray("inject")
-            var injectStepList = new ArraySeq[InjectionStep](injectionSteps.length())
-            for(j <- 0 until injectionSteps.length()) {
-                //For each injection step
-                var step = injectionSteps.getJSONObject(j)
-                var stepType = step.getString("type")
-                var stepArgs = step.getJSONArray("args")
-                injectStepList(j) = getInjectionStep(stepType, stepArgs)
-            }                        
-
-            var methodname = testCase.getString("scenario")
-            var url = testCase.getString("url")            
-
-             var scn = scenario(methodname)
-             .forever{
-                        exec(http(methodname)
-                            .get(session => url)
-                        )            
-             }
-            .inject(injectStepList:_*)
-
-            scnList(i) = scn
-
-        }
-        scnList
-    }
-
-    setUp(scnList:_*).protocols(httpConf).maxDuration(1 minutes)
-}
-```  
+<script src="https://gist.github.com/debbiswal/7bf103f727ee3a9cdd320c60ff9b99cc.js"></script>
 
 *Note : You need to change the baseurl and maxDuration as per your need.  
 If you are changing the package name and class name in CustomSimulation.scala then , remember to use same in command line.*
 
 **Command**  
-```
+```bash
 ./gatling.sh -s Order.CustomSimulation
 ```  
 
