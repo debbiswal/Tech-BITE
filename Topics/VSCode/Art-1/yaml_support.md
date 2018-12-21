@@ -1,4 +1,4 @@
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#vs-code)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#vs-code)
 
 Dowload Adding from the below lonk :  
 https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml  
@@ -11,4 +11,4 @@ Open vscode editor
 
 Happy Learning :)  
 
-[Home](https://debbiswal.github.io/Articles/) \| [Back](https://debbiswal.github.io/Articles/#vs-code)
+[Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#vs-code)
