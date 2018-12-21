@@ -1,3 +1,5 @@
+<style type="text/css"> .gist {width:500px; overflow:auto}  .gist .file-data {max-height: 500px;max-width: 500px;} </style>
+
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#gatling)  
 
 ## Executing different scenarios dynamically in Gatling  
