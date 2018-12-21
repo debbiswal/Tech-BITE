@@ -40,6 +40,15 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 ![repo](images/img1.png)  
 
 Create TextFileLogger,DBLogger repo with dummy content
+```
+curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
+git init
+echo "Logger_V0" > Logger_V0.txt
+git add Logger_V0.txt
+git commit -m "added Logger_V0.txt"
+git push
+```
+
 
 
 Explain with diagram  , how two different repo can refer to different version of submodule  
