@@ -1,15 +1,3 @@
-<style type="text/css"> 
-.gist {
-   max-width:800px;
-   overflow:auto;
-   }
-
-.gist .blob-wrapper.data {
-   max-height:300px;
-   overflow:auto;
-}
-
-</style>
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#gatling)  
 
 ## Executing different scenarios dynamically in Gatling  
