@@ -85,7 +85,7 @@
 * [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/) (external link)
 * Using GitAhead tool
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
-  * [How to add a remote Git repo from Command line](Topics/Git/Art-1/useful_commands.html#how-to-add-a-remote-git-repo-from-command-line)
+  * [How to add a remote Git repo from Command line](Topics/Git/Art-1/useful_commands.md#how-to-add-a-remote-git-repo-from-command-line)
   * [Delete git reference from a folder and sub folder](Topics/Git/Art-1/useful_commands.html#delete-git-reference-from-a-folder-and-sub-folder)
   * [Configuration](Topics/Git/Art-1/useful_commands.html#configuration-commands)
   * [Initialize and clone](Topics/Git/Art-1/useful_commands.html#initialize-and-clone)
