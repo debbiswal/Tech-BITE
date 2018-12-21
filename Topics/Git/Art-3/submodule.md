@@ -102,6 +102,13 @@ Customer_V0.txt  TextFileLogger
 
 [Customer]$ ls TextFileLogger
 Logger_V0.txt
+
+[Customer]$ tree
+.
+├── Customer_V0.txt
+└── TextFileLogger
+    └── Logger_V0.txt
+
 ```
 
 Adding submodule added some settings in our local configuration:
@@ -122,7 +129,7 @@ Adding submodule added some settings in our local configuration:
 	url = https://github.com/debbiswal/TextFileLogger.git
 	active = true
 ```
-We can see that a '[submodule "TextFileLogger"]' section has been added to .git/config file.  
+We can see that a **'[submodule "TextFileLogger"]'** section has been added to .git/config file.  
 
 It also staged two files (.gitmodules , TextFileLogger)  
 ```
@@ -146,7 +153,7 @@ But what is this **.gitmodules** file ?
 	url = https://github.com/debbiswal/TextFileLogger.git
 ```
 
-This is similar to '[submodule "TextFileLogger"]' section in .git/config file .  
+This is similar to **'[submodule "TextFileLogger"]'** section in .git/config file .  
 
 So why the duplication ?  
 Its because our local config is local .  
