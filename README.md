@@ -25,7 +25,7 @@
   <tr>
     <td class="tg-baqh"><a href="#javascript">Javascript</a></td>
     <td class="tg-baqh"><a href="#json">Json</a></td>
-    <td class="tg-baqh"><a href="#json-Web-token-jwt>JSON Web Token (JWT)"</a></td>
+    <td class="tg-baqh"><a href="#json-Web-token-jwt">JSON Web Token (JWT)</a></td>
     <td class="tg-baqh"><a href="#kubernetes">Kubernetes</a></td>
   </tr>
   <tr>
