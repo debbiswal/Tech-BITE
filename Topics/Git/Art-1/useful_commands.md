@@ -8,6 +8,9 @@
 curl -u 'USER_ID' https://api.github.com/user/repos -d "{\"name\":\"REPO_NAME\"}"
 ```  
 
+Here is the output from the above command execution :  
+<script src="https://gist.github.com/debbiswal/5f64321aa3eadaca0c15a13e6310a9ba.js"></script>
+
 #### Delete git reference from a folder and sub folder 
 ```bash
 find . -name ".git" -type f -delete  
