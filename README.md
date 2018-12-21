@@ -6,31 +6,39 @@
   </tr>
   <tr>
     <td class="tg-baqh"><a href="#api-gateway">API Gateway</a></td>
-    <td class="tg-baqh">[AWS](#aws)</td>
-    <td class="tg-baqh">[Cloud Design Pattern](#cloud-design-pattern)</td>
-    <td class="tg-baqh">[Couchbase](#couchbase)</td>
+    <td class="tg-baqh"><a href="#aws">AWS</a></td>
+    <td class="tg-baqh"><a href="#cloud-design-pattern">Cloud Design Pattern</a></td>
+    <td class="tg-baqh"><a href="#couchbase">Couchbase</a></td>
   </tr>
   <tr>
-    <td class="tg-baqh">[Data Structure and Algorothims](#data-structure-and-algorothims)</td>
-    <td class="tg-baqh">[GOF Design Pattern](#gof-design-pattern)</td>
-    <td class="tg-baqh">[Docker](#docker)</td>
-    <td class="tg-baqh">[Domain Driven Design](#domain-driven-design)</td>
+    <td class="tg-baqh"><a href="#data-structure-and-algorothims">Data Structure and Algorothims</a></td>
+    <td class="tg-baqh"><a href="#gof-design-pattern">GOF Design Pattern</a></td>
+    <td class="tg-baqh"><a href="#docker">Docker</a></td>
+    <td class="tg-baqh"><a href="#domain-driven-design">Domain Driven Design</a></td>
   </tr>
   <tr>
-    <td class="tg-baqh">C</td>
-    <td class="tg-baqh">0.4 - 0.7</td>
+    <td class="tg-baqh"><a href="#gatling">Gatling</a></td>
+    <td class="tg-baqh"><a href="#git">Git</a></td>
+    <td class="tg-baqh"><a href="#go">Go</a></td>
+    <td class="tg-baqh"><a href="#grafana">Grafana</a></td>
   </tr>
   <tr>
-    <td class="tg-baqh">C</td>
-    <td class="tg-baqh">1.0 - 1.8</td>
+    <td class="tg-baqh"><a href="#javascript">Javascript</a></td>
+    <td class="tg-baqh"><a href="#json">Json</a></td>
+    <td class="tg-baqh"><a href="#json-Web-token-jwt>JSON Web Token (JWT)</a></td>
+    <td class="tg-baqh"><a href="#kubernetes">Kubernetes</a></td>
   </tr>
   <tr>
-    <td class="tg-baqh">S</td>
-    <td class="tg-baqh">0.15 - 2.0</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
   </tr>
   <tr>
-    <td class="tg-baqh">W</td>
-    <td class="tg-baqh">0.07 - 0.17</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
   </tr>
 </table>
 
