@@ -1,4 +1,4 @@
-<style type="text/css"> .gist {max-height:300px;width:800px; overflow:auto}  .gist .file-data {max-height: 300px;max-width: 800px;} </style>
+<style type="text/css"> .gist {height:300px;width:800px; overflow:auto}  .gist .file-data {max-height: 300px;max-width: 800px;} </style>
 
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#gatling)  
 
