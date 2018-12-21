@@ -54,17 +54,6 @@
   </tr>
 </table>
 
-|-|-|-|-|
-|-------|-------|-------|-------|
-|[API Gateway](#api-gateway)|[AWS](#aws)|[Cloud Design Pattern](#cloud-design-pattern)|[Couchbase](#couchbase)|
-|[Data Structure and Algorothims](#data-structure-and-algorothims)|[GOF Design Pattern](#gof-design-pattern)|[Docker](#docker)|[Domain Driven Design](#domain-driven-design)|
-|[Gatling](#gatling)|[Git](#git)|[Go](#go)|[Grafana](#grafana)|
-|[Javascript](#javascript)|[JSON](#json)|[JSON Web Token (JWT)](#json-Web-token-jwt)|[Kubernetes](#kubernetes)|
-|[Linux](#linux)|[Micro Service](#micro-service)|[.Net](#net)|[NGinx](#nginx)|
-|[NodeJS](#nodejs)|[PowerShell](#powershell)|[Prometheus](#prometheus)|[Prometheus Operator](#prometheus-operator)|
-|[Redis](#redis)|[Ruby](#ruby)|[Service Mesh](#service-mesh)|[Splunk](#splunk)|
-|[VS Code](#vs-code)|[WinSCP](#winscp)|[WRK](#wrk)|-|
-
 ## Articles
 
 ### API Gateway  
