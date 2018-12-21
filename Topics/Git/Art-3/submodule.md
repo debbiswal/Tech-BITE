@@ -65,7 +65,7 @@ origin	https://github.com/debbiswal/TextFileLogger.git (push)
 #Now push the local repo data to remote
 git push -u origin master
 
-# For subsequent push , we dont have to use the -u parameter
+# For subsequent push , we dont have to use the' -u origin master' argument
 echo "TextLogger Updated-1" > TextLogger_V0.txt
 
 git add TextLogger_V0.txt
