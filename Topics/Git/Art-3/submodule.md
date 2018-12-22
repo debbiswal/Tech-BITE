@@ -86,7 +86,7 @@ So Now we have all our repositories ready.
 Lets use the TextFileLogger repo in Customer and Product repos and submodule.  
 
 ### Adding Submodules
-Lets add the TextFileLogger as submodule to Customer repo
+Lets add the *TextFileLogger* as submodule to *Customer* repo
 ```bash
 # Get into Customer repo folder
 $ cd Customer
@@ -113,7 +113,8 @@ Logger_V0.txt
 
 ```
 
-Adding submodule added some settings in our local configuration:
+Adding submodule , added some settings in our local configuration of *Customer* repo:  
+Lets check the *config* file under *.git* folder.  
 ```bash
 [Customer]$ cat .git/config
 [core]
@@ -133,7 +134,7 @@ Adding submodule added some settings in our local configuration:
 ```
 We can see that a **'[submodule "TextFileLogger"]'** section has been added to .git/config file.  
 
-It also staged two files (.gitmodules , TextFileLogger)  
+Now , lets check the status of our *Customer* repo.
 ```
 [Customer]$ git status
 On branch master
@@ -145,9 +146,10 @@ Changes to be committed:
 	new file:   .gitmodules
 	new file:   TextFileLogger
 ```  
+We can see that , it also staged two files (.gitmodules , TextFileLogger)  
 
 But what is this **.gitmodules** file ?  
-
+Lets print the contents of *.gitmodules* file from *Customer* repo :  
 ```
 [Customer]$ cat .gitmodules 
 [submodule "TextFileLogger"]
@@ -157,7 +159,7 @@ But what is this **.gitmodules** file ?
 
 This is similar to **'[submodule "TextFileLogger"]'** section in .git/config file .  
 
-So why the duplication ?  
+**So why the duplication ?**  
 Its because our local config is local .  
 
 Other contributors won’t see it , so they need a mechanism to get the definitions of all submodules they need to set up in their own repos.  
