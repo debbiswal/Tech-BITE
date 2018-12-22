@@ -10,13 +10,13 @@ These sub modules exists as an independent repo within our main(parent) repo.
 As submodules are independent repo on its own ,we also can modify and commit changes to these submodules.  
 
 Lets start with an example :  
-Say , I have a repository **Customer** and **Product**.  
-Also , I have a repo **TextFileLogger** and **DBLogger**.  
+Say , I have a repository *Customer* and *Product*.  
+Also , I have a repo *TextFileLogger* and *DBLogger*.  
 
-Now , I want to reuse the **TextFileLogger** in my **Customer** and  **Product** repo.  
-For this , I can copy the contents of **TextFileLogger** and paste it inside my **Customer** and  **Product** repo.  
-But , with this approach I will not be able to track the changes made to **TextFileLogger**.  
-Every time , I need to check for updates happning on **TextFileLogger** and copy paste them in my **Customer** and  **Product** repo , which is cumbersome.  
+Now , I want to reuse the *TextFileLogger* in my *Customer* and  *Product* repo.  
+For this , I can copy the contents of *TextFileLogger* and paste it inside my *Customer* and  *Product* repo.  
+But , with this approach I will not be able to track the changes made to *TextFileLogger*.  
+Every time , I need to check for updates happning on *TextFileLogger* and copy paste them in my *Customer* and  *Product* repo , which is cumbersome.  
 
 So in summary , the problems with this approach are:  
 
@@ -24,16 +24,16 @@ So in summary , the problems with this approach are:
 
 * Updates aren’t easily integrated. When changes are made to the original code we copied, it becomes very hard to track what’s changed so we can apply those changes back to our cut and pasted code. Some third party libraries can have thousands of lines of code, spread across hundreds of files, and it’s impossible to keep things synchronized manually.  
 
-* Version information isn’t maintained. Proper software development practices call for versioning releases of our code. We will find this consistent in third party libraries we use in our projects. When we copy and paste code, there’s no easy way to know we are using version 1.0.0 of library **TextFileLogger**  and how will we remember to update our code when version 1.0.1 is released?
+* Version information isn’t maintained. Proper software development practices call for versioning releases of our code. We will find this consistent in third party libraries we use in our projects. When we copy and paste code, there’s no easy way to know we are using version 1.0.0 of library *TextFileLogger*  and how will we remember to update our code when version 1.0.1 is released?
 
-The simplest solution , is to refer **TextFileLogger** repo from our repo. And pull/fetch the **TextFileLogger** repo when-ever required.
+The simplest solution , is to refer *TextFileLogger* repo from our repo. And pull/fetch the *TextFileLogger* repo when-ever required.
 
-Now , say there are some changes happend to **TextFileLogger** :  
+Now , say there are some changes happend to *TextFileLogger* :  
 * change-1 : a new file LOGGING_V1.txt is added with commit id - COMMIT-ID-01
 * change-2 : a new file LOGGING_V2.txt is added with commit id - COMMIT-ID-02
 
-We will upgrade the **TextFileLogger** in **Product** repo , to COMMIT-ID-02.  
-But **Customer** repo will only be able to use the COMMIT-ID-01 , due to some backward compatibility of other modules inside it.  
+We will upgrade the *TextFileLogger* in *Product* repo , to COMMIT-ID-02.  
+But *Customer* repo will only be able to use the COMMIT-ID-01 , due to some backward compatibility of other modules inside it.  
 
 This kind of facility makes use of submodules simpler , as we can refer to different commit state in our different projects/repositories.  
 
