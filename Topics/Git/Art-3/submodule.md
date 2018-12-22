@@ -95,6 +95,12 @@ $ cd Customer
 
 # Add the TextFileLogger as a submodule
 [Customer]$ git submodule add https://github.com/debbiswal/TextFileLogger.git
+# Output
+Cloning into 'Customer/TextFileLogger'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
 ```  
 
 Now , if we check the Customer folder .. we can see that TextFileLogger folder is created with all the contents.  
@@ -171,7 +177,37 @@ This is what .gitmodules is for.
 
 We will see verry soon that how other contributors will use this *.gitsubmodules* file , to setup sobmodules in their repo.  
 
+Now , lets come back to our *Customer* repo.  
+If you have noticed **git status** command output , we saw that two files (.gitsubmodules,TextFileLogger) has been added.
+But , *TextFileLogger* repo , is added to our *Customer* repo as subrepo.
+So any changes made to *TextFileLogger* repo should be visible to us.
+But we did not see , any information related to *TextFileLogger* repo.
 
+So , how do we see those information about chnages made to subrepos?
+Status, like logs and diffs, is limited to the active repo , not to submodules, which are nested repos. 
+So we need to set up a submodule-aware status for the repo OR globally:
+
+```
+# Check the repo level submoduleSummary config 
+[Customer] $ git config status.submoduleSummary
+# Output :
+false
+
+# Check the global level submoduleSummary config 
+[Customer] $ git config --global status.submoduleSummary
+# Output :
+false
+
+# We can set the submoduleSummary config repo level OR global level(for all repos)
+
+# Set status.submoduleSummary to true  , repo level
+[Customer] $ git config status.submoduleSummary true
+
+# OR
+
+# Set status.submoduleSummary to true  , global level(for all repos)
+[Customer] $ git config --global status.submoduleSummary true
+```
 
   show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
