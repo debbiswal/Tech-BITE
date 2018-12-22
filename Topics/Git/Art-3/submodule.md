@@ -4,6 +4,7 @@
 
 What is a Submodule?  
 A submodule is an external git repository , which we refer and use in our repository as a sub-repository.  
+
 In simple terms , git submodules as shared libraries or plugins , which we use in our project , by refering them  to reuse the existing code.  
 
 These sub modules exists as an independent repo within our main(parent) repo.  
@@ -15,6 +16,7 @@ Also , I have a repo *TextFileLogger* and *DBLogger*.
 
 Now , I want to reuse the *TextFileLogger* in my *Customer* and  *Product* repo.  
 For this , I can copy the contents of *TextFileLogger* and paste it inside my *Customer* and  *Product* repo.  
+
 But , with this approach I will not be able to track the changes made to *TextFileLogger*.  
 Every time , I need to check for updates happning on *TextFileLogger* and copy paste them in my *Customer* and  *Product* repo , which is cumbersome.  
 
@@ -160,11 +162,14 @@ Lets print the contents of *.gitmodules* file from *Customer* repo :
 This is similar to **'[submodule "TextFileLogger"]'** section in .git/config file .  
 
 **So why the duplication ?**  
-Its because our local config is local .  
+Its because our local config(.git/config) resides on our local machine .  
 
-Other contributors won’t see it , so they need a mechanism to get the definitions of all submodules they need to set up in their own repos.  
+And other contributors to *Customer* repo does not have any clue that which submodule has been added .  
+So , they need some information about , which submodules they have to setup in their own repo(after cloning Customer repo on their system).   
 
-This is what .gitmodules is for; it will be read later by the **git submodule init** command, as we’ll see in a moment.  
+This is what .gitmodules is for.
+
+We will see verry soon that how other contributors will use this *.gitsubmodules* file , to setup sobmodules in their repo.  
 
 
 
