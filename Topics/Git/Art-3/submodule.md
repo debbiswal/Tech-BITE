@@ -227,11 +227,29 @@ Submodule changes to be committed:
   > Create Logger_V0.txt
 ```
 Now you see , we got the status related to submodule *TextFileLogger* also.  It says, that it has 1 commit made. 
-The last commit was an addition(right angle bracket , >) and the last commit meesage was 'Create LOgger_V0.txt' .
+The last commit was an addition(right angle bracket , >) and the last commit meesage was 'Create Logger_V0.txt' .
 
+So , whats the status of our submodule.
+Lets check :
+```
+[Customer]$ cd TextFileLogger/
+[Customer/TextFileLogger]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
 
+nothing to commit, working tree clean
+```
+In the above example , we saw that , the status is only shown for the TextFileLogger submodule repo.
+Its because of a new *.git* file takes over the responsibilities.
+Yes , there is a file *.git* exists in the directory.
 
-  show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
+Lets see the contents of the *.git* file :
+```
+[Customer/TextFileLogger]$ cat .git
+gitdir: ../.git/modules/TextFileLogger
+```
+
+show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
 Modifying submodule , commiting mainmodule without commiting submodule  
 How to derefer a submodule  
