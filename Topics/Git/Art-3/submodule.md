@@ -143,7 +143,7 @@ Lets check the *config* file under *.git* folder.
 We can see that a **'[submodule "TextFileLogger"]'** section has been added to .git/config file.  
 
 Now , lets check the status of our *Customer* repo.
-```
+```bash
 [Customer]$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -158,7 +158,7 @@ We can see that , it also staged two files (.gitmodules , TextFileLogger)
 
 But what is this **.gitmodules** file ?  
 Lets print the contents of *.gitmodules* file from *Customer* repo :  
-```
+```bash
 [Customer]$ cat .gitmodules 
 [submodule "TextFileLogger"]
 	path = TextFileLogger
@@ -187,7 +187,7 @@ So , how do we see those information about chnages made to subrepos?
 Status, like logs and diffs, is limited to the active repo , not to submodules, which are nested repos. 
 So we need to set up a submodule-aware status for the repo OR globally:
 
-```
+```bash
 # Check the repo level submoduleSummary config 
 [Customer] $ git config status.submoduleSummary
 # Output :
@@ -210,7 +210,7 @@ false
 ```
 
 Lets try again **git status** command again :  
-```
+```bash
 [Customer]$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -231,7 +231,7 @@ The last commit was an addition(right angle bracket , >) and the last commit mee
 
 So , whats the status of our submodule.
 Lets check :
-```
+```bash
 [Customer]$ cd TextFileLogger/
 [Customer/TextFileLogger]$ git status
 On branch master
@@ -244,13 +244,13 @@ Its because of a new *.git* file takes over the responsibilities.
 Yes , there is a file *.git* exists in the directory.
 
 Lets see the contents of the *.git* file :
-```
+```bash
 [Customer/TextFileLogger]$ cat .git
 gitdir: ../.git/modules/TextFileLogger
 ```
 Git does not leave submodule repo directories inside the main repo’s working directory, but centralizes these in the container’s .git directory (inside .git/modules), and uses a gitdir reference in submodules.
 
-```
+```bash
 [Customer/TextFileLogger]$ cd ..
 [Customer]$ cd .git/modules/
 [Customer/.git/modules]$ ls
