@@ -209,6 +209,28 @@ false
 [Customer] $ git config --global status.submoduleSummary true
 ```
 
+Lets try again **git status** command again :  
+```
+[Customer]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitmodules
+	new file:   TextFileLogger
+
+Submodule changes to be committed:
+
+* TextFileLogger 0000000...cf93a5d (1):
+  > Create Logger_V0.txt
+```
+Now you see , we got the status related to submodule *TextFileLogger* also.  It says, that it has 1 commit made. 
+The last commit was an addition(right angle bracket , >) and the last commit meesage was 'Create LOgger_V0.txt' .
+
+
+
   show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
 Modifying submodule , commiting mainmodule without commiting submodule  
