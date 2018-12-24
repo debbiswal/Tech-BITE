@@ -280,6 +280,9 @@ Outpput :
 [Customer]$ git push
 ```
 
+![Customer](images/img2.png)  
+![TextFileLogger](images/img3.png)  
+
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
