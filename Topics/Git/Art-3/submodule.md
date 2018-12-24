@@ -247,8 +247,11 @@ Lets see the contents of the *.git* file :
 ```bash
 [Customer/TextFileLogger]$ cat .git
 gitdir: ../.git/modules/TextFileLogger
-```
-Git does not leave submodule repo directories inside the main repo’s working directory, but centralizes these in the container’s .git directory (inside .git/modules), and uses a gitdir reference in submodules.
+```  
+
+Git does not leave submodule repo directories inside the main repo’s working directory, but keep these in the main repo's .git directory (inside .git/modules), and uses a *gitdir* reference in submodules.
+
+Lets check the Customer/.git/modules folder :  
 
 ```bash
 [Customer/TextFileLogger]$ cd ..
@@ -259,6 +262,8 @@ TextFileLogger
 [Customer/.git/modules/TextFileLogger]$ ls
 branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs
 ```
+We can see here that , there is a folder *TextFileLogger* . And it has all ncessary files & folders to represent the *TextFileLogger* repo.  
+
 
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
