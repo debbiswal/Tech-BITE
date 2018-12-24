@@ -267,7 +267,18 @@ branches  config  description  HEAD  hooks  index  info  logs  objects  packed-r
 ```
 We can see here that , there is a folder *TextFileLogger* . And it has all ncessary files & folders to represent the *TextFileLogger* repo.  
 
-Now  , Lets push the changes 
+Now  , Lets push the changes :  
+```
+[Customer/.git/modules/TextFileLogger]$ cd ../../..
+[Customer]$ git commit -m "Adding the submodule TextFileLogger"
+Outpput :
+[master e6a4e13] Adding the submodule TextFileLogger
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 160000 TextFileLogger
+
+[Customer]$ git push
+```
 
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
