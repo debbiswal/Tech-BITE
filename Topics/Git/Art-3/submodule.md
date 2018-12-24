@@ -264,7 +264,9 @@ branches  config  description  HEAD  hooks  index  info  logs  objects  packed-r
 ```
 We can see here that , there is a folder *TextFileLogger* . And it has all ncessary files & folders to represent the *TextFileLogger* repo.  
 
+Now  , Lets push the changes 
 
+Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
 Modifying submodule , commiting mainmodule without commiting submodule  
