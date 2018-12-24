@@ -280,8 +280,8 @@ Outpput :
 [Customer]$ git push
 ```
 
-![Customer](images/img2.png)  
-![TextFileLogger](images/img3.png)  
+![Customer](images/img2.PNG)  
+![TextFileLogger](images/img3.PNG)  
 
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
