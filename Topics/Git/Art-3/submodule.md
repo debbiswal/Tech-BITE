@@ -1,5 +1,5 @@
 <style>
-/*pre code { background-color: transparent; }*/
+pre code { background-color: transparent; }
 </style>
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
 
