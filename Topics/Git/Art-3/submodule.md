@@ -443,7 +443,7 @@ What if , we have nested submodules .
 We can not go into each submodule folder and run the command 'git submodule init' and 'git submodule update'.
 We need a single command which will do all these for us.
 
-Here comes *--recursive* argument in help.
+Here comes *- -recursive* argument in help.
 Lets test it :
 ```bash
 # Lets go back to the root folder
