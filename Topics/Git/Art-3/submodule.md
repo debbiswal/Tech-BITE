@@ -406,7 +406,7 @@ Yes.. now all files are added.
 Lets check the *TextFileLogger* folder :  
 ```
 [CustomerClone]$ cd TextFileLogger/
-[CustomerClone/TextFileLogger] cat .git
+[CustomerClone/TextFileLogger]$ cat .git
 Output:
 gitdir: ../.git/modules/TextFileLogger
 ```
@@ -415,11 +415,88 @@ And this folder has the necessary meta information to make CustomerClone\TextFil
 
 But there is a problem with this approach of adding submodules , while cloning a repo.
 What if , we have nested submodules . 
-We can not go into each submodule folder and run the command 'git submodule init & git submodule update'
+We can not go into each submodule folder and run the command 'git submodule init' and 'git submodule update'.
+We need a single command which will do all these for us.
+
+Here comes *--recursive* argument in help.
+Lets test it :
+```
+# Lets go back to the root folder
+[CustomerClone/TextFileLogger] $ cd ../..
+
+# Delete the CustomerClone folder
+$ rm -rf CustomerClone
+
+# Now lets clone the Customer repo to CustomerClone folder
+$ git clone --recursive https://github.com/debbiswal/Customer.git CustomerClone
+Output :
+Cloning into 'CustomerClone'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 11 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
+Cloning into '/home/vagrant/my_Git_Articles/CustomerClone/TextFileLogger'...
+remote: Enumerating objects: 3, done.        
+remote: Counting objects: 100% (3/3), done.        
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0        
+Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'
+```
+We can see from the output of above command that , *TextFileLogger* is also cloned.
+
+Lets verify the folder structure :
+```
+$ cd CustomerClone
+[CustomerClone]$ tree
+Output :
+.
+├── Customer_V0.txt
+└── TextFileLogger
+    └── Logger_V0.txt
+
+1 directory, 2 files
+```
+Yes , we have all the required files.
+
+Now lets verify the configuration files , whether they have all the required information or not :
+```
+# Display the local configuration of CustomerClone repo
+[CustomerClone]$ cat .git/config
+Output :
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[submodule]
+	active = .
+[remote "origin"]
+	url = https://github.com/debbiswal/Customer.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "TextFileLogger"]
+	url = https://github.com/debbiswal/TextFileLogger.git
+
+# Display the .gitmodules from CustomerClone repo
+[CustomerClone]$ cat .gitmodules
+Output :
+[submodule "TextFileLogger"]
+	path = TextFileLogger
+	url = https://github.com/debbiswal/TextFileLogger.git
+
+# Display .git file from TextFileLogger submodule
+[CustomerClone]$ cd TextFileLogger/
+[CustomerClone/TextFileLogger]$ cat .git
+Output :
+gitdir: ../.git/modules/TextFileLogger
+```
+OK.. everything is fine now..
 
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
-How to clone a repo , issues with submodules while cloning , commands to be used , recursive  
 Modifying submodule , commiting mainmodule without commiting submodule  
 How to derefer a submodule  
 How to refere to different version  
