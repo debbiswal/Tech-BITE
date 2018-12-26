@@ -106,14 +106,17 @@ Unpacking objects: 100% (3/3), done.
 Now , if we check the Customer folder .. we can see that TextFileLogger folder is created with all the contents.  
 ```bash
 [Customer]$ ls
+Output :
 Customer_V0.txt  TextFileLogger
 
 [Customer]$ ls TextFileLogger
+Output :
 Logger_V0.txt
 
 # If tree command is not installed , then you have to install it.
 # As my ststem is CENTOS , I have used the command 'sudo yum -y install tree'
 [Customer]$ tree
+Output :
 .
 ├── Customer_V0.txt
 └── TextFileLogger
@@ -125,6 +128,7 @@ Adding submodule , added some settings in our local configuration of *Customer* 
 Lets check the *config* file under *.git* folder.  
 ```bash
 [Customer]$ cat .git/config
+Output :
 [core]
 	repositoryformatversion = 0
 	filemode = true
@@ -145,6 +149,7 @@ We can see that a **'[submodule "TextFileLogger"]'** section has been added to .
 Now , lets check the status of our *Customer* repo.
 ```bash
 [Customer]$ git status
+Output :
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -160,6 +165,7 @@ But what is this **.gitmodules** file ?
 Lets print the contents of *.gitmodules* file from *Customer* repo :  
 ```bash
 [Customer]$ cat .gitmodules 
+Output :
 [submodule "TextFileLogger"]
 	path = TextFileLogger
 	url = https://github.com/debbiswal/TextFileLogger.git
@@ -213,6 +219,7 @@ false
 Lets try again **git status** command again :  
 ```bash
 [Customer]$ git status
+Output :
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -235,6 +242,7 @@ Lets check :
 ```bash
 [Customer]$ cd TextFileLogger/
 [Customer/TextFileLogger]$ git status
+Output :
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -247,6 +255,7 @@ Yes , there is a file *.git* exists in the directory.
 Lets see the contents of the *.git* file :
 ```bash
 [Customer/TextFileLogger]$ cat .git
+Output :
 gitdir: ../.git/modules/TextFileLogger
 ```  
 
@@ -258,9 +267,11 @@ Lets check the Customer/.git/modules folder :
 [Customer/TextFileLogger]$ cd ..
 [Customer]$ cd .git/modules/
 [Customer/.git/modules]$ ls
+Output :
 TextFileLogger
 [Customer/.git/modules]$ cd TextFileLogger/
 [Customer/.git/modules/TextFileLogger]$ ls
+Output :
 branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs
 ```
 We can see here that , there is a folder *TextFileLogger* . And it has all ncessary files & folders to represent the *TextFileLogger* repo.  
@@ -329,6 +340,7 @@ And thats why while cloning , submodules did not get cloned.
 Lets verify.. whatever I have told ..
 ```bash
 [CustomerClone]$ cat .git/config
+Output :
 [core]
 	repositoryformatversion = 0
 	filemode = true
@@ -346,6 +358,7 @@ We can see here that , the repo CustomerClone does not have the submodule inform
 So , whether .gitmodules file has the information ?
 ```bash
 [CustomerClone]$ cat .gitmodules
+Output :
 [submodule "TextFileLogger"]
 	path = TextFileLogger
 	url = https://github.com/debbiswal/TextFileLogger.git
@@ -394,6 +407,7 @@ Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90
 Lets check the folder structure , to see whether all files & folders are added properly
 ```bash
 [CustomerClone]$ tree
+Output :
 .
 ├── Customer_V0.txt
 └── TextFileLogger
