@@ -427,6 +427,15 @@ gitdir: ../.git/modules/TextFileLogger
 Yes, *TextFileLogger* folder has a .git file , which contains the reference to CustomerClone/.git/modules/TextFileLogger folder.
 And this folder has the necessary meta information to make CustomerClone\TextFileLogger as a stand-alone repo on its own(like in out Customer repo).  
 
+We can do the above two steps in a single command also :  
+```bash
+[CustomerClone]$ git submodule update --init
+Output :
+Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
+Cloning into 'CustomerClone/TextFileLogger'...
+Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'
+```  
+
 But there is a problem with this approach of adding submodules , while cloning a repo.
 What if , we have nested submodules . 
 We can not go into each submodule folder and run the command 'git submodule init' and 'git submodule update'.
