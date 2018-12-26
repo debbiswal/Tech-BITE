@@ -178,7 +178,8 @@ This is what .gitmodules is for.
 We will see verry soon that how other contributors will use this *.gitsubmodules* file , to setup sobmodules in their repo.  
 
 Now , lets come back to our *Customer* repo.  
-If you have noticed **git status** command output , we saw that two files (.gitsubmodules,TextFileLogger) has been added.
+If you have noticed **git status** command output , we saw that two files (.gitsubmodules,TextFileLogger) has been added.  
+
 But , *TextFileLogger* repo , is added to our *Customer* repo as subrepo.
 So any changes made to *TextFileLogger* repo should be visible to us.
 But we did not see , any information related to *TextFileLogger* repo.
@@ -293,21 +294,128 @@ Submodules information is only saved in .gitmodules file , which is pushed to re
 We will discuss these things in next section.  
 
 ### Cloning a repo with submodule
+Till now , we have created a repo and added a submodule to it.  
+Now , lets try to clone the repo into a different folder , and see whether we are getting back the submodules or not.  
+
 Clone the Customer repo into a different folder
 ```
-cat .git/config
-cat .gitmodules
-# initialize submodule
-git submodule init
-Output : ????
-cat .git/config
-# now we need to fetch the submodule codebase 
-git submodule update
-Outpput : ????
+# Clone the Customer repo into another folder .. say CustomerClone
+$ git clone https://github.com/debbiswal/Customer.git CustomerClone
+Output :
+Cloning into 'CustomerClone'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 11 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), done.
 
-#now we have submodule codebase
-ls TextFileLogger
+# Get inside the folder
+$ cd CustomerClone
+
+# Print the folder structure
+[CustomerClone]$ tree
+Output :
+.
+├── Customer_V0.txt
+└── TextFileLogger
+
+1 directory, 1 file
+```  
+We can see here that , only *TextFileLogger* folder is created , but its empty. There should be a file Logger_V0.txt. Which is missing. As we can see from the output of *git clone* command , it was successfully executed , so there is no chance that clone is failed for any reason.  
+
+So , there could be a possibility that , Customer repo does not have information about its submodules .
+And thats why while cloning , submodules did not get cloned.
+
+Lets verify.. whatever I have told ..
 ```
+[CustomerClone]$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/debbiswal/Customer.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+```
+We can see here that , the repo CustomerClone does not have the submodule information in its local configuration.
+
+So , whether .gitmodules file has the information ?
+```
+[CustomerClone]$ cat .gitmodules
+[submodule "TextFileLogger"]
+	path = TextFileLogger
+	url = https://github.com/debbiswal/TextFileLogger.git
+```
+Yes it has.
+
+So ,How do we get the *TextFileLogger* submodule added to our *CustometClone* repo?
+* First we have to update the *CustomerClone* repo's local configuration with *TextFileLogger* submodule information
+```
+# Update/Initialize submodule information in local configuration
+[CustomerClone]$ git submodule init
+Output :
+Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
+```
+
+Lets verify , whether local configuration has been updated with submodule information or not :
+```
+[CustomerClone]$ cat .git/config
+Output :
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/debbiswal/Customer.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "TextFileLogger"]
+	active = true
+	url = https://github.com/debbiswal/TextFileLogger.git
+
+```  
+We can see that *TextFileLogger* submodule information has been added to .git/config file.
+
+* Update the *CustomerClone* repo from *remote* again.
+```
+[CustomerClone]$ git submodule update
+Output :
+Cloning into 'CustomerClone/TextFileLogger'...
+Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'
+```
+
+Lets check the folder structure , to see whether all files & folders are added properly
+```
+[CustomerClone]$ tree
+.
+├── Customer_V0.txt
+└── TextFileLogger
+    └── Logger_V0.txt
+
+1 directory, 2 files
+```
+Yes.. now all files are added.
+
+Lets check the *TextFileLogger* folder :  
+```
+[CustomerClone]$ cd TextFileLogger/
+[CustomerClone/TextFileLogger] cat .git
+Output:
+gitdir: ../.git/modules/TextFileLogger
+```
+Yes, *TextFileLogger* folder has a .git file , which contains the reference to CustomerClone/.git/modules/TextFileLogger folder.
+And this folder has the necessary meta information to make CustomerClone\TextFileLogger as a stand-alone repo on its own(like in out Customer repo).  
+
+But there is a problem with this approach of adding submodules , while cloning a repo.
+What if , we have nested submodules . 
+We can not go into each submodule folder and run the command 'git submodule init & git submodule update'
 
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
