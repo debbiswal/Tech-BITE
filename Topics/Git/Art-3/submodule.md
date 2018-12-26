@@ -332,7 +332,9 @@ Output :
 
 1 directory, 1 file
 ```  
-We can see here that , only *TextFileLogger* folder is created , but its empty. There should be a file Logger_V0.txt. Which is missing. As we can see from the output of *git clone* command , it was successfully executed , so there is no chance that clone is failed for any reason.  
+We can see here that , only *TextFileLogger* folder is created , but its empty. There should be a file Logger_V0.txt. Which is missing.
+
+As we can see from the output of *git clone* command , it was successfully executed , so there is no chance that clone is failed for any reason.  
 
 So , there could be a possibility that , Customer repo does not have information about its submodules .
 And thats why while cloning , submodules did not get cloned.
