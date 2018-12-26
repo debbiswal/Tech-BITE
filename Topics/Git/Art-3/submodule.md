@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
 
-## Submodules - I {DRAFT VERSION}  
+## Git Submodules - I 
 
 What is a Submodule?  
 A submodule is an external git repository , which we refer and use in our repository as a sub-repository.  
