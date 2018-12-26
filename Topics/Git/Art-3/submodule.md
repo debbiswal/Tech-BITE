@@ -44,7 +44,7 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 Lets start with creating the required repositories :  
 
 Create TextFileLogger repo with some dummy content :  
-```shell
+```bash
 # Create a Github remote repository from CLI
 curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
 
@@ -266,7 +266,7 @@ branches  config  description  HEAD  hooks  index  info  logs  objects  packed-r
 We can see here that , there is a folder *TextFileLogger* . And it has all ncessary files & folders to represent the *TextFileLogger* repo.  
 
 Now  , Lets push the changes :  
-```
+```bash
 [Customer/.git/modules/TextFileLogger]$ cd ../../..
 [Customer]$ git commit -m "Adding the submodule TextFileLogger"
 Outpput :
@@ -298,7 +298,7 @@ Till now , we have created a repo and added a submodule to it.
 Now , lets try to clone the repo into a different folder , and see whether we are getting back the submodules or not.  
 
 Clone the Customer repo into a different folder
-```
+```bash
 # Clone the Customer repo into another folder .. say CustomerClone
 $ git clone https://github.com/debbiswal/Customer.git CustomerClone
 Output :
@@ -327,7 +327,7 @@ So , there could be a possibility that , Customer repo does not have information
 And thats why while cloning , submodules did not get cloned.
 
 Lets verify.. whatever I have told ..
-```
+```bash
 [CustomerClone]$ cat .git/config
 [core]
 	repositoryformatversion = 0
@@ -344,7 +344,7 @@ Lets verify.. whatever I have told ..
 We can see here that , the repo CustomerClone does not have the submodule information in its local configuration.
 
 So , whether .gitmodules file has the information ?
-```
+```bash
 [CustomerClone]$ cat .gitmodules
 [submodule "TextFileLogger"]
 	path = TextFileLogger
@@ -354,7 +354,7 @@ Yes it has.
 
 So ,How do we get the *TextFileLogger* submodule added to our *CustometClone* repo?
 * First we have to update the *CustomerClone* repo's local configuration with *TextFileLogger* submodule information
-```
+```bash
 # Update/Initialize submodule information in local configuration
 [CustomerClone]$ git submodule init
 Output :
@@ -362,7 +362,7 @@ Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) reg
 ```
 
 Lets verify , whether local configuration has been updated with submodule information or not :
-```
+```bash
 [CustomerClone]$ cat .git/config
 Output :
 [core]
@@ -384,7 +384,7 @@ Output :
 We can see that *TextFileLogger* submodule information has been added to .git/config file.
 
 * Update the *CustomerClone* repo from *remote* again.
-```
+```bash
 [CustomerClone]$ git submodule update
 Output :
 Cloning into 'CustomerClone/TextFileLogger'...
@@ -392,7 +392,7 @@ Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90
 ```
 
 Lets check the folder structure , to see whether all files & folders are added properly
-```
+```bash
 [CustomerClone]$ tree
 .
 ├── Customer_V0.txt
@@ -404,7 +404,7 @@ Lets check the folder structure , to see whether all files & folders are added p
 Yes.. now all files are added.
 
 Lets check the *TextFileLogger* folder :  
-```
+```bash
 [CustomerClone]$ cd TextFileLogger/
 [CustomerClone/TextFileLogger]$ cat .git
 Output:
@@ -420,7 +420,7 @@ We need a single command which will do all these for us.
 
 Here comes *--recursive* argument in help.
 Lets test it :
-```
+```bash
 # Lets go back to the root folder
 [CustomerClone/TextFileLogger] $ cd ../..
 
@@ -446,7 +446,7 @@ Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90
 We can see from the output of above command that , *TextFileLogger* is also cloned.
 
 Lets verify the folder structure :
-```
+```bash
 $ cd CustomerClone
 [CustomerClone]$ tree
 Output :
@@ -460,7 +460,7 @@ Output :
 Yes , we have all the required files.
 
 Now lets verify the configuration files , whether they have all the required information or not :
-```
+```bash
 # Display the local configuration of CustomerClone repo
 [CustomerClone]$ cat .git/config
 Output :
