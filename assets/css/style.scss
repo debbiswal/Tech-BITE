@@ -1,3 +1,5 @@
 ---
 ---
 @import "{{ site.theme }}";
+/* Changing the backgroud color of code from white to transparent in Architect theme */
+pre code { background-color: transparent; }
