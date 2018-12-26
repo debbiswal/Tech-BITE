@@ -365,7 +365,7 @@ Output :
 ```
 Yes it has.
 
-So ,How do we get the *TextFileLogger* submodule added to our *CustometClone* repo?
+**So ,How do we get the *TextFileLogger* submodule added to our *CustometClone* repo?**
 * First we have to update the *CustomerClone* repo's local configuration with *TextFileLogger* submodule information
 ```bash
 # Update/Initialize submodule information in local configuration
