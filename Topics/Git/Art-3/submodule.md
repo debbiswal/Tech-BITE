@@ -3,12 +3,12 @@ pre code { background-color: transparent; }
 </style>
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
 
-## Submodule {DRAFT VERSION}  
+## Submodules - I {DRAFT VERSION}  
 
 What is a Submodule?  
 A submodule is an external git repository , which we refer and use in our repository as a sub-repository.  
 
-In simple terms , git submodules as shared libraries or plugins , which we use in our project , by refering them  to reuse the existing code.  
+In simple terms , git submodules are shared libraries or plugins , which we use in our project , by refering them  to reuse the existing code.  
 
 These sub modules exists as an independent repo within our main(parent) repo.  
 As submodules are independent repo on its own ,we also can modify and commit changes to these submodules.  
@@ -25,11 +25,11 @@ Every time , I need to check for updates happning on *TextFileLogger* and copy p
 
 So in summary , the problems with this approach are:  
 
-* The original reference is lost. When we copy and paste code, there’s no reference back to the original spot where the code was found, and it’s easily forgotten about.  
+* The original reference is lost. When we copy and paste code, there’s no reference back to the original spot where the code was found .  
 
 * Updates aren’t easily integrated. When changes are made to the original code we copied, it becomes very hard to track what’s changed so we can apply those changes back to our cut and pasted code. Some third party libraries can have thousands of lines of code, spread across hundreds of files, and it’s impossible to keep things synchronized manually.  
 
-* Version information isn’t maintained. Proper software development practices call for versioning releases of our code. We will find this consistent in third party libraries we use in our projects. When we copy and paste code, there’s no easy way to know we are using version 1.0.0 of library *TextFileLogger*  and how will we remember to update our code when version 1.0.1 is released?
+* Version information isn’t maintained. When we copy and paste code, there’s no easy way to know we are using version 1.0.0 of library *TextFileLogger*  and how will we remember to update our code when version 1.0.1 is released?
 
 The simplest solution , is to refer *TextFileLogger* repo from our repo. And pull/fetch the *TextFileLogger* repo when-ever required.
 
@@ -279,9 +279,35 @@ Outpput :
 
 [Customer]$ git push
 ```
-
+Now if we see the repository in github website , we can see that the *TextFileLogger* is saved as a reference with specific commit id.  
+There is no physical folder exists for *TextFileLogger* inside *Customer* repo.  
+See the below pic :  
 ![Customer](images/img2.PNG)  
+
+If we click the *TextFileLogger* link in *Customer* repo , we will be redirected to *TextFileLogger* repo with specific commit id.  
+See the below pic :  
 ![TextFileLogger](images/img3.PNG)  
+
+But do remember that , the information about submodules  , which was added to .git/config file  , never pushed to remote.  
+Submodules information is only saved in .gitmodules file , which is pushed to remote.  
+We will discuss these things in next topic.  
+
+### Cloning a repo with submodule
+Clone the Customer repo into a different folder
+```
+cat .git/config
+cat .gitmodules
+# initialize submodule
+git submodule init
+Output : ????
+cat .git/config
+# now we need to fetch the submodule codebase 
+git submodule update
+Outpput : ????
+
+#now we have submodule codebase
+ls TextFileLogger
+```
 
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
