@@ -1,6 +1,3 @@
-<style>
-pre code { background-color: transparent; }
-</style>
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
 
 ## Submodules - I {DRAFT VERSION}  
