@@ -278,16 +278,19 @@ Outpput :
 ```
 Now if we see the repository in github website , we can see that the *TextFileLogger* is saved as a reference with specific commit id.  
 There is no physical folder exists for *TextFileLogger* inside *Customer* repo.  
+
 See the below pic :  
 ![Customer](images/img2.PNG)  
 
 If we click the *TextFileLogger* link in *Customer* repo , we will be redirected to *TextFileLogger* repo with specific commit id.  
+
 See the below pic :  
 ![TextFileLogger](images/img3.PNG)  
 
 But do remember that , the information about submodules  , which was added to .git/config file  , never pushed to remote.  
+
 Submodules information is only saved in .gitmodules file , which is pushed to remote.  
-We will discuss these things in next topic.  
+We will discuss these things in next section.  
 
 ### Cloning a repo with submodule
 Clone the Customer repo into a different folder
