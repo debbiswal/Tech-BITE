@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#api-gateway)
 
-# Transient Fault - I #  
+## Transient Fault - I #  
 
 I my [previous article](../Art-1/apigateway_replaceby_functionality.html) , I discussed basics about Monolith Service , Microservice, API Gateway and Replace-by feature of it.  
 Today , I will talk about Transient fault and how API Gateway handles it. 
