@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#api-gateway)
 
-# Replace-by functionality Of API Gateway
+## Replace-by functionality Of API Gateway
 
 Hi ,  
 Today I came across an interesting feature of API-GATEWAY. The feature is known as Replace-by functionality.  
