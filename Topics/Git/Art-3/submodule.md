@@ -529,6 +529,7 @@ HEAD detached at cf93a5d
 nothing to commit, working tree clean
 ```
 Also we saw that , *TextFileLogger* repo has the detached head as commit id(SHA1 hash) **cf93a5d** .
+Please refer to the [Detached Head in Git](https://github.com/debbiswal/Tech-BITE/blob/master/Topics/Git/Art-5/detachedhead.md) article for more information.  
 
 OK.. , Everything is fine now..
 
@@ -536,7 +537,7 @@ So .. in this article we learned about :
 * How to add a submodule to a repository
 * How to clone a repository with submodules
 
-In next article I will discuss more about it.
+In next article [Sunmodule-II]() I will discuss more on sumbodules.
 
 Happy Learning :)  
 
