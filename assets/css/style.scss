@@ -28,14 +28,3 @@ pre {
     color: #2879d0;
     font-weight: normal;
 }
-
-/*Override the main content placement*/
-.inner {
-    position: relative;
-    width: 1040px;
-    margin: 0 auto;
-}
-#main-content {
-    float: left;
-    width: 990px;
-}
