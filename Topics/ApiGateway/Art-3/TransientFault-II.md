@@ -1,5 +1,7 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#api-gateway)
 
+## Circuit Breaker pattern  
+
 In my last article[Retry Pattern | Transient Fault - I](../Art-2/TransientFault-I.html)  I discussed about :  
 * What is Transient fault ?  
 * Dealing transient faults with Simple Retry pattern  
