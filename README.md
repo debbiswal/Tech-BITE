@@ -123,7 +123,8 @@
 [top](#topics)  
 
 ### Git
-* [Submodule](Topics/Git/Art-3/submodule.md)
+* [Submodule-I](Topics/Git/Art-3/submodule.md)
+* [Submodule-II](Topics/Git/Art-4/submodule.md)
 * Subtree
 * [Upgrading GIT in CENTOS from source code](Topics/Git/Art-2/upgrade_git_in_centos.md)
 * [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
