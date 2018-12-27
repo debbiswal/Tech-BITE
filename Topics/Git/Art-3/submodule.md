@@ -522,7 +522,7 @@ Yes .git/config and .gitmodules file has information about *TextFileLogger*.
 And TextFileLogger/.git file has the gitdir reference to *TextFileLogger* repository meta data.
 
 Lets check the status of *TextFileLogger* submodule : 
-```
+```bash
 # Display the status of submodule repo
 [CustomerClone/TextFileLogger]$ git status
 HEAD detached at cf93a5d
