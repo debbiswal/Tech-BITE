@@ -1,3 +1,6 @@
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
+
+## Git Submodules - II {Draft Version}
 
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
@@ -18,3 +21,6 @@ Parallelized fetching,shallow-submodules(https://dzone.com/articles/the-2016-git
 * It’s almost impossible to track the entire project at a time when using submodules. Changes in the submodules aren’t tracked by the main module and must change the current working directory to look at the changes.  
 * It’s hard to use IDEs when using Git Submodules and developers are forced to use the shell to maintain consistency.  
 
+Happy Learning :)  
+
+[Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
