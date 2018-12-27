@@ -521,7 +521,16 @@ gitdir: ../.git/modules/TextFileLogger
 Yes .git/config and .gitmodules file has information about *TextFileLogger*.
 And TextFileLogger/.git file has the gitdir reference to *TextFileLogger* repository meta data.
 
-Everything is fine now..
+Lets check the status of *TextFileLogger* submodule : 
+```
+# Display the status of submodule repo
+[CustomerClone/TextFileLogger]$ git status
+HEAD detached at cf93a5d
+nothing to commit, working tree clean
+```
+Also we saw that , *TextFileLogger* repo has the detached head as commit id(SHA1 hash) **cf93a5d** .
+
+OK.. , Everything is fine now..
 
 So .. in this article we learned about :
 * How to add a submodule to a repository
