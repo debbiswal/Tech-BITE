@@ -537,7 +537,7 @@ So .. in this article we learned about :
 * How to add a submodule to a repository
 * How to clone a repository with submodules
 
-In next article [Sunmodule-II](https://github.com/debbiswal/Tech-BITE/blob/master/Topics/Git/Art-4/submodule2.md) I will discuss more on sumbodules.
+In next article [Git Submodule-II](https://github.com/debbiswal/Tech-BITE/blob/master/Topics/Git/Art-4/submodule2.md) I will discuss more on sumbodules.
 
 Happy Learning :)  
 
