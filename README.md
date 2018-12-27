@@ -132,6 +132,10 @@
 * [Github pages with Jekyll](https://jekyllrb.com/docs/github-pages/) (external link)
 * [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/) (external link)
 * Using GitAhead tool
+* How to create Github pages
+* How to create a Gist
+* How to use gist in Github pages
+* How to customize CSS in github pages
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
   * [How to add a remote Git repo from Command line](Topics/Git/Art-1/useful_commands.md#how-to-add-a-remote-git-repo-from-command-line)
   * [Delete git reference from a folder and sub folder](Topics/Git/Art-1/useful_commands.md#delete-git-reference-from-a-folder-and-sub-folder)
