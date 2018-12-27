@@ -123,6 +123,7 @@
 [top](#topics)  
 
 ### Git
+* [Detached head in Git](Topics/Git/Art-5/detachedhead.md)
 * [Submodule-I](Topics/Git/Art-3/submodule.md)
 * [Submodule-II](Topics/Git/Art-4/submodule2.md)
 * Subtree
