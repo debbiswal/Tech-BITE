@@ -12,28 +12,26 @@ Lets start ..
 ### Getting an update from Submodule repo
 ```bash
 # Add a dummy file Logger_V1.txt
-
 [TextFileLogger]$ echo "Logger_V1" >> Logger_V1.txt
 [TextFileLogger]$ git add Logger_V1.txt
 [TextFileLogger]$ git commit -m "added Logger_V1.txt"
 Output :
-[master 4027d5c] added Logger_V1.txt
+[master 8c29b0f] added Logger_V1.txt
  1 file changed, 1 insertion(+)
  create mode 100644 Logger_V1.txt
  
- # Add a dummy file Logger_V2.txt
-
+# Add a dummy file Logger_V2.txt
 [TextFileLogger]$ echo "Logger_V2" >> Logger_V2.txt
 [TextFileLogger]$ git add Logger_V2.txt
 [TextFileLogger]$ git commit -m "added Logger_V2.txt"
 Output :
-[master f1118c0] added Logger_V2.txt
+[master 7125a58] added Logger_V2.txt
  1 file changed, 1 insertion(+)
  create mode 100644 Logger_V2.txt
- 
+
+# Push to master branch
+[TextFileLogger]$ git push
 ```
-
-
 
 Pending .... =>
 Adding submodule from a specific branch or commit
