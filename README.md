@@ -52,8 +52,8 @@
     <td class="tg-baqh"><a href="#winscp">WinSCP</a></td>
   </tr>
   <tr>
-    <td class="tg-baqh"><a href="#wrk">WRK</a></td>
-    <td class="tg-baqh">-</td>
+    <td class="tg-baqh"><a href="#webapi">WebAPI</a></td>    
+    <td class="tg-baqh"><a href="#wrk">WRK</a></td>    
     <td class="tg-baqh">-</td>
   </tr>
 </table>
@@ -83,7 +83,12 @@
 [top](#topics)  
 
 ### Cloud Design Pattern
-* TO BE DONE
+* Cache Aside Pattern
+* Circuit Breaker Pattern
+* Compensating Transaction Pattern
+* Pipes and Filters Pattern
+* Command and Query Responsibility Segregation (CQRS) Pattern
+* Event Sourcing Pattern
 
 [top](#topics)  
 
@@ -294,6 +299,11 @@
 
 ### VS Code
 * [YAML Support for Visual Studio Code provided by Red Hat, with built-in Kubernetes and Kedge](Topics/VSCode/Art-1/yaml_support.md)
+
+[top](#topics)  
+
+### WebAPI
+* To be done
 
 [top](#topics)  
 
