@@ -19,7 +19,15 @@ You are in 'detached HEAD' state...
 ```  
 
 This exact state - when a specific commit is checked out instead of a branch - is what's called a "detached HEAD".  
-![detached_head](images/img1.png)  
+
+**Head at master branch**
+![head_at_master_branch](images/img1.png)  
+
+**Head Detached after doing checkout to a specic commit SHA1**  
+![detached_head](images/img2.png)  
+
+**Detached head moved to new commit SHA1**  
+![detached_head moved to new commit](images/img3.png)  
 
 **The problem with a detached HEAD**  
 The HEAD pointer in Git determines our current working revision (and thereby the files that are placed in our project's working directory).  
