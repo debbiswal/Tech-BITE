@@ -1,7 +1,20 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
 
 ## Git Submodules - II {Draft Version}
+In my previous article [Git Submodule-I](../Art-3/submodule.md) , we have discussed the below points :
+* How to add a submodule to a repo
+* Cloning a repo with its submodules
 
+Today I will discuss more points...
+
+Lets start .. 
+
+## Getting an update from Submodule repo
+
+
+
+
+Pending .... =>
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
 Modifying submodule , commiting mainmodule without commiting submodule  
