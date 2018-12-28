@@ -9,8 +9,29 @@ Today I will discuss more points...
 
 Lets start .. 
 
-## Getting an update from Submodule repo
+### Getting an update from Submodule repo
+```bash
+# Add a dummy file Logger_V1.txt
 
+[TextFileLogger]$ echo "Logger_V1" >> Logger_V1.txt
+[TextFileLogger]$ git add Logger_V1.txt
+[TextFileLogger]$ git commit -m "added Logger_V1.txt"
+Output :
+[master 4027d5c] added Logger_V1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Logger_V1.txt
+ 
+ # Add a dummy file Logger_V2.txt
+
+[TextFileLogger]$ echo "Logger_V2" >> Logger_V2.txt
+[TextFileLogger]$ git add Logger_V2.txt
+[TextFileLogger]$ git commit -m "added Logger_V2.txt"
+Output :
+[master f1118c0] added Logger_V2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Logger_V2.txt
+ 
+```
 
 
 
