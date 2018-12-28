@@ -10,6 +10,19 @@ Today I will discuss more points...
 Lets start .. 
 
 ### Getting an update from Submodule repo
+
+Lets first check the *TextFileLogger* repo and see to which commit SHA1 , the head points 
+```
+# Get into the TextFileLogger repo
+$ cd TextFileLogger
+
+# Print the log of repo
+[TextFileLogger]$ git log --oneline
+cf93a5d (HEAD -> master, origin/master, origin/HEAD) Create Logger_V0.txt
+```
+We can see that , the HEAD is as master . And the commit SHA1 is **cf93a5d**
+
+Lets add few files to *TextFileLogger* repo :
 ```bash
 # Add a dummy file Logger_V1.txt
 [TextFileLogger]$ echo "Logger_V1" >> Logger_V1.txt
@@ -32,6 +45,15 @@ Output :
 # Push to master branch
 [TextFileLogger]$ git push
 ```
+
+Now lets see the log :
+```
+[TextFileLogger]$ git log --oneline
+7125a58 (HEAD -> master, origin/master, origin/HEAD) added Logger_V2.txt
+8c29b0f added Logger_V1.txt
+cf93a5d Create Logger_V0.txt
+```
+
 
 Pending .... =>
 Adding submodule from a specific branch or commit
