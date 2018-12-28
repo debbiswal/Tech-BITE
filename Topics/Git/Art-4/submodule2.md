@@ -109,9 +109,35 @@ HEAD is now at 8c29b0f added Logger_V1.txt
 HEAD is now at cf93a5d Create Logger_V0.txt
 
 # verify the HEAD position
-[vagrant@nodeapi TextFileLogger]$ git log --oneline
+[Customer/TextFileLogger]$ git log --oneline
 cf93a5d (HEAD -> master) Create Logger_V0.txt
 ```
+OK.. all set now.
+Lets update the TextFileLogger submodule to a specific commit
+```
+[Customer/TextFileLogger]$ git fetch
+
+# get the SHA1 details from origin
+[Customer/TextFileLogger]$ git log --oneline origin/master
+7125a58 (origin/master, origin/HEAD) added Logger_V2.txt
+8c29b0f added Logger_V1.txt
+cf93a5d (HEAD -> master) Create Logger_V0.txt
+
+# checkout to SHA1 8c29b0f , to get Logger_V1.txt commit
+[Customer/TextFileLogger]$ git checkout -q 8c29b0f
+
+# check the status 
+[Customer/TextFileLogger]$ git status
+HEAD detached at 8c29b0f
+nothing to commit, working tree clean
+
+# check the log
+[Customer/TextFileLogger]$ git log --oneline
+8c29b0f (HEAD) added Logger_V1.txt
+cf93a5d (master) Create Logger_V0.txt
+```
+
+
 
 Pending .... =>
 Adding submodule from a specific branch or commit
