@@ -85,10 +85,17 @@
 ### Cloud Design Pattern
 * Cache Aside Pattern
 * Circuit Breaker Pattern
-* Compensating Transaction Pattern
-* Pipes and Filters Pattern
 * Command and Query Responsibility Segregation (CQRS) Pattern
+* Compensating Transaction Pattern
+* Competing Consumers Pattern
 * Event Sourcing Pattern
+* Pipes and Filters Pattern
+* Priority Queue Pattern
+* Queue-based Load Leveling Pattern
+* Runtime Reconfiguration Pattern
+* External Configuration Store Pattern
+* Scheduler Agent Supervisor Pattern
+* Sharding Pattern
 
 [top](#topics)  
 
