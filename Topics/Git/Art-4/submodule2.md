@@ -95,7 +95,7 @@ What if we want to get a specific commit .. say the commit for **Logger_V1.txt**
 Then we have to checkout to a specific commit SHA1.
 
 But first we have to revert back the pull chnages :
-```
+```bash
 # Check the HEAD position
 [Customer/TextFileLogger]$ git log --oneline
 7125a58 (HEAD -> master, origin/master, origin/HEAD) added Logger_V2.txt
@@ -114,7 +114,7 @@ cf93a5d (HEAD -> master) Create Logger_V0.txt
 ```
 OK.. all set now.
 Lets update the TextFileLogger submodule to a specific commit
-```
+```bash
 [Customer/TextFileLogger]$ git fetch
 
 # get the SHA1 details from origin
