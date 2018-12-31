@@ -139,9 +139,7 @@
 * [Detached head in Git](Topics/Git/Art-5/detachedhead.md)
 * Submodule
   * [Submodule-I](Topics/Git/Art-3/submodule.md)
-    * What is Submodule
-    * Adding a Submodule
-    * Cloning a repo with submodule
+    * What is a Submodule , Adding a Submodule , Cloning a repo with submodule
   * [Submodule-II](Topics/Git/Art-4/submodule2.md)
     * Getting an update from Submodule repo
 * Subtree
