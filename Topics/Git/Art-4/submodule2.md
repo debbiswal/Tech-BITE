@@ -95,7 +95,7 @@ What if we want to get a specific commit .. say the commit for **Logger_V1.txt**
 Then we have to checkout to a specific commit SHA1.
 
 But first we have to revert back the pull chnages :
-```bash {.line-numbers}
+```bash
 # Check the HEAD position
 [Customer/TextFileLogger]$ git log --oneline
 7125a58 (HEAD -> master, origin/master, origin/HEAD) added Logger_V2.txt
