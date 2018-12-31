@@ -133,9 +133,7 @@ nothing to commit, working tree clean
 # check the log
 [Customer/TextFileLogger]$ git log --oneline
 8c29b0f (HEAD) added Logger_V1.txt
-cf93a5d (master) Create Logger_V0.txt
-</code>
-</pre>
+cf93a5d (master) Create Logger_V0.txt</code></pre>
 
 
 
