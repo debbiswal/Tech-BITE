@@ -163,16 +163,14 @@ The display of change details for submoule   is enabled by our *status.submodule
 It explicitly states the introduced commits (as they use a right-pointing angle bracket >) since our last parent repo (*Customer*) commit that had touched the submodule.
 
 ## The diff
-<pre><code>
-[Customer]$ git diff
+<pre><code>[Customer]$ git diff
 <b>diff --git a/TextFileLogger b/TextFileLogger
 index cf93a5d..8c29b0f 160000
 --- a/TextFileLogger
  +++ b/TextFileLogger</b>
-<span style="color:cyan">@@ -1 +1 @@</span>
+<span style="color:magenta">@@ -1 +1 @@</span>
 <span style="color:red">-Subproject commit cf93a5d641a1af6c558762935e8d544c90308e0e</span>
-<span style="color:green">+Subproject commit 8c29b0f69bc187441b1fba9627e0060243ba4846</span>
- </code></pre>
+<span style="color:green">+Subproject commit 8c29b0f69bc187441b1fba9627e0060243ba4846</span> </code></pre>
 
 Pending .... =>
 Adding submodule from a specific branch or commit
