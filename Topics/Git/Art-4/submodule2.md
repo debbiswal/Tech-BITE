@@ -158,7 +158,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 </code></pre>
 We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
 
-The display of change details for submoule   is enabled by our *status.submoduleSummary = true* setting  , which we did earlier. 
+The display of change details for submoule   is enabled by our *status.submoduleSummary = true* setting  , which we did earlier.  
+
 It explicitly states the introduced commits (as they use a right-pointing angle bracket >) since our last parent repo (*Customer*) commit that had touched the submodule.
 
 
