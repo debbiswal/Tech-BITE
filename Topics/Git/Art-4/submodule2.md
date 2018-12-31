@@ -127,8 +127,9 @@ cf93a5d (HEAD -> master) Create Logger_V0.txt
 [Customer/TextFileLogger]$ git checkout -q 8c29b0f
 
 # check the status 
-[Customer/TextFileLogger]$ git status```
-**HEAD detached at 8c29b0f**
+[Customer/TextFileLogger]$ git status
+```
+**```HEAD detached at 8c29b0f```**
 ```nothing to commit, working tree clean
 
 # check the log
