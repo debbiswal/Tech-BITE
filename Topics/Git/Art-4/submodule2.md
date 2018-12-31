@@ -153,7 +153,7 @@ Changes not staged for commit:
 Submodules changed but not updated:
 
 * TextFileLogger cf93a5d...8c29b0f (1):
-  <b>  added Logger_V1.txt</b>
+  <b> > added Logger_V1.txt</b>
 
 no changes added to commit (use "git add" and/or "git commit -a")
 </code></pre>
