@@ -162,7 +162,7 @@ The display of change details for submoule   is enabled by our *status.submodule
 
 It explicitly states the introduced commits (as they use a right-pointing angle bracket >) since our last parent repo (*Customer*) commit that had touched the submodule.
 
-## The diff
+### The diff
 Till yet we saw how to figureout the changes made by using the *git status* command.
 But if we will use *git diff* then what will heppen :
 
@@ -201,7 +201,29 @@ Now we can push these changes in main repo
 <pre class="highlight"><code>[Customer]$ git commit -am "Setting submodule on Logger_V1 (8c29b0f)"
 [Customer]$ git push </code></pre>
 
-
+### Pulling a submodule-using repo
+Do you remember the *CustomerClone* repo , which we cloned from *Customer* repo?
+As we have modified the *Customer* repo in previous section , lets take the latest of that :
+<pre class="highlight"><code># come out of Customer repo folder
+[Customer]$ cd ..
+$ cd CustomerClone
+# go git pull , to get the latest changes
+[CustomerClone]$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 2 (delta 1), reused 2 (delta 1), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/debbiswal/Customer
+   e6a4e13..e9049f0  master     -> origin/master
+<span style="color:magenta">Fetching submodule TextFileLogger</span>
+From https://github.com/debbiswal/TextFileLogger
+   cf93a5d..7125a58  master     -> origin/master
+Updating e6a4e13..e9049f0
+Fast-forward
+ TextFileLogger | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)</code></pre>
+ 
 Pending .... =>
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
