@@ -248,16 +248,18 @@ Git found that the current working directory does not have this commit .
 This is a problem : if we don’t explicitly update the submodule’s working directory, our next parent repo commit will regress the submodule.
 
 Lets verify again by listing the current working directory :
-<pre class="highlight"><code>[CustomerClone]$ tree
+```bash
+[CustomerClone]$ tree
 .
 ├── Customer_V0.txt
 └── TextFileLogger
     └── Logger_V0.txt
 
-1 directory, 2 files</code></pre>
+1 directory, 2 files
+```
+Yes... we did not get the update for submodule. Else we could have **Logger_V1.txt** file in out *TextFileLogger* folder.
 
-
-Git auto-fetches, but does not auto-update. Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its former contents.
+So , Git auto-fetches, but does not auto-update. Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its old contents.
 
 Pending .... =>
 Adding submodule from a specific branch or commit
