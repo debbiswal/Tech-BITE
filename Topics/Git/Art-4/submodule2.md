@@ -114,9 +114,7 @@ cf93a5d (HEAD -> master) Create Logger_V0.txt
 ```
 OK.. all set now.
 Lets update the TextFileLogger submodule to a specific commit
-<pre class="highlight">
-<code>
-[Customer/TextFileLogger]$ git fetch
+<pre class="highlight"><code>[Customer/TextFileLogger]$ git fetch
 
 # get the SHA1 details from origin
 [Customer/TextFileLogger]$ git log --oneline origin/master
