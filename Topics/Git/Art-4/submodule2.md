@@ -143,7 +143,7 @@ Customer_V0.txt  TextFileLogger
 [Customer]$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
-
+</code></pre>
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
@@ -156,7 +156,7 @@ Submodules changed but not updated:
   <b> > added Logger_V1.txt</b>
 
 no changes added to commit (use "git add" and/or "git commit -a")
-</code></pre>
+
 
 We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
 
