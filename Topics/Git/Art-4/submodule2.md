@@ -163,7 +163,7 @@ The display of change details for submoule   is enabled by our *status.submodule
 It explicitly states the introduced commits (as they use a right-pointing angle bracket >) since our last parent repo (*Customer*) commit that had touched the submodule.
 
 ## The diff
-<pre<code>
+<pre><code>
 [Customer]$ git diff
 <b>diff --git a/TextFileLogger b/TextFileLogger
 index cf93a5d..8c29b0f 160000
