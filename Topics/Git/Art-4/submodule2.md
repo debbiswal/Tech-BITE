@@ -148,7 +148,7 @@ Changes not staged for commit:
 (use "git add file..." to update what will be committed)
 (use "git checkout -- file..." to discard changes in working directory)
 
-modified:   TextFileLogger <b>(new commits)</b>
+<span style="color:red">modified:   TextFileLogger</span> <b>(new commits)</b>
 Submodules changed but not updated:
 
 * TextFileLogger cf93a5d...8c29b0f (1):
@@ -198,7 +198,7 @@ Submodule TextFileLogger cf93a5d..8c29b0f:
  <span style="color:green">> added Logger_V1.txt</span></code></pre>
 
 Now we can push these changes in main repo
-<pre class="highlight"><code> [Customer]$ git commit -am "Setting submodule on Logger_V1 (8c29b0f)"
+<pre class="highlight"><code>[Customer]$ git commit -am "Setting submodule on Logger_V1 (8c29b0f)"
 [Customer]$ git push </code></pre>
 
 
