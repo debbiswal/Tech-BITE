@@ -226,7 +226,38 @@ We can see that second half of this display: it’s about the submodule, startin
 
 This behavior became the default with Git 1.7.5, with the configuration setting *fetch.recurseSubmodules* now defaulting to on-demand: if a parent repo gets updates to referenced submodule commits, these submodules get fetched automatically.
 
-Still, and this is critical: Git auto-fetches, but does not auto-update. Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its former contents.
+Now lets check the status of repo :
+<pre class="highlight"><code>[CustomerClone]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add file..." to update what will be committed)
+  (use "git checkout -- file..." to discard changes in working directory)
+
+	<span style="color:red">modified:   TextFileLogger</span> (new commits)
+
+Submodules changed but not updated:
+
+* TextFileLogger 8c29b0f...cf93a5d (1):
+  <span style="color:red">< added Logger_V1.txt</span></code></span>
+
+Did you notice how the angle brackets point left (<)? 
+Git found that the current working directory does not have this commit .
+
+This is a problem : if we don’t explicitly update the submodule’s working directory, our next parent repo commit will regress the submodule.
+
+Lets verify again by listing the current working directory :
+<pre class="highlight"><code>[CustomerClone]$ tree
+.
+├── Customer_V0.txt
+└── TextFileLogger
+    └── Logger_V0.txt
+
+1 directory, 2 files</code></pre>
+
+
+Git auto-fetches, but does not auto-update. Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its former contents.
 
 Pending .... =>
 Adding submodule from a specific branch or commit
