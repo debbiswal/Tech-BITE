@@ -190,7 +190,7 @@ But it would be better if we can make the *submodule=log* argument global in som
 So that we dont have to use everytime for submodule
 Yes we can :
 <pre><code> # set the global configuration for submodule log
-[Customer]$ git config --global diff.submodule log
+[Customer]$ <b>git config --global diff.submodule log</b>
 
 # get the difference
 [vagrant@nodeapi Customer]$ git diff
