@@ -135,6 +135,27 @@ nothing to commit, working tree clean
 8c29b0f (HEAD) added Logger_V1.txt
 cf93a5d (master) Create Logger_V0.txt</code></pre>
 
+Our submodule is updated with selected commit. So now we can see the change in parent repo(Customer)
+<pre class="highlight"><code>[Customer/TextFileLogger]$ cd ..
+[Customer]$ ls
+Customer_V0.txt  TextFileLogger
+[Customer]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   TextFileLogger <b>(new commits)</b>
+
+Submodules changed but not updated:
+
+* TextFileLogger cf93a5d...8c29b0f (1):
+  <b>> added Logger_V1.txt</b>
+
+no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
 
 
 Pending .... =>
