@@ -136,7 +136,7 @@ nothing to commit, working tree clean
 cf93a5d (master) Create Logger_V0.txt</code></pre>
 
 Our submodule is updated with selected commit. So now we can see the change in parent repo(Customer)
-<pre class="highlight"><code>[Customer/TextFileLogger]$ cd ..
+<pre class="highlight"><code> [Customer/TextFileLogger]$ cd ..
 [Customer]$ ls
 Customer_V0.txt  TextFileLogger
 [Customer]$ git status
@@ -152,9 +152,10 @@ Changes not staged for commit:
 Submodules changed but not updated:
 
 * TextFileLogger cf93a5d...8c29b0f (1):
-  <b>> added Logger_V1.txt</b>
+  <b> > added Logger_V1.txt</b>
 
 no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+
 We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
 
 The display of change details for submoule   is enabled by our *status.submoduleSummary = true* setting  , which we did earlier. 
