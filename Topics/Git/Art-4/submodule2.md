@@ -232,15 +232,14 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes not staged for commit:
-  (use "git add file..." to update what will be committed)
-  (use "git checkout -- file..." to discard changes in working directory)
-
-	<span style="color:red">modified:   TextFileLogger</span> (new commits)
+(use "git add file..." to update what will be committed)
+(use "git checkout -- file..." to discard changes in working directory)
+<span style="color:red">modified:   TextFileLogger</span> (new commits)
 
 Submodules changed but not updated:
 
 * TextFileLogger 8c29b0f...cf93a5d (1):
-  <span style="color:red">< added Logger_V1.txt</span></code></span>
+  <span style="color:red">< added Logger_V1.txt</span></code></pre>
 
 Did you notice how the angle brackets point left (<)? 
 Git found that the current working directory does not have this commit .
