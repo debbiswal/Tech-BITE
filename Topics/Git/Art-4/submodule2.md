@@ -114,7 +114,7 @@ cf93a5d (HEAD -> master) Create Logger_V0.txt
 ```
 OK.. all set now.
 Lets update the TextFileLogger submodule to a specific commit
-```bash
+<pre>
 [Customer/TextFileLogger]$ git fetch
 
 # get the SHA1 details from origin
@@ -128,14 +128,14 @@ cf93a5d (HEAD -> master) Create Logger_V0.txt
 
 # check the status 
 [Customer/TextFileLogger]$ git status
-**HEAD detached at 8c29b0f**
+<b>HEAD detached at 8c29b0f</b>
 nothing to commit, working tree clean
 
 # check the log
 [Customer/TextFileLogger]$ git log --oneline
 8c29b0f (HEAD) added Logger_V1.txt
 cf93a5d (master) Create Logger_V0.txt
-```
+</pre>
 
 
 
