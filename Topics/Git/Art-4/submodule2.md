@@ -5,9 +5,7 @@ In my previous article [Git Submodule-I](../Art-3/submodule.md) , we have discus
 * How to add a submodule to a repo
 * Cloning a repo with its submodules
 
-Today I will discuss more points...
-
-Lets start .. 
+Lets discuss more points...
 
 ### Getting an update from Submodule repo
 
