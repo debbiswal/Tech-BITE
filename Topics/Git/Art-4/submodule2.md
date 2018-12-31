@@ -260,6 +260,22 @@ Yes... we did not get the update for submodule. Else we could have **Logger_V1.t
 
 So , Git auto-fetches, but does not auto-update. Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its old contents.
 
+Then we need to update our submodule :
+```bash
+# update the submodule
+[CustomerClone]$ git submodule update
+Submodule path 'TextFileLogger': checked out '8c29b0f69bc187441b1fba9627e0060243ba4846'
+
+# lets check the folder contenets
+[CustomerClone]$ tree
+.
+├── Customer_V0.txt
+└── TextFileLogger
+    ├── Logger_V0.txt
+    └── Logger_V1.txt
+```
+YES.. its updated.
+
 Pending .... =>
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
