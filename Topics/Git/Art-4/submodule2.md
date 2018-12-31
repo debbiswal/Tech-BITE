@@ -166,7 +166,7 @@ It explicitly states the introduced commits (as they use a right-pointing angle 
 Till yet we saw how to figureout the changes made by using the *git status* command.
 But if we will use *git diff* then what will heppen :
 
-<pre><code>[Customer]$ git diff
+<pre class="highlight"><code>[Customer]$ git diff
 <b>diff --git a/TextFileLogger b/TextFileLogger
 index cf93a5d..8c29b0f 160000
 --- a/TextFileLogger
@@ -178,7 +178,7 @@ index cf93a5d..8c29b0f 160000
 But from the above result , we did not understood , what changes has been done to *TextFileLogger* submodule.
 
 So , lets try *submodule=log* argument :
-<pre><code>[Customer]$ git diff --submodule=log
+<pre class="highlight"><code>[Customer]$ git diff --submodule=log
 Submodule TextFileLogger cf93a5d..8c29b0f:
   <span style="color:green">> added Logger_V1.txt</span></code></pre>
 hmmm ... we got more information .
@@ -189,13 +189,18 @@ You can notice that , these changes match almost exactly the lower part of our e
 But it would be better if we can make the *submodule=log* argument global in some configuration.
 So that we dont have to use everytime for submodule
 Yes we can :
-<pre><code> # set the global configuration for submodule log
+<pre class="highlight"><code> # set the global configuration for submodule log
 [Customer]$ <b>git config --global diff.submodule log</b>
 
 # get the difference
-[vagrant@nodeapi Customer]$ git diff
+[Customer]$ git diff
 Submodule TextFileLogger cf93a5d..8c29b0f:
  <span style="color:green">> added Logger_V1.txt</span></code></pre>
+
+Now we can push these changes in main repo
+<pre class="highlight"><code> [Customer]$ git commit -am "Setting submodule on Logger_V1 (8c29b0f)"
+[Customer]$ git push </code></pre>
+
 
 Pending .... =>
 Adding submodule from a specific branch or commit
