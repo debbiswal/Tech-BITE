@@ -224,6 +224,12 @@ Fast-forward
  TextFileLogger | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)</code></pre>
  
+We can see that second half of this display: it’s about the submodule, starting with “Fetching submodule…”.
+
+This behavior became the default with Git 1.7.5, with the configuration setting *fetch.recurseSubmodules* now defaulting to on-demand: if a parent repo gets updates to referenced submodule commits, these submodules get fetched automatically.
+
+Still, and this is critical: Git auto-fetches, but does not auto-update. Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its former contents.
+
 Pending .... =>
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
