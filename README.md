@@ -83,19 +83,20 @@
 [top](#topics)  
 
 ### Cloud Design Pattern
-* Cache Aside Pattern
-* Circuit Breaker Pattern
-* Command and Query Responsibility Segregation (CQRS) Pattern
-* Compensating Transaction Pattern
-* Competing Consumers Pattern
-* Event Sourcing Pattern
-* Pipes and Filters Pattern
-* Priority Queue Pattern
-* Queue-based Load Leveling Pattern
-* Runtime Reconfiguration Pattern
-* External Configuration Store Pattern
-* Scheduler Agent Supervisor Pattern
-* Sharding Pattern
+* To be done
+  * Cache Aside Pattern
+  * Circuit Breaker Pattern
+  * Command and Query Responsibility Segregation (CQRS) Pattern
+  * Compensating Transaction Pattern
+  * Competing Consumers Pattern
+  * Event Sourcing Pattern
+  * Pipes and Filters Pattern
+  * Priority Queue Pattern
+  * Queue-based Load Leveling Pattern
+  * Runtime Reconfiguration Pattern
+  * External Configuration Store Pattern
+  * Scheduler Agent Supervisor Pattern
+  * Sharding Pattern
 
 [top](#topics)  
 
@@ -136,20 +137,19 @@
 
 ### Git
 * [Detached head in Git](Topics/Git/Art-5/detachedhead.md)
-* [Submodule-I](Topics/Git/Art-3/submodule.md)
-* [Submodule-II](Topics/Git/Art-4/submodule2.md)
+* Submodule
+  * [Submodule-I](Topics/Git/Art-3/submodule.md)
+    * What is Submodule
+    * Adding a Submodule
+    * Cloning a repo with submodule
+  * [Submodule-II](Topics/Git/Art-4/submodule2.md)
+    * Getting an update from Submodule repo
 * Subtree
 * [Upgrading GIT in CENTOS from source code](Topics/Git/Art-2/upgrade_git_in_centos.md)
 * [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
 * [Git Desktop application for Linux](https://github.com/shiftkey/desktop/releases)(external link)
 * [Github pages with Jekyll](https://jekyllrb.com/docs/github-pages/) (external link)
 * [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/) (external link)
-* Using GitAhead tool
-* Creating Github pages
-* Creating a Gist
-* Using gist in Github pages
-* Customizing CSS in Github pages
-* Customizing html layout in Github pages
 * [Useful commands](Topics/Git/Art-1/useful_commands.md)
   * [How to add a remote Git repo from Command line](Topics/Git/Art-1/useful_commands.md#how-to-add-a-remote-git-repo-from-command-line)
   * [Delete git reference from a folder and sub folder](Topics/Git/Art-1/useful_commands.md#delete-git-reference-from-a-folder-and-sub-folder)
@@ -175,6 +175,13 @@
   * [Create a Repository on Gitlab using the API for every Directory in a List](Topics/Git/Art-1/useful_commands.md#create-a-repository-on-gitlab-using-the-api-for-every-directory-in-a-list)
   * [Set up a Git Repository using Git LFS](Topics/Git/Art-1/useful_commands.md#set-up-a-git-repository-using-git-lfs)
   * [Githooks](Topics/Git/Art-1/useful_commands.md#githooks)
+* To be done
+  * Using GitAhead tool
+  * Creating Github pages
+  * Creating a Gist
+  * Using gist in Github pages
+  * Customizing CSS in Github pages
+  * Customizing html layout in Github pages
 
 
 [top](#topics)  
@@ -223,7 +230,8 @@
 
 ### Micro Service
 * [SAGA and Distributed Transaction in Microservice - I](Topics/Microservice/Art-1/saga_pattern1.md)
-* SAGA and Distributed Transaction in Microservice - II
+* To be done
+  * SAGA and Distributed Transaction in Microservice - II
 
 [top](#topics)  
 
@@ -273,24 +281,25 @@
 
 ### Redis
 * [Useful Commands](Topics/Redis/Art-3/useful_commands.md)
-* Redis Master Slave
-* Redis Sentinel 
-* Redis Sentinel Event handling
-* Redis Key notification
-* Redis Publish/Subscribe
-* Redis Monitoring
-* Redis Production ready Configuration
-* Redis Cluster
-* Redis Split Brain situation
-* Redis with HA-Proxy
-* Redis Master-Slave Vs Cluster performance
-* Jepsen Test
-* Redis Master-Slave Test
-* Redis Cluster Test
-* Redis Cluster deployment using Kubernetes
-* Redis Cluster Monitoring using Prometheus,Grafana
 * [Agent the Saviour](Topics/Redis/Art-1/Agent_the_Saviour.md)
 * [Get Date & Time stamp of Redis using Powershell](Topics/Redis/Art-2/redis_datetime_powershell.md)
+* To be done
+  * Redis Master Slave
+  * Redis Sentinel 
+  * Redis Sentinel Event handling
+  * Redis Key notification
+  * Redis Publish/Subscribe
+  * Redis Monitoring
+  * Redis Production ready Configuration
+  * Redis Cluster
+  * Redis Split Brain situation
+  * Redis with HA-Proxy
+  * Redis Master-Slave Vs Cluster performance
+  * Jepsen Test
+  * Redis Master-Slave Test
+  * Redis Cluster Test
+  * Redis Cluster deployment using Kubernetes
+  * Redis Cluster Monitoring using Prometheus,Grafana
 
 [top](#topics)  
 
