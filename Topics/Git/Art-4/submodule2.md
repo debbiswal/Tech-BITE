@@ -149,11 +149,11 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
    modified:   TextFileLogger <b>(new commits)</b>
 Submodules changed but not updated:
-
+</code></pre>
 * TextFileLogger cf93a5d...8c29b0f (1):
   <b> > added Logger_V1.txt</b>
 
-no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+no changes added to commit (use "git add" and/or "git commit -a")
 
 We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
 
