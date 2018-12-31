@@ -195,7 +195,7 @@ Yes we can :
 # get the difference
 [vagrant@nodeapi Customer]$ git diff
 Submodule TextFileLogger cf93a5d..8c29b0f:
-  > added Logger_V1.txt</code></pre>
+ <span style="color:green">> added Logger_V1.txt</span></code></pre>
 
 Pending .... =>
 Adding submodule from a specific branch or commit
