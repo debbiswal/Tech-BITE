@@ -116,21 +116,21 @@ OK.. all set now.
 Lets update the TextFileLogger submodule to a specific commit
 <pre class="highlight"><code>[Customer/TextFileLogger]$ git fetch
 
-# get the SHA1 details from origin
+<span class="c"># get the SHA1 details from origin</span>
 [Customer/TextFileLogger]$ git log --oneline origin/master
 7125a58 (origin/master, origin/HEAD) added Logger_V2.txt
 8c29b0f added Logger_V1.txt
 cf93a5d (HEAD -> master) Create Logger_V0.txt
 
-# checkout to SHA1 8c29b0f , to get Logger_V1.txt commit
+<span class="c"># checkout to SHA1 8c29b0f , to get Logger_V1.txt commit</span>
 [Customer/TextFileLogger]$ git checkout -q 8c29b0f
 
-# check the status 
+<span class="c"># check the status</span> 
 [Customer/TextFileLogger]$ git status
 <b>HEAD detached at 8c29b0f</b>
 nothing to commit, working tree clean
 
-# check the log
+<span class="c"># check the log</span>
 [Customer/TextFileLogger]$ git log --oneline
 8c29b0f (HEAD) added Logger_V1.txt
 cf93a5d (master) Create Logger_V0.txt</code></pre>
