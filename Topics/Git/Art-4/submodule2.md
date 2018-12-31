@@ -163,6 +163,9 @@ The display of change details for submoule   is enabled by our *status.submodule
 It explicitly states the introduced commits (as they use a right-pointing angle bracket >) since our last parent repo (*Customer*) commit that had touched the submodule.
 
 ## The diff
+Till yet we saw how to figureout the changes made by using the *git status* command.
+But if we will use *git diff* then what will heppen :
+
 <pre><code>[Customer]$ git diff
 <b>diff --git a/TextFileLogger b/TextFileLogger
 index cf93a5d..8c29b0f 160000
@@ -170,7 +173,29 @@ index cf93a5d..8c29b0f 160000
  +++ b/TextFileLogger</b>
 <span style="color:magenta">@@ -1 +1 @@</span>
 <span style="color:red">-Subproject commit cf93a5d641a1af6c558762935e8d544c90308e0e</span>
-<span style="color:green">+Subproject commit 8c29b0f69bc187441b1fba9627e0060243ba4846</span> </code></pre>
+<span style="color:green">+Subproject commit 8c29b0f69bc187441b1fba9627e0060243ba4846</span></code></pre>
+
+But from the above result , we did not understood , what changes has been done to *TextFileLogger* submodule.
+
+So , lets try *submodule=log* argument :
+<pre><code>[Customer]$ git diff --submodule=log
+Submodule TextFileLogger cf93a5d..8c29b0f:
+  <span style="color:green">> added Logger_V1.txt</span></code></pre>
+hmmm ... we got more information .
+
+There are no other local changes right now besides the submodule’s referenced commit . 
+You can notice that , these changes match almost exactly the lower part of our enhanced git status output.
+
+But it would be better if we can make the *submodule=log* argument global in some configuration.
+So that we dont have to use everytime for submodule
+Yes we can :
+<pre><code> # set the global configuration for submodule log
+[Customer]$ git config --global diff.submodule log
+
+# get the difference
+[vagrant@nodeapi Customer]$ git diff
+Submodule TextFileLogger cf93a5d..8c29b0f:
+  > added Logger_V1.txt</code></pre>
 
 Pending .... =>
 Adding submodule from a specific branch or commit
