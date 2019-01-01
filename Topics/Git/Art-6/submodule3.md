@@ -6,6 +6,19 @@ In my previous article [Git Submodule-II](../Art-4/submodule2.md) , we have disc
 * Whats the difference with *diff*
 * Pulling a submodule-using repo
 
+Lets discuss below points in this article :
+* Updating a submodule in-place in the container
+* Removing a submodule
+
+### Updating a submodule in-place in the container
+
+<pre class=".heighlight"><code>[Customer/TextFileLogger]$ git log --oneline origin/master
+7125a58 (origin/master, origin/HEAD) added Logger_V2.txt
+8c29b0f (HEAD) added Logger_V1.txt
+cf93a5d (master) Create Logger_V0.txt</code></pre>
+
+### Removing a submodule
+
 Pending .... =>
 Adding submodule from a specific branch or commit
 show output of git status , gif diff --cache , cat .gitmodule , cat .git/configure  
