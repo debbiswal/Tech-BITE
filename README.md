@@ -183,6 +183,7 @@
   * Using gist in Github pages
   * Customizing CSS in Github pages
   * Customizing html layout in Github pages
+  * Git rebase
 
 
 [top](#topics)  
