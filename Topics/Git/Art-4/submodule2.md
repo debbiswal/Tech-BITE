@@ -2,10 +2,14 @@
 
 ## Git Submodules - II
 In my previous article [Git Submodule-I](../Art-3/submodule.md) , we have discussed the below points :
+* What is a submodule
 * How to add a submodule to a repo
 * Cloning a repo with its submodules
 
-Lets discuss more points...
+Lets discuss below points in this article :
+* Getting an update from Submodule repo
+* Whats the difference with *diff*
+* Pulling a submodule-using repo
 
 ### Getting an update from Submodule repo
 
@@ -160,7 +164,7 @@ The display of change details for submoule   is enabled by our *status.submodule
 
 It explicitly states the introduced commits (as they use a right-pointing angle bracket >) since our last parent repo (*Customer*) commit that had touched the submodule.
 
-### The diff
+### Whats the difference with *diff*
 Till yet we saw how to figureout the changes made by using the *git status* command.
 But if we will use *git diff* then what will heppen :
 
