@@ -12,7 +12,7 @@ Lets discuss below points in this article :
 
 ### Updating a submodule in-place in the container
 
-<pre class=".heighlight"><code>[Customer/TextFileLogger]$ git log --oneline origin/master
+<pre class="highlight"><code>[Customer/TextFileLogger]$ git log --oneline origin/master
 7125a58 (origin/master, origin/HEAD) added Logger_V2.txt
 8c29b0f (HEAD) added Logger_V1.txt
 cf93a5d (master) Create Logger_V0.txt</code></pre>
