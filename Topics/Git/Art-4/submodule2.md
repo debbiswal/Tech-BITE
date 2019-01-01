@@ -262,7 +262,9 @@ Lets verify again by listing the current working directory :
 ```
 Yes... we did not get the update for submodule. Else we could have **Logger_V1.txt** file in out *TextFileLogger* folder.
 
-So , Git auto-fetches, but does not auto-update. Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its old contents.
+> So , Git auto-fetches, but does not auto-update.
+
+Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its old contents.
 
 Then we need to update our submodule :
 ```bash
@@ -278,7 +280,14 @@ Submodule path 'TextFileLogger': checked out '8c29b0f69bc187441b1fba9627e0060243
     ├── Logger_V0.txt
     └── Logger_V1.txt
 ```
-YES.. its updated.
+YES.. its updated. We have all the required files.
+
+So .. in this article we learned about :
+* Getting an update from Submodule repo
+* Whats the difference with *diff*
+* Pulling a submodule-using repo
+
+In next article [Git Submodule-III](../Art-6/submodule3.md) we will discuss more on sumbodules.
 
 Happy Learning :)  
 
