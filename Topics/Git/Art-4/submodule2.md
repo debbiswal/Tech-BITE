@@ -269,7 +269,7 @@ Our local cache is up-to-date with the submoduleâ€™s remote, but the submoduleâ€
 Then we need to update our submodule :
 ```bash
 # update the submodule
-[CustomerClone]$ git submodule update
+[CustomerClone]$ git submodule update --init --recursive
 Submodule path 'TextFileLogger': checked out '8c29b0f69bc187441b1fba9627e0060243ba4846'
 
 # lets check the folder contenets
