@@ -534,6 +534,7 @@ Please refer to the [Detached Head in Git](../Art-5/detachedhead.md) article for
 OK.. , Everything is fine now..
 
 So .. in this article we learned about :
+* What is a submodule
 * How to add a submodule to a repository
 * How to clone a repository with submodules
 
