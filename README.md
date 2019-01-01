@@ -142,7 +142,7 @@
   * [Submodule-I](Topics/Git/Art-3/submodule.md)
     * What is a Submodule , Adding a Submodule , Cloning a repo with submodule
   * [Submodule-II](Topics/Git/Art-4/submodule2.md)
-    * Getting an update from Submodule repo
+    * Getting an update from Submodule repo , Whats the difference with diff , Pulling a submodule-using repo
   * [Submodule-III](Topics/Git/Art-6/submodule3.md)
     * Getting an update from Submodule repo    
 * Subtree
