@@ -120,7 +120,7 @@ Lets update the TextFileLogger submodule to a specific commit
 
 <span class="c"># check the status</span> 
 [Customer/TextFileLogger]$ git status
-<span style="color:#ef2929"><b>HEAD detached at 8c29b0f</b></span>
+<span style="color:#ef2929">HEAD detached at 8c29b0f</span>
 nothing to commit, working tree clean
 
 <span class="c"># check the log</span>
