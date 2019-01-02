@@ -238,7 +238,14 @@ Lets see the contents of the *.git* file :
 Output :
 <span style="color:#04aeae">gitdir: ../.git/modules/TextFileLogger</span></code></pre>  
 
-Git does not leave submodule repo directories inside the main repo’s working directory, but keep these in the main repo's .git directory (inside .git/modules), and uses a *gitdir* reference in submodules.
+From the above output , we found that '.git' file of *TextFileLogger* submodule only contains a reference to a folder of parent repo.
+Here the reference is assigned to *gitdir*. And the path is actually *Customer/.git/modules/TextFileLogger*.
+
+**Why is this so?**
+Its because , whenever we add a submodule , GIT does not keep the meta information for the submodule inside the submodule folder.
+But keep these in the main repo's .git directory (inside .git/modules), and uses a *gitdir* reference in submodules.
+
+So that , the submodule folder will not behave as a standalone repo
 
 Lets check the Customer/.git/modules folder :  
 
