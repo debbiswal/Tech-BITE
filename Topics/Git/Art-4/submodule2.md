@@ -120,7 +120,7 @@ Lets update the TextFileLogger submodule to a specific commit
 
 <span class="c"># check the status</span> 
 [Customer/TextFileLogger]$ git status
-<b>HEAD detached at 8c29b0f</b>
+<span style="color:#ef2929"><b>HEAD detached at 8c29b0f</b></span>
 nothing to commit, working tree clean
 
 <span class="c"># check the log</span>
@@ -145,7 +145,7 @@ Changes not staged for commit:
 Submodules changed but not updated:
 
 * TextFileLogger cf93a5d...8c29b0f (1):
-  <b> > added Logger_V1.txt</b>
+  <span style="color:green"><b> > added Logger_V1.txt</b></span>
 
 no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
