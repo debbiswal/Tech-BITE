@@ -61,8 +61,8 @@ $ cd TextFileLogger
 <span class="c"># Check the remote links</span>
 [TextFileLogger]$ git remote -v
 Output :
-<span style="color:#048d8d">origin	https://github.com/debbiswal/TextFileLogger.git (fetch)
-origin	https://github.com/debbiswal/TextFileLogger.git (push)</span>
+<span style="color:#048d8d">origin	https://github.com/debbiswal/TextFileLogger.git (fetch)</span>
+<span style="color:#c5860b">origin	https://github.com/debbiswal/TextFileLogger.git (push)</span>
 
 
 <span class="c">#Now push the local repo data to remote</span>
