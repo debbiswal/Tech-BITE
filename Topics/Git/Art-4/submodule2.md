@@ -14,7 +14,7 @@ Lets discuss below points in this article :
 ### Getting an update from Submodule repo
 
 Lets first check the *TextFileLogger* repo and see to which commit SHA1 , the head points 
-<pre class="highlight"><code># Get into the TextFileLogger repo
+<pre class="highlight"><code><span class="c"># Get into the TextFileLogger repo</span>
 $ cd TextFileLogger
 
 # Print the log of repo
@@ -24,7 +24,7 @@ $ cd TextFileLogger
 We can see that , the HEAD is as master . And the commit SHA1 is **cf93a5d**
 
 Lets add few files to *TextFileLogger* repo :
-<pre class="highlight"><code># Add a dummy file Logger_V1.txt
+<pre class="highlight"><code><span class="c"># Add a dummy file Logger_V1.txt</span>
 [TextFileLogger]$ echo "Logger_V1" >> Logger_V1.txt
 [TextFileLogger]$ git add Logger_V1.txt
 [TextFileLogger]$ git commit -m "added Logger_V1.txt"
@@ -33,7 +33,7 @@ Output :
  1 file changed, 1 insertion(+)
  create mode 100644 Logger_V1.txt
  
-# Add a dummy file Logger_V2.txt
+<span class="c"># Add a dummy file Logger_V2.txt</span>
 [TextFileLogger]$ echo "Logger_V2" >> Logger_V2.txt
 [TextFileLogger]$ git add Logger_V2.txt
 [TextFileLogger]$ git commit -m "added Logger_V2.txt"
@@ -42,7 +42,7 @@ Output :
  1 file changed, 1 insertion(+)
  create mode 100644 Logger_V2.txt
 
-# Push to master branch
+<span class="c"># Push to master branch</span>
 [TextFileLogger]$ git push</code></pre>
 
 Now lets see the log :
@@ -53,19 +53,19 @@ Now lets see the log :
 
 Suppose we now want to get these two commits inside our *TextFileLogger* submodule in *Customer* repo.  
 To achieve this, we need to update its local repo, starting by moving into its working directory so it becomes our active repo.
-<pre class="highlight"><code># come out of TextFileLogger repo
+<pre class="highlight"><code><span class="c"># come out of TextFileLogger repo</span>
 [TextFileLogger]$ cd ..
 
-# get into Customer repo
+<span class="c"># get into Customer repo</span>
 $ cd Customer
 
-# get into TextFileLogger submodule folder
+<span class="c"># get into TextFileLogger submodule folder</span>
 [Customer]$ cd TextFileLogger
 [Customer/TextFileLogger]$
 
-# print the log to get the status of HEAD and commit SHA1
+<span class="c"># print the log to get the status of HEAD and commit SHA1</span>
 [Customer/TextFileLogger]$ git log --oneline
-cf93a5d (HEAD -> master, origin/master, origin/HEAD) Create Logger_V0.txt</code></pre>
+<span style="color:#a58702">cf93a5d</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) Create Logger_V0.txt</code></pre>
 
 Lets try to update the submodule with remote updates :
 <pre class="highlight"><code>[Customer/TextFileLogger]$ git pull
@@ -89,19 +89,19 @@ What if we want to get a specific commit .. say the commit for **Logger_V1.txt**
 Then we have to checkout to a specific commit SHA1.
 
 But first we have to revert back the pull chnages :
-<pre class="highlight"><code># Check the HEAD position
+<pre class="highlight"><code><span class="c"># Check the HEAD position</span>
 [Customer/TextFileLogger]$ git log --oneline
-7125a58 (HEAD -> master, origin/master, origin/HEAD) added Logger_V2.txt
-8c29b0f added Logger_V1.txt
-cf93a5d Create Logger_V0.txt
+<span style="color:#a58702">7125a58</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) added Logger_V2.txt
+<span style="color:#a58702">8c29b0f</span> added Logger_V1.txt
+<span style="color:#a58702">cf93a5d</span> Create Logger_V0.txt
 
-# Revert the pull changes
+<span class="c"># Revert the pull changes</span>
 [Customer/TextFileLogger]$ git reset --hard HEAD~1
 HEAD is now at 8c29b0f added Logger_V1.txt
 [Customer/TextFileLogger]$ git reset --hard HEAD~1
 HEAD is now at cf93a5d Create Logger_V0.txt
 
-# verify the HEAD position
+<span class="c"># verify the HEAD position</span>
 [Customer/TextFileLogger]$ git log --oneline
 <span style="color:#a58702">cf93a5d</span> (<span style="color:#ef2929">HEAD -> master</span>) Create Logger_V0.txt</code></pre>
 
@@ -181,10 +181,10 @@ You can notice that , these changes match almost exactly the lower part of our e
 But it would be better if we can make the *submodule=log* argument global in some configuration.
 So that we dont have to use everytime for submodule
 Yes we can :
-<pre class="highlight"><code> # set the global configuration for submodule log
+<pre class="highlight"><code><span class="c"># set the global configuration for submodule log</span>
 [Customer]$ <b>git config --global diff.submodule log</b>
 
-# get the difference
+<span class="c"># get the difference</span>
 [Customer]$ git diff
 Submodule TextFileLogger cf93a5d..8c29b0f:
  <span style="color:green">> added Logger_V1.txt</span></code></pre>
@@ -196,10 +196,10 @@ Now we can push these changes in main repo
 ### Pulling a submodule-using repo
 Do you remember the *CustomerClone* repo , which we cloned from *Customer* repo?
 As we have modified the *Customer* repo in previous section , lets take the latest of that :
-<pre class="highlight"><code># come out of Customer repo folder
+<pre class="highlight"><code><span class="c"># come out of Customer repo folder</span>
 [Customer]$ cd ..
 $ cd CustomerClone
-# go git pull , to get the latest changes
+<span class="c"># go git pull , to get the latest changes</span>
 [CustomerClone]$ git pull
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
@@ -256,11 +256,11 @@ Yes... we did not get the update for submodule. Else we could have **Logger_V1.t
 Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its old contents.
 
 Then we need to update our submodule :
-<pre class="highlight"><code># update the submodule
+<pre class="highlight"><code><span class="c"># update the submodule</span>
 [CustomerClone]$ git submodule update --init --recursive
 Submodule path 'TextFileLogger': checked out '8c29b0f69bc187441b1fba9627e0060243ba4846'
 
-# lets check the folder contenets
+<span class="c"># lets check the folder contenets</span>
 [CustomerClone]$ tree
 .
 ├── Customer_V0.txt
