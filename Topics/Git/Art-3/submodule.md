@@ -44,11 +44,10 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 Lets start with creating the required repositories :  
 
 Create TextFileLogger repo with some dummy content :  
-```bash
-# Create a Github remote repository from CLI
+<pre class="highlight"><code><span class="c"># Create a Github remote repository from CLI</span>
 $ curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
 
-#Create the local repo TextFileLogger
+<span class="c">#Create the local repo TextFileLogger</span>
 $ mkdir TextFileLogger
 $ cd TextFileLogger
 [TextFileLogger]$ git init
@@ -56,20 +55,20 @@ $ cd TextFileLogger
 [TextFileLogger]$ git add TextLogger_V0.txt
 [TextFileLogger]$ git commit -m "added TextLogger_V0.txt"
 
-#Now link the local repo with remote
+<span class="c">#Now link the local repo with remote</span>
 [TextFileLogger]$ git remote add origin https://github.com/debbiswal/TextFileLogger.git
 
-# Check the remote links
+<span class="c"># Check the remote links</span>
 [TextFileLogger]$ git remote -v
 Output :
-origin	https://github.com/debbiswal/TextFileLogger.git (fetch)
-origin	https://github.com/debbiswal/TextFileLogger.git (push)
+<span style="color:#04aeae">origin	https://github.com/debbiswal/TextFileLogger.git (fetch)
+origin	https://github.com/debbiswal/TextFileLogger.git (push)</span>
 
 
-#Now push the local repo data to remote
+<span class="c">#Now push the local repo data to remote</span>
 [TextFileLogger]$ git push -u origin master
 
-# For subsequent push , we dont have to use the' -u origin master' argument
+<span class="c"># For subsequent push , we dont have to use the' -u origin master' argument</span>
 [TextFileLogger]$ echo "TextLogger Updated-1" > TextLogger_V0.txt
 
 [TextFileLogger]$ git add TextLogger_V0.txt
@@ -77,8 +76,8 @@ origin	https://github.com/debbiswal/TextFileLogger.git (push)
 OR
 [TextFileLogger]$ git commit -am "added TextLogger_V0.txt"
 
-[TextFileLogger]$ git push
-```  
+[TextFileLogger]$ git push</span>
+
 In the similar way lets create the below repositories :  
 * DBogger  with a fie DBLogger_V0.txt
 * Customer with a file Customer_V0.txt
@@ -89,23 +88,18 @@ Lets use the TextFileLogger repo in Customer and Product repos and submodule.
 
 ### Adding Submodules
 Lets add the *TextFileLogger* as submodule to *Customer* repo
-```bash
-# Get into Customer repo folder
+<pre class="highlight"><code><span class="c"># Get into Customer repo folder</span>
 $ cd Customer
 
-# Add the TextFileLogger as a submodule
+<span class="c"># Add the TextFileLogger as a submodule
 [Customer]$ git submodule add https://github.com/debbiswal/TextFileLogger.git
-# Output
+Output :
 Cloning into 'Customer/TextFileLogger'...
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), done.
-```  
+...
+Unpacking objects: 100% (3/3), done.</code></pre>
 
 Now , if we check the Customer folder .. we can see that TextFileLogger folder is created with all the contents.  
-```bash
-[Customer]$ ls
+<pre class="highlight"><code>[Customer]$ ls
 Output :
 Customer_V0.txt  TextFileLogger
 
@@ -113,21 +107,18 @@ Customer_V0.txt  TextFileLogger
 Output :
 Logger_V0.txt
 
-# If tree command is not installed , then you have to install it.
-# As my ststem is CENTOS , I have used the command 'sudo yum -y install tree'
+<span class="c"># If tree command is not installed , then you have to install it.</span>
+<span class="c"># As my ststem is CENTOS , I have used the command 'sudo yum -y install tree'</span>
 [Customer]$ tree
 Output :
 .
 ├── Customer_V0.txt
 └── TextFileLogger
-    └── Logger_V0.txt
-
-```
+    └── Logger_V0.txt</code></span>
 
 When we added the submodule , it utomatically added some settings in our local configuration of *Customer* repo:  
 Lets check the *config* file under *.git* folder.  
-```bash
-[Customer]$ cat .git/config
+<pre class="highlight"><code>[Customer]$ cat .git/config
 Output :
 [core]
 	repositoryformatversion = 0
@@ -140,36 +131,31 @@ Output :
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-[submodule "TextFileLogger"]
+<span style="color:#04aeae">[submodule "TextFileLogger"]
 	url = https://github.com/debbiswal/TextFileLogger.git
-	active = true
-```
+	active = true</span></code></pre>
+	
 We can see that a **'[submodule "TextFileLogger"]'** section has been added to .git/config file.  
 
 Now , lets check the status of our *Customer* repo.
-```bash
-[Customer]$ git status
+<pre class="highlight"><code>[Customer]$ git status
 Output :
 On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	new file:   .gitmodules
-	new file:   TextFileLogger
-```  
+(use "git reset HEAD <file>..." to unstage)
+<span style="color:#04aeae">new file:   .gitmodules
+	new file:   TextFileLogger</span></code></pre>  
 We can see that , it also staged two files (.gitmodules , TextFileLogger)  
 
 But what is this **.gitmodules** file ?  
 Lets print the contents of *.gitmodules* file from *Customer* repo :  
-```bash
-[Customer]$ cat .gitmodules 
+<pre class="highlight"><code>[Customer]$ cat .gitmodules 
 Output :
-[submodule "TextFileLogger"]
+<span style="color:#04aeae">[submodule "TextFileLogger"]
 	path = TextFileLogger
-	url = https://github.com/debbiswal/TextFileLogger.git
-```
+	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
 
 This is similar to **'[submodule "TextFileLogger"]'** section in .git/config file .  
 
@@ -194,77 +180,69 @@ So , how do we see those information about chnages made to subrepos?
 Status, like logs and diffs, is limited to the active repo , not to submodules, which are nested repos. 
 So we need to set up a submodule-aware status for the repo OR globally:
 
-```bash
-# Check the repo level submoduleSummary config 
+<pre class="highlight"><code><span class="c"># Check the repo level submoduleSummary config</span> 
 [Customer] $ git config status.submoduleSummary
 # Output :
 false
 
-# Check the global level submoduleSummary config 
+<span class="c"># Check the global level submoduleSummary config</span> 
 [Customer] $ git config --global status.submoduleSummary
-# Output :
+Output :
 false
 
-# We can set the submoduleSummary config repo level OR global level(for all repos)
+<span class="c"># We can set the submoduleSummary config repo level OR global level(for all repos)</span>
 
-# Set status.submoduleSummary to true  , repo level
+<span class="c"># Set status.submoduleSummary to true  , repo level</span>
 [Customer] $ git config status.submoduleSummary true
 
-# OR
+<span class="c"># OR</span>
 
-# Set status.submoduleSummary to true  , global level(for all repos)
-[Customer] $ git config --global status.submoduleSummary true
-```
+<span class="c"># Set status.submoduleSummary to true  , global level(for all repos)</span>
+[Customer] $ git config --global status.submoduleSummary true</code></pre>
 
 Lets try again **git status** command again :  
-```bash
-[Customer]$ git status
+<pre class="highlight"><code>[Customer]$ git status
 Output :
 On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	new file:   .gitmodules
-	new file:   TextFileLogger
+(use "git reset HEAD file..." to unstage)
+<span style="color:#04aeae">new file:   .gitmodules
+new file:   TextFileLogger</span>
 
 Submodule changes to be committed:
 
 * TextFileLogger 0000000...cf93a5d (1):
-  > Create Logger_V0.txt
-```
+  <span style="color:green">> Create Logger_V0.txt</span></code></pre>
+  
 Now you see , we got the status related to submodule *TextFileLogger* also.  It says, that it has 1 commit made. 
 The last commit was an addition(right angle bracket , >) and the last commit meesage was 'Create Logger_V0.txt' .
 
 So , whats the status of our submodule.
 Lets check :
-```bash
-[Customer]$ cd TextFileLogger/
+<pre class="highlight"><code>[Customer]$ cd TextFileLogger/
 [Customer/TextFileLogger]$ git status
 Output :
 On branch master
 Your branch is up to date with 'origin/master'.
 
-nothing to commit, working tree clean
-```
+nothing to commit, working tree clean</code></pre>
+
 In the above example , we saw that , the status is only shown for the TextFileLogger submodule repo.
 Its because of a new *.git* file takes over the responsibilities.
 Yes , there is a file *.git* exists in the directory.
 
 Lets see the contents of the *.git* file :
-```bash
-[Customer/TextFileLogger]$ cat .git
+<pre class="highlight"><code>[Customer/TextFileLogger]$ cat .git
 Output :
-gitdir: ../.git/modules/TextFileLogger
-```  
+<span style="color:#04aeae">gitdir: ../.git/modules/TextFileLogger</span></code></pre>  
 
 Git does not leave submodule repo directories inside the main repo’s working directory, but keep these in the main repo's .git directory (inside .git/modules), and uses a *gitdir* reference in submodules.
 
 Lets check the Customer/.git/modules folder :  
 
-```bash
-[Customer/TextFileLogger]$ cd ..
+<pre class="highlight"><code>[Customer/TextFileLogger]$ cd ..
 [Customer]$ cd .git/modules/
 [Customer/.git/modules]$ ls
 Output :
@@ -272,13 +250,12 @@ TextFileLogger
 [Customer/.git/modules]$ cd TextFileLogger/
 [Customer/.git/modules/TextFileLogger]$ ls
 Output :
-branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs
-```
+<span style="color:#04aeae">branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs</span></code></pre>
+
 We can see here that , there is a folder *TextFileLogger* . And it has all ncessary files & folders to represent the *TextFileLogger* repo.  
 
 Now  , Lets push the changes :  
-```bash
-[Customer/.git/modules/TextFileLogger]$ cd ../../..
+<pre class="highlight"><code>[Customer/.git/modules/TextFileLogger]$ cd ../../..
 [Customer]$ git commit -m "Adding the submodule TextFileLogger"
 Outpput :
 [master e6a4e13] Adding the submodule TextFileLogger
@@ -286,8 +263,8 @@ Outpput :
  create mode 100644 .gitmodules
  create mode 160000 TextFileLogger
 
-[Customer]$ git push
-```
+[Customer]$ git push</code></pre>
+
 Now if we see the repository in github website , we can see that the *TextFileLogger* is saved as a reference with specific commit id.  
 There is no physical folder exists for *TextFileLogger* inside *Customer* repo.  
 
@@ -309,29 +286,25 @@ Till now , we have created a repo and added a submodule to it.
 Now , lets try to clone the repo into a different folder , and see whether we are getting back the submodules or not.  
 
 Clone the Customer repo into a different folder
-```bash
-# Clone the Customer repo into another folder .. say CustomerClone
+<pre class="highlight"><code><span class="c"># Clone the Customer repo into another folder .. say CustomerClone</span>
 $ git clone https://github.com/debbiswal/Customer.git CustomerClone
 Output :
 Cloning into 'CustomerClone'...
-remote: Enumerating objects: 11, done.
-remote: Counting objects: 100% (11/11), done.
-remote: Compressing objects: 100% (6/6), done.
-remote: Total 11 (delta 0), reused 3 (delta 0), pack-reused 0
+...
 Unpacking objects: 100% (11/11), done.
 
-# Get inside the folder
+<span class="c"># Get inside the folder</span>
 $ cd CustomerClone
 
-# Print the folder structure
+<span class="c"># Print the folder structure</span>
 [CustomerClone]$ tree
 Output :
 .
 ├── Customer_V0.txt
 └── TextFileLogger
 
-1 directory, 1 file
-```  
+1 directory, 1 file</code></pre>
+
 We can see here that , only *TextFileLogger* folder is created , but its empty. There should be a file Logger_V0.txt. Which is missing.
 
 As we can see from the output of *git clone* command , it was successfully executed , so there is no chance that clone is failed for any reason.  
@@ -340,8 +313,7 @@ So , there could be a possibility that , Customer repo does not have information
 And thats why while cloning , submodules did not get cloned.
 
 Lets verify.. whatever I have told ..
-```bash
-[CustomerClone]$ cat .git/config
+<pre class="highlight"><code>[CustomerClone]$ cat .git/config
 Output :
 [core]
 	repositoryformatversion = 0
@@ -353,32 +325,28 @@ Output :
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin
-	merge = refs/heads/master
-```
+	merge = refs/heads/master</code></pre>
+	
 We can see here that , the repo CustomerClone does not have the submodule information in its local configuration.
 
 So , whether .gitmodules file has the information ?
-```bash
-[CustomerClone]$ cat .gitmodules
+<pre class="highlight"><code>[CustomerClone]$ cat .gitmodules
 Output :
-[submodule "TextFileLogger"]
+<span style="color:#04aeae">[submodule "TextFileLogger"]
 	path = TextFileLogger
-	url = https://github.com/debbiswal/TextFileLogger.git
-```
+	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
+	
 Yes it has.
 
 **So ,How do we get the *TextFileLogger* submodule added to our *CustometClone* repo?**
 * First we have to update the *CustomerClone* repo's local configuration with *TextFileLogger* submodule information
-```bash
-# Update/Initialize submodule information in local configuration
+<pre class="highlight"><code><span class="c"># Update/Initialize submodule information in local configuration</span>
 [CustomerClone]$ git submodule init
 Output :
-Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
-```
+Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'</code></pre>
 
 Lets verify , whether local configuration has been updated with submodule information or not :
-```bash
-[CustomerClone]$ cat .git/config
+<pre class="highlight"><code>[CustomerClone]$ cat .git/config
 Output :
 [core]
 	repositoryformatversion = 0
@@ -391,52 +359,45 @@ Output :
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-[submodule "TextFileLogger"]
+<span style="color:#04aeae">[submodule "TextFileLogger"]
 	active = true
-	url = https://github.com/debbiswal/TextFileLogger.git
-
-```  
+	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
+	
 We can see that *TextFileLogger* submodule information has been added to .git/config file.
 
 * Update the *CustomerClone* repo from *remote* again.
-```bash
-[CustomerClone]$ git submodule update
+<pre class="highlight"><code>[CustomerClone]$ git submodule update
 Output :
 Cloning into 'CustomerClone/TextFileLogger'...
-Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'
-```
+Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'</code></pre>
 
 Lets check the folder structure , to see whether all files & folders are added properly
-```bash
-[CustomerClone]$ tree
+<pre class="highlight"><code>[CustomerClone]$ tree
 Output :
 .
 ├── Customer_V0.txt
 └── TextFileLogger
     └── Logger_V0.txt
 
-1 directory, 2 files
-```
+1 directory, 2 files</code></pre>
+
 Yes.. now all files are added.
 
 Lets check the *TextFileLogger* folder :  
-```bash
-[CustomerClone]$ cd TextFileLogger/
+<pre class="highlight"><code>[CustomerClone]$ cd TextFileLogger/
 [CustomerClone/TextFileLogger]$ cat .git
 Output:
-gitdir: ../.git/modules/TextFileLogger
-```
+<span style="color:#04aeae">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
+
 Yes, *TextFileLogger* folder has a .git file , which contains the reference to CustomerClone/.git/modules/TextFileLogger folder.
 And this folder has the necessary meta information to make CustomerClone\TextFileLogger as a stand-alone repo on its own(like in out Customer repo).  
 
 We can do the above two steps in a single command also :  
-```bash
-[CustomerClone]$ git submodule update --init
+<pre class="highlight"><code>[CustomerClone]$ git submodule update --init
 Output :
 Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
 Cloning into 'CustomerClone/TextFileLogger'...
-Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'
-```  
+Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'</code></pre>  
 
 But there is a problem with this approach of adding submodules , while cloning a repo.
 What if , we have nested submodules . 
@@ -445,34 +406,27 @@ We need a single command which will do all these for us.
 
 Here comes *- -recursive* argument in help.
 Lets test it :
-```bash
-# Lets go back to the root folder
+<pre class="highlight"><code><span class="c"># Lets go back to the root folder</span>
 [CustomerClone/TextFileLogger] $ cd ../..
 
-# Delete the CustomerClone folder
+<span class="c"># Delete the CustomerClone folder</span>
 $ rm -rf CustomerClone
 
-# Now lets clone the Customer repo to CustomerClone folder
+<span class="c"># Now lets clone the Customer repo to CustomerClone folder</span>
 $ git clone --recursive https://github.com/debbiswal/Customer.git CustomerClone
 Output :
 Cloning into 'CustomerClone'...
-remote: Enumerating objects: 11, done.
-remote: Counting objects: 100% (11/11), done.
-remote: Compressing objects: 100% (6/6), done.
-remote: Total 11 (delta 0), reused 3 (delta 0), pack-reused 0
+...
 Unpacking objects: 100% (11/11), done.
 Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
 Cloning into '/home/vagrant/my_Git_Articles/CustomerClone/TextFileLogger'...
-remote: Enumerating objects: 3, done.        
-remote: Counting objects: 100% (3/3), done.        
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0        
-Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'
-```
+...
+Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'</code></pre>
+
 We can see from the output of above command that , *TextFileLogger* is also cloned.
 
 Lets verify the folder structure :
-```bash
-$ cd CustomerClone
+<pre class="highlight"><code>$ cd CustomerClone
 [CustomerClone]$ tree
 Output :
 .
@@ -480,13 +434,12 @@ Output :
 └── TextFileLogger
     └── Logger_V0.txt
 
-1 directory, 2 files
-```
+1 directory, 2 files</code></pre>
+
 Yes , we have all the required files.
 
 Now lets verify the configuration files , whether they have all the required information or not :
-```bash
-# Display the local configuration of CustomerClone repo
+<pre class="highlight"><code><span class="c"># Display the local configuration of CustomerClone repo</span>
 [CustomerClone]$ cat .git/config
 Output :
 [core]
@@ -502,32 +455,32 @@ Output :
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-[submodule "TextFileLogger"]
-	url = https://github.com/debbiswal/TextFileLogger.git
+<span style="color:#04aeae">[submodule "TextFileLogger"]
+	url = https://github.com/debbiswal/TextFileLogger.git</span>
 
-# Display the .gitmodules from CustomerClone repo
+<span class="c"># Display the .gitmodules from CustomerClone repo</span>
 [CustomerClone]$ cat .gitmodules
 Output :
-[submodule "TextFileLogger"]
+<span style="color:#04aeae">[submodule "TextFileLogger"]
 	path = TextFileLogger
-	url = https://github.com/debbiswal/TextFileLogger.git
+	url = https://github.com/debbiswal/TextFileLogger.git</span>
 
-# Display .git file from TextFileLogger submodule
+<span class="c"># Display .git file from TextFileLogger submodule</span>
 [CustomerClone]$ cd TextFileLogger/
 [CustomerClone/TextFileLogger]$ cat .git
 Output :
-gitdir: ../.git/modules/TextFileLogger
-```
+<span style="color:#04aeae">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
+
 Yes .git/config and .gitmodules file has information about *TextFileLogger*.
 And TextFileLogger/.git file has the gitdir reference to *TextFileLogger* repository meta data.
 
 Lets check the status of *TextFileLogger* submodule : 
-```bash
-# Display the status of submodule repo
+
+<pre class="highlight"><code><span class="c"># Display the status of submodule repo</span>
 [CustomerClone/TextFileLogger]$ git status
-HEAD detached at cf93a5d
-nothing to commit, working tree clean
-```
+<span style="color:#ef2929">HEAD detached at cf93a5d</span>
+nothing to commit, working tree clean</code></pre>
+
 Also we saw that , *TextFileLogger* repo has the detached head as commit id(SHA1 hash) **cf93a5d** .
 Please refer to the [Detached Head in Git](../Art-5/detachedhead.md) article for more information.  
 
