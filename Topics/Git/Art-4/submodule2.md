@@ -82,8 +82,8 @@ Fast-forward
  Logger_V2.txt | 1 +
  2 files changed, 2 insertions(+)
  create mode 100644 Logger_V1.txt
- create mode 100644 Logger_V2.txt
-```
+ create mode 100644 Logger_V2.txt</code></pre>
+ 
 But there is a problem with *git pull* command . We got all the updates.
 What if we want to get a specific commit .. say the commit for **Logger_V1.txt** file .
 Then we have to checkout to a specific commit SHA1.
@@ -103,7 +103,7 @@ HEAD is now at cf93a5d Create Logger_V0.txt
 
 # verify the HEAD position
 [Customer/TextFileLogger]$ git log --oneline
-cf93a5d (HEAD -> master) Create Logger_V0.txt</code></pre>
+<span style="color:#a58702">cf93a5d</span> (<span style="color:#ef2929">HEAD -> master</span>) Create Logger_V0.txt</code></pre>
 
 OK.. all set now.
 Lets update the TextFileLogger submodule to a specific commit
@@ -111,9 +111,9 @@ Lets update the TextFileLogger submodule to a specific commit
 
 <span class="c"># get the SHA1 details from origin</span>
 [Customer/TextFileLogger]$ git log --oneline origin/master
-7125a58 (origin/master, origin/HEAD) added Logger_V2.txt
-8c29b0f added Logger_V1.txt
-cf93a5d (HEAD -> master) Create Logger_V0.txt
+<span style="color:#a58702">7125a58</span> (<span style="color:#ef2929">origin/master, origin/HEAD</span>) added Logger_V2.txt
+<span style="color:#a58702">8c29b0f</span> added Logger_V1.txt
+<span style="color:#a58702">cf93a5d</span> (<span style="color:#55a705">HEAD -> master</span>) Create Logger_V0.txt
 
 <span class="c"># checkout to SHA1 8c29b0f , to get Logger_V1.txt commit</span>
 [Customer/TextFileLogger]$ git checkout -q 8c29b0f
@@ -125,8 +125,8 @@ nothing to commit, working tree clean
 
 <span class="c"># check the log</span>
 [Customer/TextFileLogger]$ git log --oneline
-8c29b0f (HEAD) added Logger_V1.txt
-cf93a5d (master) Create Logger_V0.txt</code></pre>
+<span style="color:#a58702">8c29b0f</span> (<span style="color:#04aeae">HEAD</span>) added Logger_V1.txt
+<span style="color:#a58702">cf93a5d</span> (<span style="color:#55a705">master</span>) Create Logger_V0.txt</code></pre>
 
 Our submodule is updated with selected commit. So now we can see the change in parent repo(Customer)
 <pre class="highlight"><code>
@@ -147,8 +147,7 @@ Submodules changed but not updated:
 * TextFileLogger cf93a5d...8c29b0f (1):
   <b> > added Logger_V1.txt</b>
 
-no changes added to commit (use "git add" and/or "git commit -a")
-</code></pre>
+no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
 
 The display of change details for submoule   is enabled by our *status.submoduleSummary = true* setting  , which we did earlier.  
@@ -242,15 +241,14 @@ Git found that the current working directory does not have this commit .
 This is a problem : if we don’t explicitly update the submodule’s working directory, our next parent repo commit will regress the submodule.
 
 Lets verify again by listing the current working directory :
-```bash
-[CustomerClone]$ tree
+<pre class="highlight"><code>[CustomerClone]$ tree
 .
 ├── Customer_V0.txt
 └── TextFileLogger
     └── Logger_V0.txt
 
-1 directory, 2 files
-```
+1 directory, 2 files</code></pre>
+
 Yes... we did not get the update for submodule. Else we could have **Logger_V1.txt** file in out *TextFileLogger* folder.
 
 > So , Git auto-fetches, but does not auto-update.
@@ -258,8 +256,7 @@ Yes... we did not get the update for submodule. Else we could have **Logger_V1.t
 Our local cache is up-to-date with the submodule’s remote, but the submodule’s working directory stuck to its old contents.
 
 Then we need to update our submodule :
-```bash
-# update the submodule
+<pre class="highlight"><code># update the submodule
 [CustomerClone]$ git submodule update --init --recursive
 Submodule path 'TextFileLogger': checked out '8c29b0f69bc187441b1fba9627e0060243ba4846'
 
@@ -269,8 +266,7 @@ Submodule path 'TextFileLogger': checked out '8c29b0f69bc187441b1fba9627e0060243
 ├── Customer_V0.txt
 └── TextFileLogger
     ├── Logger_V0.txt
-    └── Logger_V1.txt
-```
+    └── Logger_V1.txt</code></pre>
 YES.. its updated. We have all the required files.
 
 So .. in this article we learned about :
