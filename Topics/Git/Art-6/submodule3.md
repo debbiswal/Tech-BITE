@@ -13,9 +13,9 @@ Lets discuss below points in this article :
 ### Updating a submodule in-place in the container
 
 <pre class="highlight"><code>[Customer/TextFileLogger]$ git log --oneline origin/master
-<span style="color:#c5a103">7125a5</span> (<span style="color:#ef2929">origin/master, origin/HEAD</span>) added Logger_V2.txt
-<span style="color:#c5a103">8c29b0f</span> (<span style="color:#04aeae">HEAD</span>) added Logger_V1.txt
-<span style="color:#c5a103">cf93a5d</span> (<span style="color:#55a705">master</span>) Create Logger_V0.txt</code></pre>
+<span style="color:#a58702">7125a5</span> (<span style="color:#ef2929">origin/master, origin/HEAD</span>) added Logger_V2.txt
+<span style="color:#a58702">8c29b0f</span> (<span style="color:#04aeae">HEAD</span>) added Logger_V1.txt
+<span style="color:#a58702">cf93a5d</span> (<span style="color:#55a705">master</span>) Create Logger_V0.txt</code></pre>
 
 ### Removing a submodule
 
