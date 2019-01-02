@@ -144,7 +144,7 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-(use "git reset HEAD file..." to unstage)<span style="color:#c5860b">
+(use "git reset HEAD file..." to unstage)<span class="output-highlight">
 	new file:   .gitmodules
 	new file:   TextFileLogger</span></code></pre>  
 We can see that , it also staged two files (.gitmodules , TextFileLogger)  
