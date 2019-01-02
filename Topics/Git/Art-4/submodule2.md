@@ -69,10 +69,7 @@ $ cd Customer
 
 Lets try to update the submodule with remote updates :
 <pre class="highlight"><code>[Customer/TextFileLogger]$ git pull
-remote: Enumerating objects: 7, done.
-remote: Counting objects: 100% (7/7), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 6 (delta 1), reused 6 (delta 1), pack-reused 0
+...
 Unpacking objects: 100% (6/6), done.
 From https://github.com/debbiswal/TextFileLogger
    cf93a5d..7125a58  master     -> origin/master
@@ -202,10 +199,7 @@ $ cd CustomerClone
 
 <span class="c"># go git pull , to get the latest changes</span>
 [CustomerClone]$ git pull
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Compressing objects: 100% (1/1), done.
-remote: Total 2 (delta 1), reused 2 (delta 1), pack-reused 0
+...
 Unpacking objects: 100% (2/2), done.
 From https://github.com/debbiswal/Customer
    e6a4e13..e9049f0  master     -> origin/master
