@@ -45,38 +45,38 @@ Lets start with creating the required repositories :
 
 Create TextFileLogger repo with some dummy content :  
 <pre class="highlight"><code><span class="c"># Create a Github remote repository from CLI</span>
-$ curl -u 'git-user' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
+$ <span class="command">curl -u 'git-user' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"</span>
 
 <span class="c">#Create the local repo TextFileLogger</span>
-$ mkdir TextFileLogger
-$ cd TextFileLogger
-[TextFileLogger]$ git init
-[TextFileLogger]$ echo "TextLogger_V0" > TextLogger_V0.txt
-[TextFileLogger]$ git add TextLogger_V0.txt
-[TextFileLogger]$ git commit -m "added TextLogger_V0.txt"
+$ <span class="command">mkdir TextFileLogger</span>
+$ <span class="command">cd TextFileLogger</span>
+[TextFileLogger]$ <span class="command">git init</span>
+[TextFileLogger]$ <span class="command">echo "TextLogger_V0" > TextLogger_V0.txt</span>
+[TextFileLogger]$ <span class="command">git add TextLogger_V0.txt</span>
+[TextFileLogger]$ <span class="command">git commit -m "added TextLogger_V0.txt"</span>
 
 <span class="c">#Now link the local repo with remote</span>
-[TextFileLogger]$ git remote add origin https://github.com/git-user/TextFileLogger.git
+[TextFileLogger]$ <span class="command">git remote add origin https://github.com/git-user/TextFileLogger.git</span>
 
 <span class="c"># Check the remote links</span>
-[TextFileLogger]$ git remote -v
+[TextFileLogger]$ <span class="command">git remote -v</span>
 Output :
 <span style="color:#c5860b">origin	https://github.com/git-user/TextFileLogger.git (fetch)</span>
 <span style="color:#c5860b">origin	https://github.com/git-user/TextFileLogger.git (push)</span>
 
 
 <span class="c">#Now push the local repo data to remote</span>
-[TextFileLogger]$ git push -u origin master
+[TextFileLogger]$ <span class="command">git push -u origin master</span>
 
 <span class="c"># For subsequent push , we dont have to use the' -u origin master' argument</span>
-[TextFileLogger]$ echo "TextLogger Updated-1" > TextLogger_V0.txt
+[TextFileLogger]$ <span class="command">echo "TextLogger Updated-1" > TextLogger_V0.txt</span>
 
-[TextFileLogger]$ git add TextLogger_V0.txt
-[TextFileLogger]$ git commit -m "added TextLogger_V0.txt"
+[TextFileLogger]$ <span class="command">git add TextLogger_V0.txt</span>
+[TextFileLogger]$ <span class="command">git commit -m "added TextLogger_V0.txt"</span>
 OR
-[TextFileLogger]$ git commit -am "added TextLogger_V0.txt"
+[TextFileLogger]$ <span class="command">git commit -am "added TextLogger_V0.txt"</span>
 
-[TextFileLogger]$ git push</code></pre>
+[TextFileLogger]$ <span class="command">git push</span></code></pre>
 
 In the similar way lets create the below repositories :  
 * DBogger  with a fie DBLogger_V0.txt
