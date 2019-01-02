@@ -124,7 +124,7 @@ Output :
 
 ```
 
-Adding submodule , added some settings in our local configuration of *Customer* repo:  
+When we added the submodule , it utomatically added some settings in our local configuration of *Customer* repo:  
 Lets check the *config* file under *.git* folder.  
 ```bash
 [Customer]$ cat .git/config
