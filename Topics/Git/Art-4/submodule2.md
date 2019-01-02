@@ -71,7 +71,7 @@ Lets try to update the submodule with remote updates :
 <pre class="highlight"><code>[Customer/TextFileLogger]$ git pull
 ...
 Unpacking objects: 100% (6/6), done.
-From https://github.com/debbiswal/TextFileLogger
+From https://github.com/git-user/TextFileLogger
    cf93a5d..7125a58  master     -> origin/master
 Updating cf93a5d..7125a58
 Fast-forward
@@ -201,10 +201,10 @@ $ cd CustomerClone
 [CustomerClone]$ git pull
 ...
 Unpacking objects: 100% (2/2), done.
-From https://github.com/debbiswal/Customer
+From https://github.com/git-user/Customer
    e6a4e13..e9049f0  master     -> origin/master
 <span style="color:magenta">Fetching submodule TextFileLogger</span>
-From https://github.com/debbiswal/TextFileLogger
+From https://github.com/git-user/TextFileLogger
    cf93a5d..7125a58  master     -> origin/master
 Updating e6a4e13..e9049f0
 Fast-forward
