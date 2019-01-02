@@ -61,7 +61,7 @@ $ cd TextFileLogger
 <span class="c"># Check the remote links</span>
 [TextFileLogger]$ git remote -v
 Output :
-<span style="color:#04aeae">origin	https://github.com/debbiswal/TextFileLogger.git (fetch)
+<span style="color:#048d8d">origin	https://github.com/debbiswal/TextFileLogger.git (fetch)
 origin	https://github.com/debbiswal/TextFileLogger.git (push)</span>
 
 
@@ -131,7 +131,7 @@ Output :
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-<span style="color:#04aeae">[submodule "TextFileLogger"]
+<span style="color:#048d8d">[submodule "TextFileLogger"]
 	url = https://github.com/debbiswal/TextFileLogger.git
 	active = true</span></code></pre>
 	
@@ -144,7 +144,7 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-(use "git reset HEAD file..." to unstage)<span style="color:#04aeae">
+(use "git reset HEAD file..." to unstage)<span style="color:#048d8d">
 	new file:   .gitmodules
 	new file:   TextFileLogger</span></code></pre>  
 We can see that , it also staged two files (.gitmodules , TextFileLogger)  
@@ -153,7 +153,7 @@ But what is this **.gitmodules** file ?
 Lets print the contents of *.gitmodules* file from *Customer* repo :  
 <pre class="highlight"><code>[Customer]$ cat .gitmodules 
 Output :
-<span style="color:#04aeae">[submodule "TextFileLogger"]
+<span style="color:#048d8d">[submodule "TextFileLogger"]
 	path = TextFileLogger
 	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
 
@@ -207,7 +207,7 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-(use "git reset HEAD file..." to unstage)<span style="color:#04aeae">
+(use "git reset HEAD file..." to unstage)<span style="color:#048d8d">
 	new file:   .gitmodules
 	new file:   TextFileLogger</span>
 
@@ -236,7 +236,7 @@ Yes , there is a file *.git* exists in the directory.
 Lets see the contents of the *.git* file :
 <pre class="highlight"><code>[Customer/TextFileLogger]$ cat .git
 Output :
-<span style="color:#04aeae">gitdir: ../.git/modules/TextFileLogger</span></code></pre>  
+<span style="color:#048d8d">gitdir: ../.git/modules/TextFileLogger</span></code></pre>  
 
 From the above output , we found that '.git' file of *TextFileLogger* submodule only contains a reference to a folder of parent repo.
 Here the reference is assigned to *gitdir*. And the path is actually *Customer/.git/modules/TextFileLogger*.
@@ -257,7 +257,7 @@ TextFileLogger
 [Customer/.git/modules]$ cd TextFileLogger/
 [Customer/.git/modules/TextFileLogger]$ ls
 Output :
-<span style="color:#04aeae">branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs</span></code></pre>
+<span style="color:#048d8d">branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs</span></code></pre>
 
 We can see here that , there is a folder *TextFileLogger* . And it has all necessary files & folders to represent the *TextFileLogger* repo.  
 
@@ -339,7 +339,7 @@ We can see here that , the repo *CustomerClone* does not have the submodule info
 So , whether .gitmodules file has the information ?
 <pre class="highlight"><code>[CustomerClone]$ cat .gitmodules
 Output :
-<span style="color:#04aeae">[submodule "TextFileLogger"]
+<span style="color:#048d8d">[submodule "TextFileLogger"]
 	path = TextFileLogger
 	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
 	
@@ -366,7 +366,7 @@ Output :
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-<span style="color:#04aeae">[submodule "TextFileLogger"]
+<span style="color:#048d8d">[submodule "TextFileLogger"]
 	active = true
 	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
 	
@@ -394,7 +394,7 @@ Lets check the *TextFileLogger* folder :
 <pre class="highlight"><code>[CustomerClone]$ cd TextFileLogger/
 [CustomerClone/TextFileLogger]$ cat .git
 Output:
-<span style="color:#04aeae">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
+<span style="color:#048d8d">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
 
 Yes, *TextFileLogger* folder has a .git file , which contains the reference to CustomerClone/.git/modules/TextFileLogger folder.
 And this folder has the necessary meta information to make CustomerClone\TextFileLogger as a stand-alone repo on its own(like in out Customer repo).  
@@ -462,13 +462,13 @@ Output :
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-<span style="color:#04aeae">[submodule "TextFileLogger"]
+<span style="color:#048d8d">[submodule "TextFileLogger"]
 	url = https://github.com/debbiswal/TextFileLogger.git</span>
 
 <span class="c"># Display the .gitmodules from CustomerClone repo</span>
 [CustomerClone]$ cat .gitmodules
 Output :
-<span style="color:#04aeae">[submodule "TextFileLogger"]
+<span style="color:#048d8d">[submodule "TextFileLogger"]
 	path = TextFileLogger
 	url = https://github.com/debbiswal/TextFileLogger.git</span>
 
@@ -476,7 +476,7 @@ Output :
 [CustomerClone]$ cd TextFileLogger/
 [CustomerClone/TextFileLogger]$ cat .git
 Output :
-<span style="color:#04aeae">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
+<span style="color:#048d8d">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
 
 Yes .git/config and .gitmodules file has information about *TextFileLogger*.
 And TextFileLogger/.git file has the gitdir reference to *TextFileLogger* repository meta data.
