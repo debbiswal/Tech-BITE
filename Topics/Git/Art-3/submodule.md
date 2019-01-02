@@ -216,7 +216,7 @@ Submodule changes to be committed:
 * TextFileLogger 0000000...cf93a5d (1):
   <span style="color:green">> Create Logger_V0.txt</span></code></pre>
   
-Now you see , we got the status related to submodule *TextFileLogger* also.  It says, that it has 1 commit made. 
+We can see from the above *git status* command output that , we got the status related to submodule *TextFileLogger* also.  It says, that it has 1 commit made. 
 The last commit was an addition(right angle bracket , >) and the last commit meesage was 'Create Logger_V0.txt' .
 
 So , whats the status of our submodule.
