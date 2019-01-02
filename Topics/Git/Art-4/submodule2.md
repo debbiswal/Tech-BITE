@@ -14,19 +14,17 @@ Lets discuss below points in this article :
 ### Getting an update from Submodule repo
 
 Lets first check the *TextFileLogger* repo and see to which commit SHA1 , the head points 
-```bash
-# Get into the TextFileLogger repo
+<pre class="highlight"><code># Get into the TextFileLogger repo
 $ cd TextFileLogger
 
 # Print the log of repo
 [TextFileLogger]$ git log --oneline
-cf93a5d (HEAD -> master, origin/master, origin/HEAD) Create Logger_V0.txt
-```
+<span style="color:#a58702">cf93a5d</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) Create Logger_V0.txt</code></pre>
+
 We can see that , the HEAD is as master . And the commit SHA1 is **cf93a5d**
 
 Lets add few files to *TextFileLogger* repo :
-```bash
-# Add a dummy file Logger_V1.txt
+<pre class="highlight"><code># Add a dummy file Logger_V1.txt
 [TextFileLogger]$ echo "Logger_V1" >> Logger_V1.txt
 [TextFileLogger]$ git add Logger_V1.txt
 [TextFileLogger]$ git commit -m "added Logger_V1.txt"
@@ -45,21 +43,17 @@ Output :
  create mode 100644 Logger_V2.txt
 
 # Push to master branch
-[TextFileLogger]$ git push
-```
+[TextFileLogger]$ git push</code></pre>
 
 Now lets see the log :
-```bash
-[TextFileLogger]$ git log --oneline
-7125a58 (HEAD -> master, origin/master, origin/HEAD) added Logger_V2.txt
-8c29b0f added Logger_V1.txt
-cf93a5d Create Logger_V0.txt
-```
+<pre class="highlight"><code>[TextFileLogger]$ git log --oneline
+<span style="color:#a58702">7125a58</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) added Logger_V2.txt
+<span style="color:#a58702">8c29b0f</span> added Logger_V1.txt
+<span style="color:#a58702">cf93a5d</span> Create Logger_V0.txt</code></pre>
 
 Suppose we now want to get these two commits inside our *TextFileLogger* submodule in *Customer* repo.  
 To achieve this, we need to update its local repo, starting by moving into its working directory so it becomes our active repo.
-```bash
-# come out of TextFileLogger repo
+<pre class="highlight"><code># come out of TextFileLogger repo
 [TextFileLogger]$ cd ..
 
 # get into Customer repo
@@ -71,12 +65,10 @@ $ cd Customer
 
 # print the log to get the status of HEAD and commit SHA1
 [Customer/TextFileLogger]$ git log --oneline
-cf93a5d (HEAD -> master, origin/master, origin/HEAD) Create Logger_V0.txt
-```
+cf93a5d (HEAD -> master, origin/master, origin/HEAD) Create Logger_V0.txt</code></pre>
 
 Lets try to update the submodule with remote updates :
-```bash
-[Customer/TextFileLogger]$ git pull
+<pre class="highlight"><code>[Customer/TextFileLogger]$ git pull
 remote: Enumerating objects: 7, done.
 remote: Counting objects: 100% (7/7), done.
 remote: Compressing objects: 100% (3/3), done.
@@ -97,8 +89,7 @@ What if we want to get a specific commit .. say the commit for **Logger_V1.txt**
 Then we have to checkout to a specific commit SHA1.
 
 But first we have to revert back the pull chnages :
-```bash
-# Check the HEAD position
+<pre class="highlight"><code># Check the HEAD position
 [Customer/TextFileLogger]$ git log --oneline
 7125a58 (HEAD -> master, origin/master, origin/HEAD) added Logger_V2.txt
 8c29b0f added Logger_V1.txt
@@ -112,8 +103,8 @@ HEAD is now at cf93a5d Create Logger_V0.txt
 
 # verify the HEAD position
 [Customer/TextFileLogger]$ git log --oneline
-cf93a5d (HEAD -> master) Create Logger_V0.txt
-```
+cf93a5d (HEAD -> master) Create Logger_V0.txt</code></pre>
+
 OK.. all set now.
 Lets update the TextFileLogger submodule to a specific commit
 <pre class="highlight"><code>[Customer/TextFileLogger]$ git fetch
