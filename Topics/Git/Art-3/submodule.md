@@ -259,7 +259,7 @@ TextFileLogger
 Output :
 <span style="color:#04aeae">branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs</span></code></pre>
 
-We can see here that , there is a folder *TextFileLogger* . And it has all ncessary files & folders to represent the *TextFileLogger* repo.  
+We can see here that , there is a folder *TextFileLogger* . And it has all necessary files & folders to represent the *TextFileLogger* repo.  
 
 Now  , Lets push the changes :  
 <pre class="highlight"><code>[Customer/.git/modules/TextFileLogger]$ cd ../../..
@@ -316,10 +316,10 @@ We can see here that , only *TextFileLogger* folder is created , but its empty. 
 
 As we can see from the output of *git clone* command , it was successfully executed , so there is no chance that clone is failed for any reason.  
 
-So , there could be a possibility that , Customer repo does not have information about its submodules .
+So , there could be a possibility that , *Customer* repo does not have information about its submodules .
 And thats why while cloning , submodules did not get cloned.
 
-Lets verify.. whatever I have told ..
+Lets verify..
 <pre class="highlight"><code>[CustomerClone]$ cat .git/config
 Output :
 [core]
@@ -334,7 +334,7 @@ Output :
 	remote = origin
 	merge = refs/heads/master</code></pre>
 	
-We can see here that , the repo CustomerClone does not have the submodule information in its local configuration.
+We can see here that , the repo *CustomerClone* does not have the submodule information in its local configuration.
 
 So , whether .gitmodules file has the information ?
 <pre class="highlight"><code>[CustomerClone]$ cat .gitmodules
