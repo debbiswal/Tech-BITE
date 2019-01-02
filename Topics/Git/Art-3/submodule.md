@@ -89,27 +89,27 @@ Lets use the TextFileLogger repo in Customer and Product repos and submodule.
 ### Adding Submodules
 Lets add the *TextFileLogger* as submodule to *Customer* repo
 <pre class="highlight"><code><span class="c"># Get into Customer repo folder</span>
-$ cd Customer
+<span  class="command-prompt">$</span> <span class="command">cd Customer</span>
 
 <span class="c"># Add the TextFileLogger as a submodule</span>
-[Customer]$ <span class="command">git submodule add https://github.com/git-user/TextFileLogger.git</span>
+<span  class="command-prompt">[Customer]$</span> <span class="command">git submodule add https://github.com/git-user/TextFileLogger.git</span>
 Output :
 Cloning into 'Customer/TextFileLogger'...
 ...
 Unpacking objects: 100% (3/3), done.</code></pre>
 
 Now , if we check the Customer folder .. we can see that TextFileLogger folder is created with all the contents.  
-<pre class="highlight"><code>[Customer]$ <span class="command">ls</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> <span class="command">ls</span>
 Output :
 Customer_V0.txt  TextFileLogger
 
-[Customer]$ <span class="command">ls TextFileLogger</span>
+<span  class="command-prompt">[Customer]$</span> <span class="command">ls TextFileLogger</span>
 Output :
 Logger_V0.txt
 
 <span class="c"># If tree command is not installed , then you have to install it.</span>
 <span class="c"># As my ststem is CENTOS , I have used the command 'sudo yum -y install tree'</span>
-[Customer]$ <span class="command">tree</span>
+<span  class="command-prompt">[Customer]$</span> <span class="command">tree</span>
 Output :
 .
 ├── Customer_V0.txt
@@ -118,7 +118,7 @@ Output :
 
 When we added the submodule , it utomatically added some settings in our local configuration of *Customer* repo:  
 Lets check the *config* file under *.git* folder.  
-<pre class="highlight"><code>[Customer]$ <span class="command">cat .git/config</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> <span class="command">cat .git/config</span>
 Output :
 [core]
 	repositoryformatversion = 0
@@ -138,7 +138,7 @@ Output :
 We can see that a **'[submodule "TextFileLogger"]'** section has been added to .git/config file.  
 
 Now , lets check the status of our *Customer* repo.
-<pre class="highlight"><code>[Customer]$ <span class="command">git status</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> <span class="command">git status</span>
 Output :
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -151,7 +151,7 @@ We can see that , it also staged two files (.gitmodules , TextFileLogger)
 
 But what is this **.gitmodules** file ?  
 Lets print the contents of *.gitmodules* file from *Customer* repo :  
-<pre class="highlight"><code>[Customer]$ <span class="command">cat .gitmodules</span> 
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> <span class="command">cat .gitmodules</span> 
 Output :
 <span class="output-highlight">[submodule "TextFileLogger"]
 	path = TextFileLogger
@@ -181,27 +181,27 @@ Status, like logs and diffs, is limited to the active repo , not to submodules, 
 So we need to set up a submodule-aware status for the repo OR globally:
 
 <pre class="highlight"><code><span class="c"># Check the repo level submoduleSummary config</span> 
-[Customer] $ <span class="command">git config status.submoduleSummary</span>
+<span  class="command-prompt">[Customer] $</span> <span class="command">git config status.submoduleSummary</span>
 Output :
 false
 
 <span class="c"># Check the global level submoduleSummary config</span> 
-[Customer] $ <span class="command">git config --global status.submoduleSummary</span>
+<span  class="command-prompt">[Customer] $</span> <span class="command">git config --global status.submoduleSummary</span>
 Output :
 false
 
 <span class="c"># We can set the submoduleSummary config repo level OR global level(for all repos)</span>
 
 <span class="c"># Set status.submoduleSummary to true  , repo level</span>
-[Customer] $ <span class="command">git config status.submoduleSummary true</span>
+<span  class="command-prompt">[Customer] $</span> <span class="command">git config status.submoduleSummary true</span>
 
 <span class="c">OR</span>
 
 <span class="c"># Set status.submoduleSummary to true  , global level(for all repos)</span>
-[Customer] $ <span class="command">git config --global status.submoduleSummary true</span></code></pre>
+<span  class="command-prompt">[Customer] $</span> <span class="command">git config --global status.submoduleSummary true</span></code></pre>
 
 Lets try again **git status** command again :  
-<pre class="highlight"><code>[Customer]$ <span class="command">git status</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> <span class="command">git status</span>
 Output :
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -221,8 +221,8 @@ The last commit was an addition(right angle bracket , >) and the last commit mee
 
 So , whats the status of our submodule.
 Lets check :
-<pre class="highlight"><code>[Customer]$ <span class="command">cd TextFileLogger/</span>
-[Customer/TextFileLogger]$ <span class="command">git status</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> <span class="command">cd TextFileLogger/</span>
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> <span class="command">git status</span>
 Output :
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -234,7 +234,7 @@ Its because of a new *.git* file takes over the responsibilities.
 Yes , there is a file *.git* exists in the directory.
 
 Lets see the contents of the *.git* file :
-<pre class="highlight"><code>[Customer/TextFileLogger]$ <span class="command">cat .git</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer/TextFileLogger]$</span> <span class="command">cat .git</span>
 Output :
 <span class="output-highlight">gitdir: ../.git/modules/TextFileLogger</span></code></pre>  
 
@@ -249,28 +249,28 @@ So that , the submodule folder will not behave as a standalone repo
 
 Lets check the Customer/.git/modules folder :  
 
-<pre class="highlight"><code>[Customer/TextFileLogger]$ <span class="command">cd ..</span>
-[Customer]$ <span class="command">cd .git/modules/</span>
-[Customer/.git/modules]$ <span class="command">ls</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer/TextFileLogger]$</span> <span class="command">cd ..</span>
+<span  class="command-prompt">[Customer]$</span> <span class="command">cd .git/modules/</span>
+<span  class="command-prompt">[Customer/.git/modules]$</span> <span class="command">ls</span>
 Output :
 TextFileLogger
-[Customer/.git/modules]$ <span class="command">cd TextFileLogger/</span>
-[Customer/.git/modules/TextFileLogger]$ <span class="command">ls</span>
+<span  class="command-prompt">[Customer/.git/modules]$</span> <span class="command">cd TextFileLogger/</span>
+<span  class="command-prompt">[Customer/.git/modules/TextFileLogger]$</span> <span class="command">ls</span>
 Output :
 <span class="output-highlight">branches  config  description  HEAD  hooks  index  info  logs  objects  packed-refs  refs</span></code></pre>
 
 We can see here that , there is a folder *TextFileLogger* . And it has all necessary files & folders to represent the *TextFileLogger* repo.  
 
 Now  , Lets push the changes :  
-<pre class="highlight"><code>[Customer/.git/modules/TextFileLogger]$ <span class="command">cd ../../..</span>
-[Customer]$ <span class="command">git commit -m "Adding the submodule TextFileLogger"</span>
+<pre class="highlight"><code><span  class="command-prompt">[Customer/.git/modules/TextFileLogger]$</span> <span class="command">cd ../../..</span>
+<span  class="command-prompt">[Customer]$</span> <span class="command">git commit -m "Adding the submodule TextFileLogger"</span>
 Outpput :
 [master e6a4e13] Adding the submodule TextFileLogger
  2 files changed, 4 insertions(+)
  create mode 100644 .gitmodules
  create mode 160000 TextFileLogger
 
-[Customer]$ <span class="command">git push</span></code></pre>
+<span  class="command-prompt">[Customer]$</span> <span class="command">git push</span></code></pre>
 
 Now if we see the repository in github website , we can see that the *TextFileLogger* is saved as a reference with specific commit id.  
 There is no physical folder exists for *TextFileLogger* inside *Customer* repo.  
@@ -301,10 +301,10 @@ Cloning into 'CustomerClone'...
 Unpacking objects: 100% (11/11), done.
 
 <span class="c"># Get inside the folder</span>
-$ <span class="command">cd CustomerClone</span>
+<span  class="command-prompt">$</span> <span class="command">cd CustomerClone</span>
 
 <span class="c"># Print the folder structure</span>
-[CustomerClone]$ <span class="command">tree</span>
+<span  class="command-prompt">[CustomerClone]$</span> <span class="command">tree</span>
 Output :
 .
 ├── Customer_V0.txt
@@ -320,7 +320,7 @@ So , there could be a possibility that , *Customer* repo does not have informati
 And thats why while cloning , submodules did not get cloned.
 
 Lets verify..
-<pre class="highlight"><code>[CustomerClone]$ <span class="command">cat .git/config</span>
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> <span class="command">cat .git/config</span>
 Output :
 [core]
 	repositoryformatversion = 0
@@ -337,7 +337,7 @@ Output :
 We can see here that , the repo *CustomerClone* does not have the submodule information in its local configuration.
 
 So , whether .gitmodules file has the information ?
-<pre class="highlight"><code>[CustomerClone]$ <span class="command">cat .gitmodules</span>
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> <span class="command">cat .gitmodules</span>
 Output :
 <span class="output-highlight">[submodule "TextFileLogger"]
 	path = TextFileLogger
@@ -353,7 +353,7 @@ Output :
 Submodule 'TextFileLogger' (https://github.com/git-user/TextFileLogger.git) registered for path 'TextFileLogger'</code></pre>
 
 Lets verify , whether local configuration has been updated with submodule information or not :
-<pre class="highlight"><code>[CustomerClone]$ <span class="command">cat .git/config</span>
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> <span class="command">cat .git/config</span>
 Output :
 [core]
 	repositoryformatversion = 0
@@ -373,13 +373,13 @@ Output :
 We can see that *TextFileLogger* submodule information has been added to .git/config file.
 
 * Update the *CustomerClone* repo from *remote* again.
-<pre class="highlight"><code>[CustomerClone]$ <span class="command">git submodule update</span>
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> <span class="command">git submodule update</span>
 Output :
 Cloning into 'CustomerClone/TextFileLogger'...
 Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'</code></pre>
 
 Lets check the folder structure , to see whether all files & folders are added properly
-<pre class="highlight"><code>[CustomerClone]$ <span class="command">tree</span>
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> <span class="command">tree</span>
 Output :
 .
 ├── Customer_V0.txt
@@ -391,8 +391,8 @@ Output :
 Yes.. now all files are added.
 
 Lets check the *TextFileLogger* folder :  
-<pre class="highlight"><code>[CustomerClone]$ <span class="command">cd TextFileLogger/</span>
-[CustomerClone/TextFileLogger]$ <span class="command">cat .git</span>
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> <span class="command">cd TextFileLogger/</span>
+<span  class="command-prompt">[CustomerClone/TextFileLogger]$</span> <span class="command">cat .git</span>
 Output:
 <span class="output-highlight">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
 
@@ -400,7 +400,7 @@ Yes, *TextFileLogger* folder has a .git file , which contains the reference to C
 And this folder has the necessary meta information to make CustomerClone\TextFileLogger as a stand-alone repo on its own(like in out Customer repo).  
 
 We can do the above two steps in a single command also :  
-<pre class="highlight"><code>[CustomerClone]$ <span class="command">git submodule update --init</span>
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> <span class="command">git submodule update --init</span>
 Output :
 Submodule 'TextFileLogger' (https://github.com/git-user/TextFileLogger.git) registered for path 'TextFileLogger'
 Cloning into 'CustomerClone/TextFileLogger'...
@@ -414,13 +414,13 @@ We need a single command which will do all these for us.
 Here comes *- -recursive* argument in help.
 Lets test it :
 <pre class="highlight"><code><span class="c"># Lets go back to the root folder</span>
-[CustomerClone/TextFileLogger] $ <span class="command">cd ../..</span>
+<span  class="command-prompt">[CustomerClone/TextFileLogger] $</span> <span class="command">cd ../..</span>
 
 <span class="c"># Delete the CustomerClone folder</span>
-$ <span class="command">rm -rf CustomerClone</span>
+<span  class="command-prompt">$</span> <span class="command">rm -rf CustomerClone</span>
 
 <span class="c"># Now lets clone the Customer repo to CustomerClone folder</span>
-$ <span class="command">git clone --recursive https://github.com/git-user/Customer.git CustomerClone</span>
+<span  class="command-prompt">$</span> <span class="command">git clone --recursive https://github.com/git-user/Customer.git CustomerClone</span>
 Output :
 Cloning into 'CustomerClone'...
 ...
@@ -433,8 +433,8 @@ Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90
 We can see from the output of above command that , *TextFileLogger* is also cloned.
 
 Lets verify the folder structure :
-<pre class="highlight"><code>$ <span class="command">cd CustomerClone</span>
-[CustomerClone]$ <span class="command">tree</span>
+<pre class="highlight"><code><span  class="command-prompt">$</span> <span class="command">cd CustomerClone</span>
+<span  class="command-prompt">[CustomerClone]$</span> <span class="command">tree</span>
 Output :
 .
 ├── Customer_V0.txt
@@ -447,7 +447,7 @@ Yes , we have all the required files.
 
 Now lets verify the configuration files , whether they have all the required information or not :
 <pre class="highlight"><code><span class="c"># Display the local configuration of CustomerClone repo</span>
-[CustomerClone]$ <span class="command">cat .git/config</span>
+<span  class="command-prompt">[CustomerClone]$</span> <span class="command">cat .git/config</span>
 Output :
 [core]
 	repositoryformatversion = 0
@@ -466,15 +466,15 @@ Output :
 	url = https://github.com/git-user/TextFileLogger.git</span>
 
 <span class="c"># Display the .gitmodules from CustomerClone repo</span>
-[CustomerClone]$ <span class="command">cat .gitmodules</span>
+<span  class="command-prompt">[CustomerClone]$</span> <span class="command">cat .gitmodules</span>
 Output :
 <span class="output-highlight">[submodule "TextFileLogger"]
 	path = TextFileLogger
 	url = https://github.com/git-user/TextFileLogger.git</span>
 
 <span class="c"># Display .git file from TextFileLogger submodule</span>
-[CustomerClone]$ <span class="command">cd TextFileLogger/</span>
-[CustomerClone/TextFileLogger]$ <span class="command">cat .git</span>
+<span  class="command-prompt">[CustomerClone]$</span> <span class="command">cd TextFileLogger/</span>
+<span  class="command-prompt">[CustomerClone/TextFileLogger]$</span> <span class="command">cat .git</span>
 Output :
 <span class="output-highlight">gitdir: ../.git/modules/TextFileLogger</span></code></pre>
 
@@ -484,7 +484,7 @@ And TextFileLogger/.git file has the gitdir reference to *TextFileLogger* reposi
 Lets check the status of *TextFileLogger* submodule : 
 
 <pre class="highlight"><code><span class="c"># Display the status of submodule repo</span>
-[CustomerClone/TextFileLogger]$ <span class="command">git status</span>
+<span  class="command-prompt">[CustomerClone/TextFileLogger]$</span> <span class="command">git status</span>
 <span style="color:#ef2929">HEAD detached at cf93a5d</span>
 nothing to commit, working tree clean</code></pre>
 
