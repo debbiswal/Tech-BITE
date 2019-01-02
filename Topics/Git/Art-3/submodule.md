@@ -46,38 +46,38 @@ Lets start with creating the required repositories :
 Create TextFileLogger repo with some dummy content :  
 ```bash
 # Create a Github remote repository from CLI
-curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
+$ curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
 
 #Create the local repo TextFileLogger
-mkdir TextFileLogger
-cd TextFileLogger
-git init
-echo "TextLogger_V0" > TextLogger_V0.txt
-git add TextLogger_V0.txt
-git commit -m "added TextLogger_V0.txt"
+$ mkdir TextFileLogger
+$ cd TextFileLogger
+[TextFileLogger]$ git init
+[TextFileLogger]$ echo "TextLogger_V0" > TextLogger_V0.txt
+[TextFileLogger]$ git add TextLogger_V0.txt
+[TextFileLogger]$ git commit -m "added TextLogger_V0.txt"
 
 #Now link the local repo with remote
-git remote add origin https://github.com/debbiswal/TextFileLogger.git
+[TextFileLogger]$ git remote add origin https://github.com/debbiswal/TextFileLogger.git
 
 # Check the remote links
-git remote -v
+[TextFileLogger]$ git remote -v
 Output :
 origin	https://github.com/debbiswal/TextFileLogger.git (fetch)
 origin	https://github.com/debbiswal/TextFileLogger.git (push)
 
 
 #Now push the local repo data to remote
-git push -u origin master
+[TextFileLogger]$ git push -u origin master
 
 # For subsequent push , we dont have to use the' -u origin master' argument
-echo "TextLogger Updated-1" > TextLogger_V0.txt
+[TextFileLogger]$ echo "TextLogger Updated-1" > TextLogger_V0.txt
 
-git add TextLogger_V0.txt
-git commit -m "added TextLogger_V0.txt"
+[TextFileLogger]$ git add TextLogger_V0.txt
+[TextFileLogger]$ git commit -m "added TextLogger_V0.txt"
 OR
-git commit -am "added TextLogger_V0.txt"
+[TextFileLogger]$ git commit -am "added TextLogger_V0.txt"
 
-git push
+[TextFileLogger]$ git push
 ```  
 In the similar way lets create the below repositories :  
 * DBogger  with a fie DBLogger_V0.txt
