@@ -348,7 +348,7 @@ Yes it has.
 **So ,How do we get the *TextFileLogger* submodule added to our *CustometClone* repo?**
 * First we have to update the *CustomerClone* repo's local configuration with *TextFileLogger* submodule information
 <pre class="highlight"><code><span class="c"># Update/Initialize submodule information in local configuration</span>
-[CustomerClone]$ <span class="command">git submodule init</span>
+<span  class="command-prompt">[CustomerClone]$</span> <span class="command">git submodule init</span>
 Output :
 Submodule 'TextFileLogger' (https://github.com/git-user/TextFileLogger.git) registered for path 'TextFileLogger'</code></pre>
 
