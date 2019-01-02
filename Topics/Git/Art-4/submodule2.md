@@ -199,6 +199,7 @@ As we have modified the *Customer* repo in previous section , lets take the late
 <pre class="highlight"><code><span class="c"># come out of Customer repo folder</span>
 [Customer]$ cd ..
 $ cd CustomerClone
+
 <span class="c"># go git pull , to get the latest changes</span>
 [CustomerClone]$ git pull
 remote: Enumerating objects: 3, done.
