@@ -97,9 +97,9 @@ But first we have to revert back the pull chnages :
 
 <span class="c"># Revert the pull changes</span>
 [Customer/TextFileLogger]$ git reset --hard HEAD~1
-HEAD is now at 8c29b0f added Logger_V1.txt
+<span style="color:#04aeae">HEAD is now at 8c29b0f added Logger_V1.txt</span>
 [Customer/TextFileLogger]$ git reset --hard HEAD~1
-HEAD is now at cf93a5d Create Logger_V0.txt
+<span style="color:#04aeae">HEAD is now at cf93a5d Create Logger_V0.txt</span>
 
 <span class="c"># verify the HEAD position</span>
 [Customer/TextFileLogger]$ git log --oneline
@@ -141,11 +141,11 @@ Changes not staged for commit:
 (use "git add file..." to update what will be committed)
 (use "git checkout -- file..." to discard changes in working directory)
 
-<span style="color:red">modified:   TextFileLogger</span> <b>(new commits)</b>
+<span style="color:red">modified:   TextFileLogger</span> (new commits)
 Submodules changed but not updated:
 
 * TextFileLogger cf93a5d...8c29b0f (1):
-  <span style="color:green"><b> > added Logger_V1.txt</b></span>
+  <span style="color:green">> added Logger_V1.txt</span>
 
 no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 We can see that , new commits has been made. It means our reference submodule has been changed , or we made some changes to local submodule code.
@@ -159,10 +159,10 @@ Till yet we saw how to figureout the changes made by using the *git status* comm
 But if we will use *git diff* then what will heppen :
 
 <pre class="highlight"><code>[Customer]$ git diff
-<b>diff --git a/TextFileLogger b/TextFileLogger
+<span style="color:#04aeae">diff --git a/TextFileLogger b/TextFileLogger
 index cf93a5d..8c29b0f 160000
 --- a/TextFileLogger
- +++ b/TextFileLogger</b>
+ +++ b/TextFileLogger</span>
 <span style="color:magenta">@@ -1 +1 @@</span>
 <span style="color:red">-Subproject commit cf93a5d641a1af6c558762935e8d544c90308e0e</span>
 <span style="color:green">+Subproject commit 8c29b0f69bc187441b1fba9627e0060243ba4846</span></code></pre>
