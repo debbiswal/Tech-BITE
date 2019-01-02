@@ -258,6 +258,7 @@
   * Server Sent Events (SSE)
   * Using Redis Pub/Sub in Node.Js
   * Deploying submodules with grunt-git
+  * Deploying nested package.json (https://strongloop.com/strongblog/modular-node-js-express/)
 
 
 
