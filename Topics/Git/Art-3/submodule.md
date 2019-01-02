@@ -76,7 +76,7 @@ origin	https://github.com/debbiswal/TextFileLogger.git (push)</span>
 OR
 [TextFileLogger]$ git commit -am "added TextLogger_V0.txt"
 
-[TextFileLogger]$ git push</span>
+[TextFileLogger]$ git push</code></pre>
 
 In the similar way lets create the below repositories :  
 * DBogger  with a fie DBLogger_V0.txt
@@ -91,7 +91,7 @@ Lets add the *TextFileLogger* as submodule to *Customer* repo
 <pre class="highlight"><code><span class="c"># Get into Customer repo folder</span>
 $ cd Customer
 
-<span class="c"># Add the TextFileLogger as a submodule
+<span class="c"># Add the TextFileLogger as a submodule</span>
 [Customer]$ git submodule add https://github.com/debbiswal/TextFileLogger.git
 Output :
 Cloning into 'Customer/TextFileLogger'...
@@ -114,7 +114,7 @@ Output :
 .
 ├── Customer_V0.txt
 └── TextFileLogger
-    └── Logger_V0.txt</code></span>
+    └── Logger_V0.txt</code></pre>
 
 When we added the submodule , it utomatically added some settings in our local configuration of *Customer* repo:  
 Lets check the *config* file under *.git* folder.  
@@ -144,7 +144,7 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-(use "git reset HEAD <file>..." to unstage)
+(use "git reset HEAD file..." to unstage)
 <span style="color:#04aeae">new file:   .gitmodules
 	new file:   TextFileLogger</span></code></pre>  
 We can see that , it also staged two files (.gitmodules , TextFileLogger)  
@@ -182,7 +182,7 @@ So we need to set up a submodule-aware status for the repo OR globally:
 
 <pre class="highlight"><code><span class="c"># Check the repo level submoduleSummary config</span> 
 [Customer] $ git config status.submoduleSummary
-# Output :
+Output :
 false
 
 <span class="c"># Check the global level submoduleSummary config</span> 
@@ -195,7 +195,7 @@ false
 <span class="c"># Set status.submoduleSummary to true  , repo level</span>
 [Customer] $ git config status.submoduleSummary true
 
-<span class="c"># OR</span>
+<span class="c">OR</span>
 
 <span class="c"># Set status.submoduleSummary to true  , global level(for all repos)</span>
 [Customer] $ git config --global status.submoduleSummary true</code></pre>
