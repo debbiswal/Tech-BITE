@@ -144,8 +144,8 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-(use "git reset HEAD file..." to unstage)
-<span style="color:#04aeae">new file:   .gitmodules
+(use "git reset HEAD file..." to unstage)<span style="color:#04aeae">
+	new file:   .gitmodules
 	new file:   TextFileLogger</span></code></pre>  
 We can see that , it also staged two files (.gitmodules , TextFileLogger)  
 
@@ -207,9 +207,9 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
-(use "git reset HEAD file..." to unstage)
-<span style="color:#04aeae">new file:   .gitmodules
-new file:   TextFileLogger</span>
+(use "git reset HEAD file..." to unstage)<span style="color:#04aeae">
+	new file:   .gitmodules
+	new file:   TextFileLogger</span>
 
 Submodule changes to be committed:
 
