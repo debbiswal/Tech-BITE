@@ -45,7 +45,7 @@ Lets start with creating the required repositories :
 
 Create TextFileLogger repo with some dummy content :  
 <pre class="highlight"><code><span class="c"># Create a Github remote repository from CLI</span>
-$ curl -u 'debbiswal' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
+$ curl -u 'git-user' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"
 
 <span class="c">#Create the local repo TextFileLogger</span>
 $ mkdir TextFileLogger
@@ -56,13 +56,13 @@ $ cd TextFileLogger
 [TextFileLogger]$ git commit -m "added TextLogger_V0.txt"
 
 <span class="c">#Now link the local repo with remote</span>
-[TextFileLogger]$ git remote add origin https://github.com/debbiswal/TextFileLogger.git
+[TextFileLogger]$ git remote add origin https://github.com/git-user/TextFileLogger.git
 
 <span class="c"># Check the remote links</span>
 [TextFileLogger]$ git remote -v
 Output :
-<span style="color:#c5860b">origin	https://github.com/debbiswal/TextFileLogger.git (fetch)</span>
-<span style="color:#c5860b">origin	https://github.com/debbiswal/TextFileLogger.git (push)</span>
+<span style="color:#c5860b">origin	https://github.com/git-user/TextFileLogger.git (fetch)</span>
+<span style="color:#c5860b">origin	https://github.com/git-user/TextFileLogger.git (push)</span>
 
 
 <span class="c">#Now push the local repo data to remote</span>
@@ -92,7 +92,7 @@ Lets add the *TextFileLogger* as submodule to *Customer* repo
 $ cd Customer
 
 <span class="c"># Add the TextFileLogger as a submodule</span>
-[Customer]$ git submodule add https://github.com/debbiswal/TextFileLogger.git
+[Customer]$ git submodule add https://github.com/git-user/TextFileLogger.git
 Output :
 Cloning into 'Customer/TextFileLogger'...
 ...
@@ -126,13 +126,13 @@ Output :
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = https://github.com/debbiswal/Customer.git
+	url = https://github.com/git-user/Customer.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 <span style="color:#c5860b">[submodule "TextFileLogger"]
-	url = https://github.com/debbiswal/TextFileLogger.git
+	url = https://github.com/git-user/TextFileLogger.git
 	active = true</span></code></pre>
 	
 We can see that a **'[submodule "TextFileLogger"]'** section has been added to .git/config file.  
@@ -155,7 +155,7 @@ Lets print the contents of *.gitmodules* file from *Customer* repo :
 Output :
 <span style="color:#c5860b">[submodule "TextFileLogger"]
 	path = TextFileLogger
-	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
+	url = https://github.com/git-user/TextFileLogger.git</span></code></pre>
 
 This is similar to **'[submodule "TextFileLogger"]'** section in .git/config file .  
 
@@ -294,7 +294,7 @@ Now , lets try to clone the repo into a different folder , and see whether we ar
 
 Clone the Customer repo into a different folder
 <pre class="highlight"><code><span class="c"># Clone the Customer repo into another folder .. say CustomerClone</span>
-$ git clone https://github.com/debbiswal/Customer.git CustomerClone
+$ git clone https://github.com/git-user/Customer.git CustomerClone
 Output :
 Cloning into 'CustomerClone'...
 ...
@@ -328,7 +328,7 @@ Output :
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = https://github.com/debbiswal/Customer.git
+	url = https://github.com/git-user/Customer.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin
@@ -341,7 +341,7 @@ So , whether .gitmodules file has the information ?
 Output :
 <span style="color:#c5860b">[submodule "TextFileLogger"]
 	path = TextFileLogger
-	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
+	url = https://github.com/git-user/TextFileLogger.git</span></code></pre>
 	
 Yes it has.
 
@@ -350,7 +350,7 @@ Yes it has.
 <pre class="highlight"><code><span class="c"># Update/Initialize submodule information in local configuration</span>
 [CustomerClone]$ git submodule init
 Output :
-Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'</code></pre>
+Submodule 'TextFileLogger' (https://github.com/git-user/TextFileLogger.git) registered for path 'TextFileLogger'</code></pre>
 
 Lets verify , whether local configuration has been updated with submodule information or not :
 <pre class="highlight"><code>[CustomerClone]$ cat .git/config
@@ -361,14 +361,14 @@ Output :
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = https://github.com/debbiswal/Customer.git
+	url = https://github.com/git-user/Customer.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 <span style="color:#c5860b">[submodule "TextFileLogger"]
 	active = true
-	url = https://github.com/debbiswal/TextFileLogger.git</span></code></pre>
+	url = https://github.com/git-user/TextFileLogger.git</span></code></pre>
 	
 We can see that *TextFileLogger* submodule information has been added to .git/config file.
 
@@ -402,7 +402,7 @@ And this folder has the necessary meta information to make CustomerClone\TextFil
 We can do the above two steps in a single command also :  
 <pre class="highlight"><code>[CustomerClone]$ git submodule update --init
 Output :
-Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
+Submodule 'TextFileLogger' (https://github.com/git-user/TextFileLogger.git) registered for path 'TextFileLogger'
 Cloning into 'CustomerClone/TextFileLogger'...
 Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'</code></pre>  
 
@@ -420,12 +420,12 @@ Lets test it :
 $ rm -rf CustomerClone
 
 <span class="c"># Now lets clone the Customer repo to CustomerClone folder</span>
-$ git clone --recursive https://github.com/debbiswal/Customer.git CustomerClone
+$ git clone --recursive https://github.com/git-user/Customer.git CustomerClone
 Output :
 Cloning into 'CustomerClone'...
 ...
 Unpacking objects: 100% (11/11), done.
-Submodule 'TextFileLogger' (https://github.com/debbiswal/TextFileLogger.git) registered for path 'TextFileLogger'
+Submodule 'TextFileLogger' (https://github.com/git-user/TextFileLogger.git) registered for path 'TextFileLogger'
 Cloning into '/home/vagrant/my_Git_Articles/CustomerClone/TextFileLogger'...
 ...
 Submodule path 'TextFileLogger': checked out 'cf93a5d641a1af6c558762935e8d544c90308e0e'</code></pre>
@@ -457,20 +457,20 @@ Output :
 [submodule]
 	active = .
 [remote "origin"]
-	url = https://github.com/debbiswal/Customer.git
+	url = https://github.com/git-user/Customer.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 <span style="color:#c5860b">[submodule "TextFileLogger"]
-	url = https://github.com/debbiswal/TextFileLogger.git</span>
+	url = https://github.com/git-user/TextFileLogger.git</span>
 
 <span class="c"># Display the .gitmodules from CustomerClone repo</span>
 [CustomerClone]$ cat .gitmodules
 Output :
 <span style="color:#c5860b">[submodule "TextFileLogger"]
 	path = TextFileLogger
-	url = https://github.com/debbiswal/TextFileLogger.git</span>
+	url = https://github.com/git-user/TextFileLogger.git</span>
 
 <span class="c"># Display .git file from TextFileLogger submodule</span>
 [CustomerClone]$ cd TextFileLogger/
