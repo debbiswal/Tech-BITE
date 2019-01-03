@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#prometheus-operator)
 
-# How to scrape custom service metrics endpoints in Prometheus-Operator
+## How to scrape custom service metrics endpoints in Prometheus-Operator
 We have a Service with name ‘redis-cluster’ running in ‘redis’ namespace in kubernetes .It exposes thee end points on port :   
 *	6379 – Rredis client port (redis container)
 * 16379 – Redis Cluster Bus (redis container)
