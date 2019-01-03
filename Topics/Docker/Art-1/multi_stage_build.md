@@ -7,7 +7,7 @@
 I have a GO program(inside App folder) with the following folder structure  
 
 Contents of App folder on local machine :  
-![folder](images/img1.png)  
+[![](images/img1.png) ](images/img1.png)
 
 Now , I want to create a docker image for this.  
 
@@ -17,7 +17,7 @@ Now , I want to create a docker image for this.
 * Copy paste the binaries from local machine to docker image  
 
 *Dockerfile :*  
-![docker file](images/img2.png)  
+[![](images/img2.png) ](images/img2.png)
 
 *Build :*
 ```
@@ -29,7 +29,7 @@ $ docker build –t testgoimage
 $ docker images
 ```  
 
-![file_size](images/img3.png)  
+[![](images/img3.png) ](images/img3.png)
 
 **But , what I see is , for my minimal program , the docker image size is 800MB.**  
 The reason is , by default the golang image size if around 800MB.
@@ -55,7 +55,7 @@ Using this feature , we can optimize the docker image size.
 * Copy binaries from golang image to alpine image  
 
 Dockerfile :  
-![docker file](images/img4.png)  
+[![](images/img4.png) ](images/img4.png)
 
 Build :  
 ```
@@ -71,7 +71,7 @@ Docker images :
 ```
 $ docker images
 ```  
-![docker images](images/img5.png)  
+[![](images/img5.png) ](images/img5.png)
 
 BINGO….  
 
