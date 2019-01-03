@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#docker)  
 
-# Multi-stage Docker Building  
+## Multi-stage Docker Building  
 
 ### Problem statement :  
 
