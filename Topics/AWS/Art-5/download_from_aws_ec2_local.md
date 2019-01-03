@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#aws)  
 
-# How to download files from AWS EC2 to local machine  
+## How to download files from AWS EC2 to local machine  
 
 **Syntax:**
 ```shell
