@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#prometheus-operator)
 
-# How to change alerting interval of a Prometheus alert | Prometheus Operator
+## How to change alerting interval of a Prometheus alert | Prometheus Operator
 
 I have an alert ‘DeadMansSwitch’ configured in my Prometheus , which gets fired in every 3 minutes.  
 
