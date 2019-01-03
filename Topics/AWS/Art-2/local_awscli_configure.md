@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#aws)  
 
-# How to configure AWS Cli on local machine with Auto complete feature
+## How to configure AWS Cli on local machine with Auto complete feature
 
 **Installing AWSCli**  
 ```shell
