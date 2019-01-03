@@ -15,38 +15,38 @@ Lets discuss below points in this article :
 
 Lets first check the *TextFileLogger* repo and see to which commit SHA1 , the head points 
 <pre class="highlight"><code><span class="c"># Get into the TextFileLogger repo</span>
-$ cd TextFileLogger
+<span  class="command-prompt">$</span> cd TextFileLogger
 
 # Print the log of repo
-[TextFileLogger]$ git log --oneline
+<span  class="command-prompt">[TextFileLogger]$</span> git log --oneline
 <span style="color:#a58702">cf93a5d</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) Create Logger_V0.txt</code></pre>
 
 We can see that , the HEAD is as master . And the commit SHA1 is **cf93a5d**
 
 Lets add few files to *TextFileLogger* repo :
 <pre class="highlight"><code><span class="c"># Add a dummy file Logger_V1.txt</span>
-[TextFileLogger]$ echo "Logger_V1" >> Logger_V1.txt
-[TextFileLogger]$ git add Logger_V1.txt
-[TextFileLogger]$ git commit -m "added Logger_V1.txt"
+<span  class="command-prompt">[TextFileLogger]$</span> echo "Logger_V1" >> Logger_V1.txt
+<span  class="command-prompt">[TextFileLogger]$</span> git add Logger_V1.txt
+<span  class="command-prompt">[TextFileLogger]$</span> git commit -m "added Logger_V1.txt"
 Output :
 [master 8c29b0f] added Logger_V1.txt
  1 file changed, 1 insertion(+)
  create mode 100644 Logger_V1.txt
  
 <span class="c"># Add a dummy file Logger_V2.txt</span>
-[TextFileLogger]$ echo "Logger_V2" >> Logger_V2.txt
-[TextFileLogger]$ git add Logger_V2.txt
-[TextFileLogger]$ git commit -m "added Logger_V2.txt"
+<span  class="command-prompt">[TextFileLogger]$</span> echo "Logger_V2" >> Logger_V2.txt
+<span  class="command-prompt">[TextFileLogger]$</span> git add Logger_V2.txt
+<span  class="command-prompt">[TextFileLogger]$</span> git commit -m "added Logger_V2.txt"
 Output :
 [master 7125a58] added Logger_V2.txt
  1 file changed, 1 insertion(+)
  create mode 100644 Logger_V2.txt
 
 <span class="c"># Push to master branch</span>
-[TextFileLogger]$ git push</code></pre>
+<span  class="command-prompt">[TextFileLogger]$</span> git push</code></pre>
 
 Now lets see the log :
-<pre class="highlight"><code>[TextFileLogger]$ git log --oneline
+<pre class="highlight"><code><span  class="command-prompt">[TextFileLogger]$</span> git log --oneline
 <span style="color:#a58702">7125a58</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) added Logger_V2.txt
 <span style="color:#a58702">8c29b0f</span> added Logger_V1.txt
 <span style="color:#a58702">cf93a5d</span> Create Logger_V0.txt</code></pre>
@@ -54,21 +54,21 @@ Now lets see the log :
 Suppose we now want to get these two commits inside our *TextFileLogger* submodule in *Customer* repo.  
 To achieve this, we need to update its local repo, starting by moving into its working directory so it becomes our active repo.
 <pre class="highlight"><code><span class="c"># come out of TextFileLogger repo</span>
-[TextFileLogger]$ cd ..
+<span  class="command-prompt">[TextFileLogger]$</span> cd ..
 
 <span class="c"># get into Customer repo</span>
-$ cd Customer
+<span  class="command-prompt">$</span> cd Customer
 
 <span class="c"># get into TextFileLogger submodule folder</span>
-[Customer]$ cd TextFileLogger
-[Customer/TextFileLogger]$
+<span  class="command-prompt">[Customer]$</span> cd TextFileLogger
+<span  class="command-prompt">[Customer/TextFileLogger]$</span>
 
 <span class="c"># print the log to get the status of HEAD and commit SHA1</span>
-[Customer/TextFileLogger]$ git log --oneline
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git log --oneline
 <span style="color:#a58702">cf93a5d</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) Create Logger_V0.txt</code></pre>
 
 Lets try to update the submodule with remote updates :
-<pre class="highlight"><code>[Customer/TextFileLogger]$ git pull
+<pre class="highlight"><code><span  class="command-prompt">[Customer/TextFileLogger]$</span> git pull
 ...
 Unpacking objects: 100% (6/6), done.
 From https://github.com/git-user/TextFileLogger
@@ -87,50 +87,50 @@ Then we have to checkout to a specific commit SHA1.
 
 But first we have to revert back the pull chnages :
 <pre class="highlight"><code><span class="c"># Check the HEAD position</span>
-[Customer/TextFileLogger]$ git log --oneline
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git log --oneline
 <span style="color:#a58702">7125a58</span> (<span style="color:#ef2929">HEAD -> master, origin/master, origin/HEAD</span>) added Logger_V2.txt
 <span style="color:#a58702">8c29b0f</span> added Logger_V1.txt
 <span style="color:#a58702">cf93a5d</span> Create Logger_V0.txt
 
 <span class="c"># Revert the pull changes</span>
-[Customer/TextFileLogger]$ git reset --hard HEAD~1
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git reset --hard HEAD~1
 <span style="color:#04aeae">HEAD is now at 8c29b0f added Logger_V1.txt</span>
-[Customer/TextFileLogger]$ git reset --hard HEAD~1
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git reset --hard HEAD~1
 <span style="color:#04aeae">HEAD is now at cf93a5d Create Logger_V0.txt</span>
 
 <span class="c"># verify the HEAD position</span>
-[Customer/TextFileLogger]$ git log --oneline
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git log --oneline
 <span style="color:#a58702">cf93a5d</span> (<span style="color:#ef2929">HEAD -> master</span>) Create Logger_V0.txt</code></pre>
 
 OK.. all set now.
 Lets update the TextFileLogger submodule to a specific commit
-<pre class="highlight"><code>[Customer/TextFileLogger]$ git fetch
+<pre class="highlight"><code><span  class="command-prompt">[Customer/TextFileLogger]$</span> git fetch
 
 <span class="c"># get the SHA1 details from origin</span>
-[Customer/TextFileLogger]$ git log --oneline origin/master
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git log --oneline origin/master
 <span style="color:#a58702">7125a58</span> (<span style="color:#ef2929">origin/master, origin/HEAD</span>) added Logger_V2.txt
 <span style="color:#a58702">8c29b0f</span> added Logger_V1.txt
 <span style="color:#a58702">cf93a5d</span> (<span style="color:#55a705">HEAD -> master</span>) Create Logger_V0.txt
 
 <span class="c"># checkout to SHA1 8c29b0f , to get Logger_V1.txt commit</span>
-[Customer/TextFileLogger]$ git checkout -q 8c29b0f
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git checkout -q 8c29b0f
 
 <span class="c"># check the status</span> 
-[Customer/TextFileLogger]$ git status
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git status
 <span style="color:#ef2929">HEAD detached at 8c29b0f</span>
 nothing to commit, working tree clean
 
 <span class="c"># check the log</span>
-[Customer/TextFileLogger]$ git log --oneline
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> git log --oneline
 <span style="color:#a58702">8c29b0f</span> (<span style="color:#04aeae">HEAD</span>) added Logger_V1.txt
 <span style="color:#a58702">cf93a5d</span> (<span style="color:#55a705">master</span>) Create Logger_V0.txt</code></pre>
 
 Our submodule is updated with selected commit. So now we can see the change in parent repo(Customer)
 <pre class="highlight"><code>
-[Customer/TextFileLogger]$ cd ..
-[Customer]$ ls
+<span  class="command-prompt">[Customer/TextFileLogger]$</span> cd ..
+<span  class="command-prompt">[Customer]$</span> ls
 Customer_V0.txt  TextFileLogger
-[Customer]$ git status
+<span  class="command-prompt">[Customer]$</span> git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -155,7 +155,7 @@ It explicitly states the introduced commits (as they use a right-pointing angle 
 Till yet we saw how to figureout the changes made by using the *git status* command.
 But if we will use *git diff* then what will heppen :
 
-<pre class="highlight"><code>[Customer]$ git diff
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> git diff
 <span style="color:#04aeae">diff --git a/TextFileLogger b/TextFileLogger
 index cf93a5d..8c29b0f 160000
 --- a/TextFileLogger
@@ -167,7 +167,7 @@ index cf93a5d..8c29b0f 160000
 But from the above result , we did not understood , what changes has been done to *TextFileLogger* submodule.
 
 So , lets try *submodule=log* argument :
-<pre class="highlight"><code>[Customer]$ git diff --submodule=log
+<pre class="highlight"><code><span  class="command-prompt">[Customer]$</span> git diff --submodule=log
 Submodule TextFileLogger cf93a5d..8c29b0f:
   <span style="color:green">> added Logger_V1.txt</span></code></pre>
 hmmm ... we got more information .
@@ -179,26 +179,26 @@ But it would be better if we can make the *submodule=log* argument global in som
 So that we dont have to use everytime for submodule
 Yes we can :
 <pre class="highlight"><code><span class="c"># set the global configuration for submodule log</span>
-[Customer]$ <b>git config --global diff.submodule log</b>
+<span  class="command-prompt">[Customer]$</span> <b>git config --global diff.submodule log</b>
 
 <span class="c"># get the difference</span>
-[Customer]$ git diff
+<span  class="command-prompt">[Customer]$</span> git diff
 Submodule TextFileLogger cf93a5d..8c29b0f:
  <span style="color:green">> added Logger_V1.txt</span></code></pre>
 
 Now we can push these changes in main repo
 <pre class="highlight"><code>[Customer]$ git commit -am "Setting submodule on Logger_V1 (8c29b0f)"
-[Customer]$ git push </code></pre>
+<span  class="command-prompt">[Customer]$</span> git push </code></pre>
 
 ### Pulling a submodule-using repo
 Do you remember the *CustomerClone* repo , which we cloned from *Customer* repo?
 As we have modified the *Customer* repo in previous section , lets take the latest of that :
 <pre class="highlight"><code><span class="c"># come out of Customer repo folder</span>
-[Customer]$ cd ..
-$ cd CustomerClone
+<span  class="command-prompt">[Customer]$</span> cd ..
+<span  class="command-prompt">$</span> cd CustomerClone
 
 <span class="c"># go git pull , to get the latest changes</span>
-[CustomerClone]$ git pull
+<span  class="command-prompt">[CustomerClone]$</span> git pull
 ...
 Unpacking objects: 100% (2/2), done.
 From https://github.com/git-user/Customer
@@ -216,7 +216,7 @@ We can see that second half of this display: it’s about the submodule, startin
 This behavior became the default with Git 1.7.5, with the configuration setting *fetch.recurseSubmodules* now defaulting to on-demand: if a parent repo gets updates to referenced submodule commits, these submodules get fetched automatically.
 
 Now lets check the status of repo :
-<pre class="highlight"><code>[CustomerClone]$ git status
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -236,7 +236,7 @@ Git found that the current working directory does not have this commit .
 This is a problem : if we don’t explicitly update the submodule’s working directory, our next parent repo commit will regress the submodule.
 
 Lets verify again by listing the current working directory :
-<pre class="highlight"><code>[CustomerClone]$ tree
+<pre class="highlight"><code><span  class="command-prompt">[CustomerClone]$</span> tree
 .
 ├── Customer_V0.txt
 └── TextFileLogger
@@ -252,11 +252,11 @@ Our local cache is up-to-date with the submodule’s remote, but the submodule�
 
 Then we need to update our submodule :
 <pre class="highlight"><code><span class="c"># update the submodule</span>
-[CustomerClone]$ git submodule update --init --recursive
+<span  class="command-prompt">[CustomerClone]$</span> git submodule update --init --recursive
 Submodule path 'TextFileLogger': checked out '8c29b0f69bc187441b1fba9627e0060243ba4846'
 
 <span class="c"># lets check the folder contenets</span>
-[CustomerClone]$ tree
+<span  class="command-prompt">[CustomerClone]$</span> tree
 .
 ├── Customer_V0.txt
 └── TextFileLogger
