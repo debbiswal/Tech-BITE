@@ -10,7 +10,7 @@ Below is the sample metrics :
 
 
 I want to display a dashboard like below :    
-![requirement](images/img2.png)  
+[![](images/img2.png) ](images/img2.png)
 
 *Answer :*
 
