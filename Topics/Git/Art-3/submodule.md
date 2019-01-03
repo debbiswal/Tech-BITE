@@ -44,7 +44,7 @@ This kind of facility makes use of submodules simpler , as we can refer to diffe
 Lets start with creating the required repositories :  
 
 Create TextFileLogger repo with some dummy content :  
-<pre class="highlight linenos"><code><span class="c"># Create a Github remote repository from CLI</span>
+<pre class="highlight"><code><span class="c"># Create a Github remote repository from CLI</span>
 <span  class="command-prompt">$</span> <span  class="command">curl -u 'git-user' https://api.github.com/user/repos -d "{\"name\":\"TextFileLogger\"}"</span>
 
 <span class="c">#Create the local repo TextFileLogger</span>
