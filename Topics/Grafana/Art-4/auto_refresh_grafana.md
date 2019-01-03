@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
 
-# How to set custom auto refresh values in Grafana  
+## How to set custom auto refresh values in Grafana  
 
 By default  Grafana’s  auto refresh starts with minimum value of 5 second.  
 What if you want to refresh the dashboard in custom made seconds. , say 1 second.  
