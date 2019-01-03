@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#prometheus-operator)
 
-# How to deploy custom Grafana dashboard as part of Grafana Deployment in Prometheus Operator
+## How to deploy custom Grafana dashboard as part of Grafana Deployment in Prometheus Operator
 
 The purpose of this article is to show , How to deploy custom Grafana dashboard as part of Grafana Deployment in Prometheus Operator.
 So that , it will be available with the deployment and  You don’t have to create it  , after deploying Grafana.  
