@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#javascript)
 
-# Constant vs Enum in Java Script
+## Constant vs Enum in Java Script
 
 Lets first understand the basic difference , irrespective of any programming language:
 
