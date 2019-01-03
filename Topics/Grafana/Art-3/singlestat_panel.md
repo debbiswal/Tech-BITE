@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#grafana)  
 
-# Using SingleStat pannel in Grafana to diaplay messages based on value 
+## Using SingleStat pannel in Grafana to diaplay messages based on value 
 
 ### Requirement :
 I have 6 redis instances running with port 8001 to 8006 in cluster mode. I want to inform the user whether the Redis Cluster is UP or DOWN on the Grafana dashboard.  
