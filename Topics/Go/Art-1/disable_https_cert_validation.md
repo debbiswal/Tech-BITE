@@ -1,5 +1,5 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#go)  
-# How to disable certificate validation for https request in GO  
+## How to disable certificate validation for https request in GO  
 
 * Set the TLSClient config globally
 ```go
