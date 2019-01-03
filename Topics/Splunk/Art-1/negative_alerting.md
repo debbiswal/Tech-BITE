@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#splunk)
 
-# Negative Alerting
+## Negative Alerting
 **Context :** In our Kubernetes Cluster  , Prometheus Alert Manager is running . The sole purpose of AlertManager is to raise alerts based on the rules configured to it.
 It also raises an Alert , known as ‘DeadMansSwitch’ in every 3 minutes  , to indicate that the complete alerting pipeline is healthy. 
 So from and end user point of view  , this ‘DeadMansSwitch’ alert is the source of truth , of knowing the Alerting pipeline as healthy.
