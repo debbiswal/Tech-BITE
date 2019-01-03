@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#aws)  
 
-# How to copy a file from local machine to AWS EC2 instance  
+## How to copy a file from local machine to AWS EC2 instance  
 
 **Syntax:**  
 ```shell
