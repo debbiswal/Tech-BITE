@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#redis)
 
-# Get Date & Time stamp of Redis using Powershell  
+## Get Date & Time stamp of Redis using Powershell  
 
 Lets say you have many Redis servers in which Redis is running on 10001 port.  
 We want to get the Date & Time from each Redis instance from Windows .  
