@@ -143,8 +143,8 @@
     * What is a Submodule , Adding a Submodule , Cloning a repo with submodule
   * [Submodule-II](Topics/Git/Art-4/submodule2.md)
     * Getting an update from Submodule repo , Whats the difference with diff , Pulling a submodule-using repo
-  * [Submodule-III](Topics/Git/Art-6/submodule3.md)
-    * Getting an update from Submodule repo    
+  * Submodule-III(coming soon)
+    * Updating a submodule in-place in the container, Removing a submodule
 * Subtree
 * [Upgrading GIT in CENTOS from source code](Topics/Git/Art-2/upgrade_git_in_centos.md)
 * [Github suported languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)(external link)
