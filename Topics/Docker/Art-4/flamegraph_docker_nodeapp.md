@@ -80,7 +80,8 @@ $ docker cp fe4f5336a048:/node-flamegraph.svg  /home/vagrant/
 Open the node-flamegraph.svg in browser. Click on the required blocks to drill down.  
 
 Screenshot :  
-![flamegraph](node-flamegraph.svg)  
+[![](node-flamegraph.svg) ](node-flamegraph.svg)
+
 
 Happy Learning :)  
 
