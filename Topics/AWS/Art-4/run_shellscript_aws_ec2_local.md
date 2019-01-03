@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#aws)  
 
-# How to run a shell script on AWS EC2 from local machine  
+## How to run a shell script on AWS EC2 from local machine  
 
 **Syntax:**  
 ```shell
