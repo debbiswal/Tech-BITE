@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
 
-# Useful Commands
+## Useful Commands
 
 #### How to add a remote Git repo from Command line
 ```bash
