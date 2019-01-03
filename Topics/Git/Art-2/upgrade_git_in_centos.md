@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#git)  
 
-# Upgrading GIT in CENTOS from source code  
+## Upgrading GIT in CENTOS from source code  
 
 In CENTOS , simply uninstalling the current git and installing new one does not works.  
 It will always install the configured version (for me , it is 1.8).  
