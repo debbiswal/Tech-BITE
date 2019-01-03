@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#prometheus-operator)
 
-# Deploying Prometheus StatefulSet with Persistent Volume in Prometheus-Operator  
+## Deploying Prometheus StatefulSet with Persistent Volume in Prometheus-Operator  
 
 Prometheus-Operator deploys Prometheus pods as Statefulset with 2 replicas .  
 But the data of Prometheus pod resides inside the pod , as it uses local storage.  
