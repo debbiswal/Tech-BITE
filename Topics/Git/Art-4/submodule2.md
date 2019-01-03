@@ -269,7 +269,7 @@ So .. in this article we learned about :
 * Whats the difference with *diff*
 * Pulling a submodule-using repo
 
-In next article [Git Submodule-III](../Art-6/submodule3.md) we will discuss more on sumbodules.
+In next article Git Submodule-III(coming soon) we will discuss more on sumbodules.
 
 Happy Learning :)  
 
