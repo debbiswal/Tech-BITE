@@ -1,6 +1,6 @@
 [Home](https://debbiswal.github.io/Tech-BITE/) \| [Back](https://debbiswal.github.io/Tech-BITE/#docker)  
 
-# How to access local host from a container  
+## How to access local host from a container  
 
 I have a Redis cluster running on local host(vagrant). The ports on which Redis is running are 8001 to 8006.  
 
