@@ -1,3 +1,4 @@
+<title>Replace-by functionality Of API Gateway</title>
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#api-gateway)
 
 ## Replace-by functionality Of API Gateway
