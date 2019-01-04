@@ -1,4 +1,4 @@
-<h1>Replace-by functionality Of API Gateway</h1>
+<h2>Replace-by functionality Of API Gateway</h2>
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#api-gateway)
 
 ## Replace-by functionality Of API Gateway
