@@ -79,6 +79,8 @@
 
 ### AZURE  
 * To be done
+  * What is Cosmos DB
+  * Cosmos DB Consistency levels :  bounded staleness, strong, session, eventual, and consistent-prefix.
 
 [top](#topics)  
 
