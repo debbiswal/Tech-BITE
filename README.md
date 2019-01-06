@@ -86,19 +86,8 @@
 
 ### Cloud Design Pattern
 * To be done
-  * Cache Aside Pattern
-  * Circuit Breaker Pattern
-  * Command and Query Responsibility Segregation (CQRS) Pattern
-  * Compensating Transaction Pattern
-  * Competing Consumers Pattern
-  * Event Sourcing Pattern
-  * Pipes and Filters Pattern
-  * Priority Queue Pattern
-  * Queue-based Load Leveling Pattern
-  * Runtime Reconfiguration Pattern
-  * External Configuration Store Pattern
-  * Scheduler Agent Supervisor Pattern
-  * Sharding Pattern
+  * Cache Aside Pattern , Circuit Breaker Pattern , Command and Query Responsibility Segregation (CQRS) Pattern , Compensating Transaction Pattern ,Competing Consumers Pattern , Event Sourcing Pattern ,Pipes and Filters Pattern ,Priority Queue Pattern ,Queue-based Load Leveling Pattern , Runtime Reconfiguration Pattern ,External Configuration Store Pattern ,Scheduler Agent Supervisor Pattern
+, Sharding Pattern
 
 [top](#topics)  
 
@@ -181,13 +170,7 @@
   * [Set up a Git Repository using Git LFS](Topics/Git/Art-1/useful_commands.md#set-up-a-git-repository-using-git-lfs)
   * [Githooks](Topics/Git/Art-1/useful_commands.md#githooks)
 * To be done
-  * Using GitAhead tool
-  * Creating Github pages
-  * Creating a Gist
-  * Using gist in Github pages
-  * Customizing CSS in Github pages
-  * Customizing html layout in Github pages
-  * Git rebase
+  * Using GitAhead tool , Creating Github pages , Creating a Gist , Using gist in Github pages , Customizing CSS in Github pages , Customizing html layout in Github pages ,Git rebase
 
 
 [top](#topics)  
@@ -238,6 +221,7 @@
 * [SAGA and Distributed Transaction in Microservice - I](Topics/Microservice/Art-1/saga_pattern1.md)
 * To be done
   * SAGA and Distributed Transaction in Microservice - II
+  * Ambasador Pattern , Anti corruption Layer , Backend for Frontend , Bulkhead , Gateway Aggregation  , Gateway Offloading  , Gateway Routing  , Sidecar , Strangler
 
 [top](#topics)  
 
@@ -258,11 +242,7 @@
 
 ### NodeJS
 * To be done
-  * Polling , Long-Polling , Server Sent Events (SSE)
-  * Server Sent Events (SSE)
-  * Using Redis Pub/Sub in Node.Js
-  * Deploying submodules with grunt-git
-  * Deploying nested package.json (https://strongloop.com/strongblog/modular-node-js-express/)
+  * Polling , Long-Polling , Server Sent Events (SSE) , Server Sent Events (SSE) ,Using Redis Pub/Sub in Node.Js ,Deploying submodules with grunt-git ,Deploying nested package.json (https://strongloop.com/strongblog/modular-node-js-express/)
 
 
 
@@ -294,22 +274,7 @@
 * [Agent the Saviour](Topics/Redis/Art-1/Agent_the_Saviour.md)
 * [Get Date & Time stamp of Redis using Powershell](Topics/Redis/Art-2/redis_datetime_powershell.md)
 * To be done
-  * Redis Master Slave
-  * Redis Sentinel 
-  * Redis Sentinel Event handling
-  * Redis Key notification
-  * Redis Publish/Subscribe
-  * Redis Monitoring
-  * Redis Production ready Configuration
-  * Redis Cluster
-  * Redis Split Brain situation
-  * Redis with HA-Proxy
-  * Redis Master-Slave Vs Cluster performance
-  * Jepsen Test
-  * Redis Master-Slave Test
-  * Redis Cluster Test
-  * Redis Cluster deployment using Kubernetes
-  * Redis Cluster Monitoring using Prometheus,Grafana
+  * Redis Master Slave , Redis Sentinel ,Redis Sentinel Event handling , Redis Key notification , Redis Publish/Subscribe , Redis Monitoring ,Redis Production ready Configuration , Redis Cluster , Redis Split Brain situation ,Redis with HA-Proxy ,Redis Master-Slave Vs Cluster performance , Jepsen Test , Redis Master-Slave Test , Redis Cluster Test , Redis Cluster deployment using Kubernetes , Redis Cluster Monitoring using Prometheus,Grafana
 
 [top](#topics)  
 
