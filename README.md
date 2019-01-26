@@ -223,7 +223,7 @@
 * To be done
   * SAGA and Distributed Transaction in Microservice - II
   * Ambasador Pattern , Anti corruption Layer , Backend for Frontend , Bulkhead , Gateway Aggregation  , Gateway Offloading  , Gateway Routing  , Sidecar , Strangler
-
+* [Microservice resources](https://github.com/wanghaisheng/awesome-microservice)
 [top](#topics)  
 
 ### MVC
