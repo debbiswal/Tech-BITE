@@ -316,4 +316,6 @@
 ### WRK
 * TO BE DONE
 
+### Other External Resources
+* [Awesome list](https://github.com/sindresorhus/awesome)
 [top](#topics)  
