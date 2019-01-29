@@ -320,5 +320,6 @@
 
 ### Other External Resources
 * [Awesome list](https://github.com/sindresorhus/awesome) 
+* [Decorator Pattern](https://blog.ismaelvelten.com/2017/05/13/decorator-pattern-and-logging/) 
 
 [top](#topics)  
