@@ -322,7 +322,8 @@
 ### Other External Resources
 * [Awesome list](https://github.com/sindresorhus/awesome) 
 * [Decorator Pattern](https://blog.ismaelvelten.com/2017/05/13/decorator-pattern-and-logging/) 
-* Async Indepth(https://docs.microsoft.com/en-us/dotnet/standard/async-in-depth)
-* Understanding C# async / await (1) Compilation(https://weblogs.asp.net/dixin/understanding-c-sharp-async-await-1-compilation)
+* [Async Indepth](https://docs.microsoft.com/en-us/dotnet/standard/async-in-depth)
+* [Understanding C# async / await (1) Compilation](https://weblogs.asp.net/dixin/understanding-c-sharp-async-await-1-compilation)
+* [Fluent Validation](https://fluentvalidation.net/)
 
 [top](#topics)  
