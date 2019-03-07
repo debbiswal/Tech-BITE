@@ -214,7 +214,7 @@
 [top](#topics)  
 
 ### Linux
-* [Find number of active connections in Linux using netstat](Topics/Linux/Art-2/netstat_commands.md)
+* [Find number of active connections in Linux using netstat](Topics/Linux/Art-2/netstat_command.md)
 * [Useful Commands](Topics/Linux/Art-1/useful_commands.md)
 
 [top](#topics)  
