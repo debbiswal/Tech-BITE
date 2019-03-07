@@ -1,5 +1,7 @@
 [Home](https://debbiswal.github.io/Tech-BITE) \| [Back](https://debbiswal.github.io/Tech-BITE/#linux)
 
+## Find number of active connections in Linux using netstat
+
 **How to see ALL of the connections?**  
 ```shell
 netstat -a
