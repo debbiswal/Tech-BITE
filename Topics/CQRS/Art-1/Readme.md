@@ -1,5 +1,7 @@
-CQRS. 
-//https://www.youtube.com/watch?v=Q0Bz-O67_nI. 
+CQRS.  
+
+//https://www.youtube.com/watch?v=Q0Bz-O67_nI.  
+// https://www.youtube.com/watch?v=FaAEvYf5-PY. 
 
 ```cs
 using System;  
