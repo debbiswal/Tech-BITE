@@ -1,10 +1,11 @@
-CQRS
+CQRS. 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+https://debbiswal.github.io/Tech-BITE/. 
 
-// https://www.youtube.com/watch?v=Q0Bz-O67_nI
+```
+using System;  
+using System.Collections.Generic;  
+using System.Linq;  
 
 namespace Test1
 {
@@ -168,3 +169,4 @@ namespace Test1
         }
     }
 }
+```
