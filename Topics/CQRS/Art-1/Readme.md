@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;  
 using System.Linq;  
 
-namespace Test1
+namespace CQRS_Demo
 {
     public class Command : EventArgs
     {
