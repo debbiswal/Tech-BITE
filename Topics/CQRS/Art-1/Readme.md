@@ -1,11 +1,12 @@
 CQRS. 
+//https://www.youtube.com/watch?v=Q0Bz-O67_nI. 
 
 ```cs
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
 
-namespace CQRS_Demo
+namespace CQRS_EventSourcing_Demo
 {
     public class Command : EventArgs
     {
