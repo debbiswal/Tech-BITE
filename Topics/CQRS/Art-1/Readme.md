@@ -1,7 +1,5 @@
 CQRS. 
 
-https://debbiswal.github.io/Tech-BITE/. 
-
 ```cs
 using System;  
 using System.Collections.Generic;  
