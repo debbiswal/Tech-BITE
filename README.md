@@ -132,6 +132,7 @@
 ### Gatling
 * [How to Implement Load Test Scenarios in Gatling](Topics/Gatling/Art-2/howto_loadtest.md)
 * [Running different scenarios dynamicaly](Topics/Gatling/Art-1/dynamic_scenarios.md)
+* [How to share session value within concurrent users](Topics/Gatling/Art-3/hashmap.md)
 
 [top](#topics)  
 
