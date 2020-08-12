@@ -113,7 +113,8 @@ class TestLookup extends Simulation {
       ) 
   ).protocols(httpConfig)
   
-}```
+}```. 
+
 
 How to run the script ?  
 JAVA_OPTS="-DIDENTITY_URL=XXX -DCLIENT_ID=XXX -DGRANT_TYPE=XXX -DSCOPE=XXX -DPASSWORD=XXX -DUSER=XXX" ./gatling.sh -s Test.TestLookup
