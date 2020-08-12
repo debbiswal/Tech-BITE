@@ -1,4 +1,5 @@
-ooo
+The below code sample shows , how the identity API is called for first user and access token is saved in hashmap.  
+For subsequent users, Idenity API is not called and access token is pulled from hashmap.  
 
 ```scala
 package Test
