@@ -81,7 +81,7 @@ val USER = System.getProperty("USER")
       })
     }
 
-  def getToken(key: String) = { Identity.tokenCache.get("ACCESS_TOKEN") }
+  def getToken(key: String) = { tokenCache.get("ACCESS_TOKEN") }
 
 }
 //==================================
