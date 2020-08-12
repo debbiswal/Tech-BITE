@@ -113,7 +113,8 @@ class TestLookup extends Simulation {
       ) 
   ).protocols(httpConfig)
   
-}```. 
+}
+```
 
 
 How to run the script ?  
