@@ -6,18 +6,8 @@ package Test
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+
 import scala.concurrent.duration._
-import io.gatling.core.structure.ScenarioBuilder
-import io.gatling.http.protocol.HttpProtocolBuilder
-
-import scala.collection.mutable._
-import scala.concurrent.duration._
-
-import java.util
-import java.io.File
-import java.io.PrintWriter
-import java.io.FileOutputStream
-
 import scala.collection._
 import java.util.concurrent.ConcurrentHashMap
 import scala.collection.JavaConverters._
@@ -92,7 +82,7 @@ val USER = System.getProperty("USER")
     }
 
   def getToken(key: String) = { Identity.tokenCache.get("ACCESS_TOKEN") }
-  
+
 }
 //==================================
 class TestLookup extends Simulation {
