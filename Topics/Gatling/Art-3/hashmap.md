@@ -23,12 +23,7 @@ import java.util.concurrent.ConcurrentHashMap
 import scala.collection.JavaConverters._
 
 // ====================================================
-val IDENTITY_URL = System.getProperty("IDENTITY_URL")
-val CLIENT_ID = System.getProperty("CLIENT_ID")
-val GRANT_TYPE = System.getProperty("GRANT_TYPE")
-val SCOPE = System.getProperty("SCOPE")
-val PASSWORD = System.getProperty("PASSWORD")
-val USER = System.getProperty("USER")
+// JAVA_OPTS='-DIDENTITY_URL=IDENTITY_URL -DCLIENT_ID=CLIENT_ID -DGRANT_TYPE=GRANT_TYPE -DSCOPE=SCOPE -DPASSWORD=PASSWORD -DUSER=USER' ./gatling.sh -s Test.TestLookup
 //======================================================
 
 class LookupCache {
@@ -65,10 +60,17 @@ class LookupCache {
 object Identity {
   val tokenCache = new LookupCache()
 
+val IDENTITY_URL = System.getProperty("IDENTITY_URL")
+val CLIENT_ID = System.getProperty("CLIENT_ID")
+val GRANT_TYPE = System.getProperty("GRANT_TYPE")
+val SCOPE = System.getProperty("SCOPE")
+val PASSWORD = System.getProperty("PASSWORD")
+val USER = System.getProperty("USER")
+
   def authenticate = 
       doIf( session => tokenCache.lock( "ACCESS_TOKEN", "IDENTITY_USER") ) {
       exec(http("GetAccessToken")
-		  .post("$IDENTITY_URL")
+		  .post(IDENTITY_URL)
     	.body(StringBody(s"""{
 		      "client_id":"$CLIENT_ID",
 		      "grant_type":"$GRANT_TYPE",
@@ -78,9 +80,8 @@ object Identity {
 		    }""")).asJson
 		.check(status.is(200))
 	  .check(jsonPath("$.access_token").saveAs("access_token")))
-      // save the token into the cache for next time
-      .exec( session => {
-        println("Saving the token in cache")
+    .exec(session => {
+        println(s"Saving the token in cache FROM $IDENTITY_URL")
         tokenCache.put(
           "ACCESS_TOKEN",
           session("access_token").as[String],
@@ -89,6 +90,9 @@ object Identity {
         session
       })
     }
+
+  def getToken(key: String) = { Identity.tokenCache.get("ACCESS_TOKEN") }
+  
 }
 //==================================
 class TestLookup extends Simulation {
@@ -98,17 +102,17 @@ class TestLookup extends Simulation {
       .inferHtmlResources()
       .headers(hdr)
 
-  val persistScenario = scenario("TEST LOOKUP")
+  val testScenario = scenario("TEST LOOKUP")
      .exec(Identity.authenticate)
      // pull the token out of the cache for use in subsequent tests
     .exec( session => {
-      val token = Identity.tokenCache.get("IDENTITY_TOKEN")
+      val token = Identity.getToken("ACCESS_TOKEN")
       println ("The token is " + token)
       session
       } )
 
   setUp( 
-    persistScenario.inject(
+    testScenario.inject(
         constantUsersPerSec(1) during (5 seconds)
       ) 
   ).protocols(httpConfig)
@@ -118,4 +122,4 @@ class TestLookup extends Simulation {
 
 
 How to run the script ?  
-JAVA_OPTS="-DIDENTITY_URL=XXX -DCLIENT_ID=XXX -DGRANT_TYPE=XXX -DSCOPE=XXX -DPASSWORD=XXX -DUSER=XXX" ./gatling.sh -s Test.TestLookup
+JAVA_OPTS='-DIDENTITY_URL=XXX -DCLIENT_ID=XXX -DGRANT_TYPE=XXX -DSCOPE=XXX -DPASSWORD=XXX -DUSER=XXX' ./gatling.sh -s Test.TestLookup
