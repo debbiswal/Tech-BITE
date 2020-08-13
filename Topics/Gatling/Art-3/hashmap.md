@@ -106,8 +106,6 @@ class TestLookup extends Simulation {
   val testScenario = scenario("TEST LOOKUP")
      .feed(userIdFeeder)
      // Get the universal token for all users
-     // If we want to have user specific access token , then we have to create a user specific key 
-     // and then pass it to authenticate() method .
      .exec(Identity.authenticate("GLOBAL_TOKEN_KEY","GLOBAL_USER"))
      // Fetch the token out of the cache for use in subsequent tests
     .exec( session => {
