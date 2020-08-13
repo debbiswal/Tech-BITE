@@ -1,4 +1,5 @@
-Problem Statement : We need to do a load test on an API(say Product API) using Gatling. 
+Problem Statement :  
+We need to do a load test on an API(say Product API) using Gatling. 
 The steps for test are : 
 1. Call the Authentication API(say Identity API) and get the access token. This token is not related to user , its a service token .
 2. Call the target API (say Product API) using the access token. 
@@ -7,12 +8,15 @@ But the catch is , as the token is not user specific , we don’t want to call t
 We want to call the Authentication API(Identity API) only once(for the first request ) , get the token , save it somewhere(say local cache) for future use. 
 For subsequent requests , the access token will be fetched from local cache  and used to call target API(say Product API)
 
-Solution :
+Solution :  
 Basically we need a mechanism which will allow us to share data across multiple sessions/requests
 We can achieve cross session data sharing by using a local cache  , which can be implemented by using ConcurrentHashMap . 
 We will use 2 ConcurrentHashMap  object  , one for Cache and one for Lock.
 
-So also we have to provide a locking mechanism to check whether cache is set for a key(access token) or not. The logic will be something like below :
+So also we have to provide a locking mechanism to check whether cache is set for a key(access token) or not.  
+The logic will be something like below :
+
+```. 
 IF ( able to get lock on resource )  THEN 
 Call Authentication API , get the token , save it in Cache. 
 ELSE  
@@ -20,12 +24,12 @@ Don’t call Authentication API
 END IF
 Get the token from Cache
 Call Target API
+```. 
 
 Locking will be implemented using ‘putIfAbsent(key,value)’ method of a Lock (ConcurrentHashMap) object to main.
 The ‘putIfAbsent(key,value)’ method returns ‘None’ when we set the ‘value’ for the ‘key’ for first time . We will check this return value to get a lock on Cache object. Please check the ‘LookupCache’ class for complete implementation .
 
-Below is the sample Gatling code :
-
+Below is the sample Gatling code :  
 
 ```scala
 package Test
