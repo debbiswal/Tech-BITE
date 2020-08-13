@@ -18,10 +18,11 @@ The logic will be something like below :
 
 ```. 
 IF ( able to get lock on resource )  THEN 
-Call Authentication API , get the token , save it in Cache. 
+    Call Authentication API , get the token , save it in Cache. 
 ELSE  
-Don’t call Authentication API
+    Don’t call Authentication API
 END IF
+
 Get the token from Cache
 Call Target API
 ```   
